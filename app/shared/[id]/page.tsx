@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, use } from 'react';
+import { useEffect, useState, use, useCallback } from 'react';
 import { PracticeAttempt } from '@/lib/types';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -10,6 +10,7 @@ interface SharedData {
   createdAt: string;
   stats: { total: number; avg: number; best: number };
   attempts: PracticeAttempt[];
+  audioUrls?: Record<string, string>;
 }
 
 function dateKey(ts: number): string {
@@ -31,6 +32,7 @@ export default function SharedPage({ params }: { params: Promise<{ id: string }>
   const [data, setData] = useState<SharedData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [playingId, setPlayingId] = useState<string | null>(null);
 
   useEffect(() => {
     fetch(`/api/share/${id}`)
@@ -42,6 +44,14 @@ export default function SharedPage({ params }: { params: Promise<{ id: string }>
       .catch(() => setError('기록을 찾을 수 없습니다'))
       .finally(() => setLoading(false));
   }, [id]);
+
+  const handlePlay = useCallback((attemptId: string, url: string) => {
+    const audio = new Audio(url);
+    setPlayingId(attemptId);
+    audio.onended = () => setPlayingId(null);
+    audio.onerror = () => setPlayingId(null);
+    audio.play().catch(() => setPlayingId(null));
+  }, []);
 
   if (loading) {
     return (
@@ -60,6 +70,8 @@ export default function SharedPage({ params }: { params: Promise<{ id: string }>
       </div>
     );
   }
+
+  const audioUrls = data.audioUrls || {};
 
   // Group by date
   const grouped = new Map<string, PracticeAttempt[]>();
@@ -116,27 +128,44 @@ export default function SharedPage({ params }: { params: Promise<{ id: string }>
                   </div>
                 </div>
                 <div className="space-y-2">
-                  {items.map(a => (
-                    <Card key={a.id} className="p-3">
-                      <div className="flex items-center justify-between">
-                        <div className="min-w-0 flex-1">
-                          <p className="text-sm font-medium truncate">{a.exerciseTitle}</p>
-                          <p className="text-xs text-muted-foreground">
-                            구간 {a.segmentIndex + 1} · {new Date(a.timestamp).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })}
-                            {a.recordingDuration > 0 && ` · ${a.recordingDuration.toFixed(1)}초`}
-                          </p>
-                          {a.userTranscript && (
-                            <p className="text-xs text-muted-foreground mt-1 italic truncate">
-                              &ldquo;{a.userTranscript}&rdquo;
+                  {items.map(a => {
+                    const hasAudio = !!audioUrls[a.id];
+                    const isPlaying = playingId === a.id;
+                    return (
+                      <Card
+                        key={a.id}
+                        className={`p-3 transition-colors ${hasAudio ? 'cursor-pointer hover:bg-muted/50 active:bg-muted' : ''}`}
+                        onClick={() => {
+                          if (hasAudio) handlePlay(a.id, audioUrls[a.id]);
+                        }}
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="min-w-0 flex-1">
+                            <div className="flex items-center gap-1.5">
+                              {hasAudio && (
+                                <span className="text-sm shrink-0">
+                                  {isPlaying ? '🔊' : '▶️'}
+                                </span>
+                              )}
+                              <p className="text-sm font-medium truncate">{a.exerciseTitle}</p>
+                            </div>
+                            <p className="text-xs text-muted-foreground">
+                              구간 {a.segmentIndex + 1} · {new Date(a.timestamp).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })}
+                              {a.recordingDuration > 0 && ` · ${a.recordingDuration.toFixed(1)}초`}
                             </p>
-                          )}
+                            {a.userTranscript && (
+                              <p className="text-xs text-muted-foreground mt-1 italic truncate">
+                                &ldquo;{a.userTranscript}&rdquo;
+                              </p>
+                            )}
+                          </div>
+                          <p className={`text-lg font-bold shrink-0 ml-3 ${a.scores.total >= 4 ? 'text-emerald-600' : a.scores.total >= 3 ? 'text-amber-600' : 'text-red-600'}`}>
+                            {a.scores.total.toFixed(1)}
+                          </p>
                         </div>
-                        <p className={`text-lg font-bold shrink-0 ml-3 ${a.scores.total >= 4 ? 'text-emerald-600' : a.scores.total >= 3 ? 'text-amber-600' : 'text-red-600'}`}>
-                          {a.scores.total.toFixed(1)}
-                        </p>
-                      </div>
-                    </Card>
-                  ))}
+                      </Card>
+                    );
+                  })}
                 </div>
               </div>
             );

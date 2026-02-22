@@ -60,6 +60,16 @@ export async function getAllRecordingIds(): Promise<string[]> {
   });
 }
 
+export async function getAllRecordings(): Promise<StoredRecording[]> {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(STORE_NAME, 'readonly');
+    const request = tx.objectStore(STORE_NAME).getAll();
+    request.onsuccess = () => resolve(request.result || []);
+    request.onerror = () => reject(request.error);
+  });
+}
+
 export async function deleteRecording(id: string): Promise<void> {
   const db = await openDB();
   return new Promise((resolve, reject) => {

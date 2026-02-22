@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { PracticeAttempt } from '@/lib/types';
 import { getAttempts, clearAllData } from '@/lib/storage/localStorage';
-import { getRecording, downloadRecording, getAllRecordingIds } from '@/lib/storage/recordingDB';
+import { getRecording, downloadRecording, getAllRecordingIds, getAllRecordings } from '@/lib/storage/recordingDB';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -71,12 +71,26 @@ export function HistoryScreen() {
   const handleShare = useCallback(async () => {
     setSharing(true);
     try {
+      // Collect recordings as base64
+      const recordings: Record<string, string> = {};
+      const allRecs = await getAllRecordings().catch(() => []);
+      const attemptIds = new Set(attempts.map(a => a.id));
+      for (const rec of allRecs) {
+        if (attemptIds.has(rec.id)) {
+          // Convert blob to base64
+          const buf = await rec.blob.arrayBuffer();
+          const base64 = btoa(String.fromCharCode(...new Uint8Array(buf)));
+          recordings[rec.id] = `data:${rec.mimeType};base64,${base64}`;
+        }
+      }
+
       // Upload to server
       const res = await fetch('/api/share', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           attempts,
+          recordings,
           stats: { total: attempts.length, avg: avgScore, best: bestScore },
         }),
       });
