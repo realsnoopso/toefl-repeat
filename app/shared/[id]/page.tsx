@@ -154,7 +154,7 @@ export default function SharedPage({ params }: { params: Promise<{ id: string }>
                               {a.recordingDuration > 0 && ` · ${a.recordingDuration.toFixed(1)}초`}
                             </p>
                             {a.userTranscript && (
-                              <p className="text-xs text-muted-foreground mt-1 italic truncate">
+                              <p className="text-xs text-muted-foreground mt-2 italic leading-relaxed bg-muted/50 rounded px-2 py-1.5">
                                 &ldquo;{a.userTranscript}&rdquo;
                               </p>
                             )}
