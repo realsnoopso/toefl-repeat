@@ -1,0 +1,9487 @@
+{
+  "AT_1": {
+    "file": "actual-test/test1/AT_1.mp3",
+    "duration": 183.31,
+    "segments": [
+      {
+        "start": 0,
+        "end": 26.39,
+        "resumeAt": 28.96
+      },
+      {
+        "start": 28.96,
+        "end": 31.96,
+        "resumeAt": 35.31
+      },
+      {
+        "start": 35.31,
+        "end": 35.46,
+        "resumeAt": 43.76
+      },
+      {
+        "start": 43.76,
+        "end": 45.69,
+        "resumeAt": 47.82
+      },
+      {
+        "start": 47.82,
+        "end": 51.25,
+        "resumeAt": 54.58
+      },
+      {
+        "start": 54.58,
+        "end": 54.73,
+        "resumeAt": 63.03
+      },
+      {
+        "start": 63.03,
+        "end": 64.96,
+        "resumeAt": 67.08
+      },
+      {
+        "start": 67.08,
+        "end": 71.43,
+        "resumeAt": 74.36
+      },
+      {
+        "start": 74.36,
+        "end": 74.51,
+        "resumeAt": 84.81
+      },
+      {
+        "start": 84.81,
+        "end": 86.75,
+        "resumeAt": 88.63
+      },
+      {
+        "start": 88.63,
+        "end": 93.3,
+        "resumeAt": 96.46
+      },
+      {
+        "start": 96.46,
+        "end": 96.61,
+        "resumeAt": 106.91
+      },
+      {
+        "start": 106.91,
+        "end": 108.85,
+        "resumeAt": 110.7
+      },
+      {
+        "start": 110.7,
+        "end": 115.6,
+        "resumeAt": 118.72
+      },
+      {
+        "start": 118.72,
+        "end": 118.86,
+        "resumeAt": 129.17
+      },
+      {
+        "start": 129.17,
+        "end": 131.11,
+        "resumeAt": 132.98
+      },
+      {
+        "start": 132.98,
+        "end": 137.61,
+        "resumeAt": 141.26
+      },
+      {
+        "start": 141.26,
+        "end": 141.41,
+        "resumeAt": 153.71
+      },
+      {
+        "start": 153.71,
+        "end": 155.64,
+        "resumeAt": 157.75
+      },
+      {
+        "start": 157.75,
+        "end": 163.55,
+        "resumeAt": 167.1
+      },
+      {
+        "start": 167.1,
+        "end": 167.25,
+        "resumeAt": 179.55
+      },
+      {
+        "start": 179.55,
+        "end": 181.48,
+        "resumeAt": 183.3
+      }
+    ]
+  },
+  "AT_2": {
+    "file": "actual-test/test1/AT_2.mp3",
+    "duration": 283.02,
+    "segments": [
+      {
+        "start": 0,
+        "end": 24.18,
+        "resumeAt": 26.44
+      },
+      {
+        "start": 26.44,
+        "end": 40.38,
+        "resumeAt": 85.41
+      },
+      {
+        "start": 85.41,
+        "end": 87.34,
+        "resumeAt": 90.15
+      },
+      {
+        "start": 90.15,
+        "end": 103.46,
+        "resumeAt": 148.49
+      },
+      {
+        "start": 148.49,
+        "end": 150.43,
+        "resumeAt": 153.4
+      },
+      {
+        "start": 153.4,
+        "end": 168.62,
+        "resumeAt": 213.65
+      },
+      {
+        "start": 213.65,
+        "end": 215.59,
+        "resumeAt": 218.34
+      },
+      {
+        "start": 218.34,
+        "end": 233.39,
+        "resumeAt": 278.42
+      },
+      {
+        "start": 278.42,
+        "end": 280.35,
+        "resumeAt": 283.01
+      }
+    ]
+  },
+  "AT_2_08_질문&모범답안": {
+    "file": "actual-test/test1/AT_2_08_질문&모범답안.mp3",
+    "duration": 59.51,
+    "segments": [
+      {
+        "start": 0,
+        "end": 50.8,
+        "resumeAt": 59.51
+      }
+    ]
+  },
+  "AT_2_09_질문&모범답안": {
+    "file": "actual-test/test1/AT_2_09_질문&모범답안.mp3",
+    "duration": 58.5,
+    "segments": [
+      {
+        "start": 0,
+        "end": 49.53,
+        "resumeAt": 58.49
+      }
+    ]
+  },
+  "AT_2_10_질문&모범답안": {
+    "file": "actual-test/test1/AT_2_10_질문&모범답안.mp3",
+    "duration": 60.98,
+    "segments": [
+      {
+        "start": 0,
+        "end": 57.92,
+        "resumeAt": 60.97
+      }
+    ]
+  },
+  "AT_2_11_질문&모범답안": {
+    "file": "actual-test/test1/AT_2_11_질문&모범답안.mp3",
+    "duration": 61.06,
+    "segments": [
+      {
+        "start": 0,
+        "end": 54.13,
+        "resumeAt": 61.05
+      }
+    ]
+  },
+  "AT_3": {
+    "file": "actual-test/test2/AT_3.mp3",
+    "duration": 181.79,
+    "segments": [
+      {
+        "start": 0,
+        "end": 26.97,
+        "resumeAt": 29.27
+      },
+      {
+        "start": 29.27,
+        "end": 31.73,
+        "resumeAt": 34.91
+      },
+      {
+        "start": 34.91,
+        "end": 35.05,
+        "resumeAt": 43.36
+      },
+      {
+        "start": 43.36,
+        "end": 45.29,
+        "resumeAt": 47.21
+      },
+      {
+        "start": 47.21,
+        "end": 50.28,
+        "resumeAt": 53.59
+      },
+      {
+        "start": 53.59,
+        "end": 53.73,
+        "resumeAt": 62.04
+      },
+      {
+        "start": 62.04,
+        "end": 63.97,
+        "resumeAt": 65.89
+      },
+      {
+        "start": 65.89,
+        "end": 69.54,
+        "resumeAt": 72.43
+      },
+      {
+        "start": 72.43,
+        "end": 72.58,
+        "resumeAt": 82.89
+      },
+      {
+        "start": 82.89,
+        "end": 84.82,
+        "resumeAt": 87.04
+      },
+      {
+        "start": 87.04,
+        "end": 91.11,
+        "resumeAt": 94.16
+      },
+      {
+        "start": 94.16,
+        "end": 94.31,
+        "resumeAt": 104.61
+      },
+      {
+        "start": 104.61,
+        "end": 106.57,
+        "resumeAt": 108.55
+      },
+      {
+        "start": 108.55,
+        "end": 113.78,
+        "resumeAt": 116.92
+      },
+      {
+        "start": 116.92,
+        "end": 117.06,
+        "resumeAt": 127.37
+      },
+      {
+        "start": 127.37,
+        "end": 129.3,
+        "resumeAt": 131.25
+      },
+      {
+        "start": 131.25,
+        "end": 136.99,
+        "resumeAt": 140.14
+      },
+      {
+        "start": 140.14,
+        "end": 140.29,
+        "resumeAt": 152.59
+      },
+      {
+        "start": 152.59,
+        "end": 154.52,
+        "resumeAt": 156.63
+      },
+      {
+        "start": 156.63,
+        "end": 162.0,
+        "resumeAt": 165.41
+      },
+      {
+        "start": 165.41,
+        "end": 165.56,
+        "resumeAt": 177.87
+      },
+      {
+        "start": 177.87,
+        "end": 179.79,
+        "resumeAt": 181.79
+      }
+    ]
+  },
+  "AT_4": {
+    "file": "actual-test/test2/AT_4.mp3",
+    "duration": 282.31,
+    "segments": [
+      {
+        "start": 0,
+        "end": 24.72,
+        "resumeAt": 26.85
+      },
+      {
+        "start": 26.85,
+        "end": 39.92,
+        "resumeAt": 84.95
+      },
+      {
+        "start": 84.95,
+        "end": 86.89,
+        "resumeAt": 89.13
+      },
+      {
+        "start": 89.13,
+        "end": 103.57,
+        "resumeAt": 148.61
+      },
+      {
+        "start": 148.61,
+        "end": 150.54,
+        "resumeAt": 152.76
+      },
+      {
+        "start": 152.76,
+        "end": 166.78,
+        "resumeAt": 211.81
+      },
+      {
+        "start": 211.81,
+        "end": 213.75,
+        "resumeAt": 215.89
+      },
+      {
+        "start": 215.89,
+        "end": 233.34,
+        "resumeAt": 278.37
+      },
+      {
+        "start": 278.37,
+        "end": 280.3,
+        "resumeAt": 282.31
+      }
+    ]
+  },
+  "AT_4_08_질문&모범답안": {
+    "file": "actual-test/test2/AT_4_08_질문&모범답안.mp3",
+    "duration": 59.1,
+    "segments": [
+      {
+        "start": 0,
+        "end": 47.84,
+        "resumeAt": 59.09
+      }
+    ]
+  },
+  "AT_4_09_질문&모범답안": {
+    "file": "actual-test/test2/AT_4_09_질문&모범답안.mp3",
+    "duration": 61.0,
+    "segments": [
+      {
+        "start": 0,
+        "end": 55.72,
+        "resumeAt": 61.0
+      }
+    ]
+  },
+  "AT_4_10_질문&모범답안": {
+    "file": "actual-test/test2/AT_4_10_질문&모범답안.mp3",
+    "duration": 60.53,
+    "segments": [
+      {
+        "start": 0,
+        "end": 49.19,
+        "resumeAt": 60.53
+      }
+    ]
+  },
+  "AT_4_11_질문&모범답안": {
+    "file": "actual-test/test2/AT_4_11_질문&모범답안.mp3",
+    "duration": 63.96,
+    "segments": [
+      {
+        "start": 0,
+        "end": 59.84,
+        "resumeAt": 63.95
+      }
+    ]
+  },
+  "DT_1": {
+    "file": "diagnostic/DT_1.mp3",
+    "duration": 181.14,
+    "segments": [
+      {
+        "start": 0,
+        "end": 31.49,
+        "resumeAt": 33.54
+      },
+      {
+        "start": 33.54,
+        "end": 36.22,
+        "resumeAt": 39.37
+      },
+      {
+        "start": 39.37,
+        "end": 39.52,
+        "resumeAt": 47.82
+      },
+      {
+        "start": 47.82,
+        "end": 49.75,
+        "resumeAt": 51.79
+      },
+      {
+        "start": 51.79,
+        "end": 54.69,
+        "resumeAt": 57.86
+      },
+      {
+        "start": 57.86,
+        "end": 58.01,
+        "resumeAt": 66.14
+      },
+      {
+        "start": 66.14,
+        "end": 68.06,
+        "resumeAt": 70.14
+      },
+      {
+        "start": 70.14,
+        "end": 73.78,
+        "resumeAt": 76.91
+      },
+      {
+        "start": 76.91,
+        "end": 77.06,
+        "resumeAt": 87.36
+      },
+      {
+        "start": 87.36,
+        "end": 89.3,
+        "resumeAt": 91.37
+      },
+      {
+        "start": 91.37,
+        "end": 95.85,
+        "resumeAt": 98.89
+      },
+      {
+        "start": 98.89,
+        "end": 99.04,
+        "resumeAt": 109.34
+      },
+      {
+        "start": 109.34,
+        "end": 111.3,
+        "resumeAt": 113.37
+      },
+      {
+        "start": 113.37,
+        "end": 117.58,
+        "resumeAt": 120.66
+      },
+      {
+        "start": 120.66,
+        "end": 120.8,
+        "resumeAt": 131.11
+      },
+      {
+        "start": 131.11,
+        "end": 133.04,
+        "resumeAt": 135.09
+      },
+      {
+        "start": 135.09,
+        "end": 139.31,
+        "resumeAt": 142.56
+      },
+      {
+        "start": 142.56,
+        "end": 142.71,
+        "resumeAt": 155.02
+      },
+      {
+        "start": 155.02,
+        "end": 156.95,
+        "resumeAt": 158.99
+      },
+      {
+        "start": 158.99,
+        "end": 163.43,
+        "resumeAt": 166.62
+      },
+      {
+        "start": 166.62,
+        "end": 166.77,
+        "resumeAt": 179.08
+      },
+      {
+        "start": 179.08,
+        "end": 181.14,
+        "resumeAt": 181.14
+      }
+    ]
+  },
+  "DT_2": {
+    "file": "diagnostic/DT_2.mp3",
+    "duration": 293.68,
+    "segments": [
+      {
+        "start": 0,
+        "end": 28.47,
+        "resumeAt": 30.52
+      },
+      {
+        "start": 30.52,
+        "end": 49.4,
+        "resumeAt": 94.44
+      },
+      {
+        "start": 94.44,
+        "end": 96.37,
+        "resumeAt": 98.45
+      },
+      {
+        "start": 98.45,
+        "end": 114.64,
+        "resumeAt": 160.03
+      },
+      {
+        "start": 160.03,
+        "end": 161.96,
+        "resumeAt": 164.03
+      },
+      {
+        "start": 164.03,
+        "end": 181.06,
+        "resumeAt": 226.16
+      },
+      {
+        "start": 226.16,
+        "end": 228.09,
+        "resumeAt": 230.21
+      },
+      {
+        "start": 230.21,
+        "end": 244.56,
+        "resumeAt": 289.73
+      },
+      {
+        "start": 289.73,
+        "end": 291.65,
+        "resumeAt": 293.67
+      }
+    ]
+  },
+  "DT_2_08_질문&모범답안": {
+    "file": "diagnostic/DT_2_08_질문&모범답안.mp3",
+    "duration": 64.69,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.69,
+        "resumeAt": 64.68
+      }
+    ]
+  },
+  "DT_2_09_질문&모범답안": {
+    "file": "diagnostic/DT_2_09_질문&모범답안.mp3",
+    "duration": 61.32,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.32,
+        "resumeAt": 61.32
+      }
+    ]
+  },
+  "DT_2_10_질문&모범답안": {
+    "file": "diagnostic/DT_2_10_질문&모범답안.mp3",
+    "duration": 61.76,
+    "segments": [
+      {
+        "start": 0,
+        "end": 56.85,
+        "resumeAt": 61.75
+      }
+    ]
+  },
+  "DT_2_11_질문&모범답안": {
+    "file": "diagnostic/DT_2_11_질문&모범답안.mp3",
+    "duration": 59.62,
+    "segments": [
+      {
+        "start": 0,
+        "end": 55.95,
+        "resumeAt": 59.61
+      }
+    ]
+  },
+  "T1_1": {
+    "file": "task1/basic/T1_1.mp3",
+    "duration": 133.78,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.05,
+        "resumeAt": 13.42
+      },
+      {
+        "start": 13.42,
+        "end": 21.04,
+        "resumeAt": 23.12
+      },
+      {
+        "start": 23.12,
+        "end": 33.14,
+        "resumeAt": 35.33
+      },
+      {
+        "start": 35.33,
+        "end": 43.65,
+        "resumeAt": 45.82
+      },
+      {
+        "start": 45.82,
+        "end": 55.18,
+        "resumeAt": 57.16
+      },
+      {
+        "start": 57.16,
+        "end": 65.81,
+        "resumeAt": 67.91
+      },
+      {
+        "start": 67.91,
+        "end": 71.52,
+        "resumeAt": 73.47
+      },
+      {
+        "start": 73.47,
+        "end": 75.96,
+        "resumeAt": 78.27
+      },
+      {
+        "start": 78.27,
+        "end": 88.26,
+        "resumeAt": 90.39
+      },
+      {
+        "start": 90.39,
+        "end": 99.43,
+        "resumeAt": 101.61
+      },
+      {
+        "start": 101.61,
+        "end": 110.21,
+        "resumeAt": 112.45
+      },
+      {
+        "start": 112.45,
+        "end": 121.07,
+        "resumeAt": 123.11
+      },
+      {
+        "start": 123.11,
+        "end": 133.78,
+        "resumeAt": 133.78
+      }
+    ]
+  },
+  "T1_2": {
+    "file": "task1/basic/T1_2.mp3",
+    "duration": 176.1,
+    "segments": [
+      {
+        "start": 0,
+        "end": 3.86,
+        "resumeAt": 13.98
+      },
+      {
+        "start": 13.98,
+        "end": 18.42,
+        "resumeAt": 28.59
+      },
+      {
+        "start": 28.59,
+        "end": 32.13,
+        "resumeAt": 42.33
+      },
+      {
+        "start": 42.33,
+        "end": 46.58,
+        "resumeAt": 57.25
+      },
+      {
+        "start": 57.25,
+        "end": 61.33,
+        "resumeAt": 71.3
+      },
+      {
+        "start": 71.3,
+        "end": 76.59,
+        "resumeAt": 86.61
+      },
+      {
+        "start": 86.61,
+        "end": 90.28,
+        "resumeAt": 100.39
+      },
+      {
+        "start": 100.39,
+        "end": 104.93,
+        "resumeAt": 115.14
+      },
+      {
+        "start": 115.14,
+        "end": 119.6,
+        "resumeAt": 129.7
+      },
+      {
+        "start": 129.7,
+        "end": 134.64,
+        "resumeAt": 144.75
+      },
+      {
+        "start": 144.75,
+        "end": 150.01,
+        "resumeAt": 160.95
+      },
+      {
+        "start": 160.95,
+        "end": 166.03,
+        "resumeAt": 176.09
+      }
+    ]
+  },
+  "T1_3": {
+    "file": "task1/basic/T1_3.mp3",
+    "duration": 141.28,
+    "segments": [
+      {
+        "start": 0,
+        "end": 9.34,
+        "resumeAt": 11.45
+      },
+      {
+        "start": 11.45,
+        "end": 18.12,
+        "resumeAt": 20.28
+      },
+      {
+        "start": 20.28,
+        "end": 30.64,
+        "resumeAt": 32.97
+      },
+      {
+        "start": 32.97,
+        "end": 41.35,
+        "resumeAt": 43.61
+      },
+      {
+        "start": 43.61,
+        "end": 53.65,
+        "resumeAt": 55.84
+      },
+      {
+        "start": 55.84,
+        "end": 65.48,
+        "resumeAt": 67.59
+      },
+      {
+        "start": 67.59,
+        "end": 77.46,
+        "resumeAt": 79.7
+      },
+      {
+        "start": 79.7,
+        "end": 87.46,
+        "resumeAt": 89.66
+      },
+      {
+        "start": 89.66,
+        "end": 99.41,
+        "resumeAt": 101.53
+      },
+      {
+        "start": 101.53,
+        "end": 110.24,
+        "resumeAt": 112.32
+      },
+      {
+        "start": 112.32,
+        "end": 125.01,
+        "resumeAt": 127.21
+      },
+      {
+        "start": 127.21,
+        "end": 139.23,
+        "resumeAt": 141.27
+      }
+    ]
+  },
+  "T1_4": {
+    "file": "task1/basic/T1_4.mp3",
+    "duration": 177.95,
+    "segments": [
+      {
+        "start": 0,
+        "end": 3.74,
+        "resumeAt": 13.84
+      },
+      {
+        "start": 13.84,
+        "end": 17.88,
+        "resumeAt": 27.89
+      },
+      {
+        "start": 27.89,
+        "end": 32.21,
+        "resumeAt": 42.36
+      },
+      {
+        "start": 42.36,
+        "end": 46.33,
+        "resumeAt": 56.31
+      },
+      {
+        "start": 56.31,
+        "end": 61.39,
+        "resumeAt": 71.54
+      },
+      {
+        "start": 71.54,
+        "end": 75.94,
+        "resumeAt": 86.16
+      },
+      {
+        "start": 86.16,
+        "end": 91.03,
+        "resumeAt": 101.16
+      },
+      {
+        "start": 101.16,
+        "end": 105.1,
+        "resumeAt": 115.21
+      },
+      {
+        "start": 115.21,
+        "end": 119.85,
+        "resumeAt": 129.94
+      },
+      {
+        "start": 129.94,
+        "end": 135.51,
+        "resumeAt": 145.7
+      },
+      {
+        "start": 145.7,
+        "end": 151.25,
+        "resumeAt": 161.25
+      },
+      {
+        "start": 161.25,
+        "end": 167.25,
+        "resumeAt": 177.95
+      }
+    ]
+  },
+  "T1_5": {
+    "file": "task1/basic/T1_5.mp3",
+    "duration": 149.32,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.72,
+        "resumeAt": 13.9
+      },
+      {
+        "start": 13.9,
+        "end": 24.37,
+        "resumeAt": 26.51
+      },
+      {
+        "start": 26.51,
+        "end": 36.07,
+        "resumeAt": 38.12
+      },
+      {
+        "start": 38.12,
+        "end": 46.67,
+        "resumeAt": 48.75
+      },
+      {
+        "start": 48.75,
+        "end": 60.58,
+        "resumeAt": 62.89
+      },
+      {
+        "start": 62.89,
+        "end": 73.73,
+        "resumeAt": 75.83
+      },
+      {
+        "start": 75.83,
+        "end": 85.12,
+        "resumeAt": 87.2
+      },
+      {
+        "start": 87.2,
+        "end": 96.62,
+        "resumeAt": 98.95
+      },
+      {
+        "start": 98.95,
+        "end": 110.25,
+        "resumeAt": 112.23
+      },
+      {
+        "start": 112.23,
+        "end": 120.81,
+        "resumeAt": 122.91
+      },
+      {
+        "start": 122.91,
+        "end": 133.38,
+        "resumeAt": 135.47
+      },
+      {
+        "start": 135.47,
+        "end": 147.28,
+        "resumeAt": 149.32
+      }
+    ]
+  },
+  "T1_6": {
+    "file": "task1/basic/T1_6.mp3",
+    "duration": 180.23,
+    "segments": [
+      {
+        "start": 0,
+        "end": 4.55,
+        "resumeAt": 14.6
+      },
+      {
+        "start": 14.6,
+        "end": 18.94,
+        "resumeAt": 29.84
+      },
+      {
+        "start": 29.84,
+        "end": 33.89,
+        "resumeAt": 43.96
+      },
+      {
+        "start": 43.96,
+        "end": 48.67,
+        "resumeAt": 58.63
+      },
+      {
+        "start": 58.63,
+        "end": 63.36,
+        "resumeAt": 73.32
+      },
+      {
+        "start": 73.32,
+        "end": 78.29,
+        "resumeAt": 88.12
+      },
+      {
+        "start": 88.12,
+        "end": 93.32,
+        "resumeAt": 103.33
+      },
+      {
+        "start": 103.33,
+        "end": 108.21,
+        "resumeAt": 118.43
+      },
+      {
+        "start": 118.43,
+        "end": 124.33,
+        "resumeAt": 134.48
+      },
+      {
+        "start": 134.48,
+        "end": 139.74,
+        "resumeAt": 149.92
+      },
+      {
+        "start": 149.92,
+        "end": 154.61,
+        "resumeAt": 164.38
+      },
+      {
+        "start": 164.38,
+        "end": 170.12,
+        "resumeAt": 180.22
+      }
+    ]
+  },
+  "PT_1": {
+    "file": "task2/power-test/PT_1.mp3",
+    "duration": 286.7,
+    "segments": [
+      {
+        "start": 0,
+        "end": 25.37,
+        "resumeAt": 28.04
+      },
+      {
+        "start": 28.04,
+        "end": 45.52,
+        "resumeAt": 90.55
+      },
+      {
+        "start": 90.55,
+        "end": 92.49,
+        "resumeAt": 95.23
+      },
+      {
+        "start": 95.23,
+        "end": 103.79,
+        "resumeAt": 148.82
+      },
+      {
+        "start": 148.82,
+        "end": 150.76,
+        "resumeAt": 153.51
+      },
+      {
+        "start": 153.51,
+        "end": 173.73,
+        "resumeAt": 218.76
+      },
+      {
+        "start": 218.76,
+        "end": 220.7,
+        "resumeAt": 223.38
+      },
+      {
+        "start": 223.38,
+        "end": 237.02,
+        "resumeAt": 282.05
+      },
+      {
+        "start": 282.05,
+        "end": 283.98,
+        "resumeAt": 286.69
+      }
+    ]
+  },
+  "PT_2": {
+    "file": "task2/power-test/PT_2.mp3",
+    "duration": 286.34,
+    "segments": [
+      {
+        "start": 0,
+        "end": 26.22,
+        "resumeAt": 28.3
+      },
+      {
+        "start": 28.3,
+        "end": 47.03,
+        "resumeAt": 92.06
+      },
+      {
+        "start": 92.06,
+        "end": 94.0,
+        "resumeAt": 96.05
+      },
+      {
+        "start": 96.05,
+        "end": 105.67,
+        "resumeAt": 150.71
+      },
+      {
+        "start": 150.71,
+        "end": 152.64,
+        "resumeAt": 154.84
+      },
+      {
+        "start": 154.84,
+        "end": 174.47,
+        "resumeAt": 219.5
+      },
+      {
+        "start": 219.5,
+        "end": 221.44,
+        "resumeAt": 223.58
+      },
+      {
+        "start": 223.58,
+        "end": 237.32,
+        "resumeAt": 282.35
+      },
+      {
+        "start": 282.35,
+        "end": 284.29,
+        "resumeAt": 286.33
+      }
+    ]
+  },
+  "T1_25": {
+    "file": "task1/situation/event/T1_25.mp3",
+    "duration": 197.34,
+    "segments": [
+      {
+        "start": 0,
+        "end": 1.74,
+        "resumeAt": 3.91
+      },
+      {
+        "start": 3.91,
+        "end": 6.3,
+        "resumeAt": 9.56
+      },
+      {
+        "start": 9.56,
+        "end": 9.71,
+        "resumeAt": 19.7
+      },
+      {
+        "start": 19.7,
+        "end": 19.85,
+        "resumeAt": 21.94
+      },
+      {
+        "start": 21.94,
+        "end": 24.52,
+        "resumeAt": 27.74
+      },
+      {
+        "start": 27.74,
+        "end": 27.89,
+        "resumeAt": 37.88
+      },
+      {
+        "start": 37.88,
+        "end": 38.03,
+        "resumeAt": 40.1
+      },
+      {
+        "start": 40.1,
+        "end": 43.53,
+        "resumeAt": 46.74
+      },
+      {
+        "start": 46.74,
+        "end": 46.88,
+        "resumeAt": 56.88
+      },
+      {
+        "start": 56.88,
+        "end": 57.03,
+        "resumeAt": 59.19
+      },
+      {
+        "start": 59.19,
+        "end": 63.75,
+        "resumeAt": 66.79
+      },
+      {
+        "start": 66.79,
+        "end": 66.93,
+        "resumeAt": 76.93
+      },
+      {
+        "start": 76.93,
+        "end": 77.07,
+        "resumeAt": 79.24
+      },
+      {
+        "start": 79.24,
+        "end": 83.27,
+        "resumeAt": 86.57
+      },
+      {
+        "start": 86.57,
+        "end": 86.72,
+        "resumeAt": 96.71
+      },
+      {
+        "start": 96.71,
+        "end": 96.86,
+        "resumeAt": 98.96
+      },
+      {
+        "start": 98.96,
+        "end": 103.69,
+        "resumeAt": 106.82
+      },
+      {
+        "start": 106.82,
+        "end": 106.97,
+        "resumeAt": 116.96
+      },
+      {
+        "start": 116.96,
+        "end": 117.11,
+        "resumeAt": 119.19
+      },
+      {
+        "start": 119.19,
+        "end": 124.14,
+        "resumeAt": 127.26
+      },
+      {
+        "start": 127.26,
+        "end": 127.41,
+        "resumeAt": 137.4
+      },
+      {
+        "start": 137.4,
+        "end": 137.55,
+        "resumeAt": 139.63
+      },
+      {
+        "start": 139.63,
+        "end": 144.7,
+        "resumeAt": 148.15
+      },
+      {
+        "start": 148.15,
+        "end": 148.3,
+        "resumeAt": 158.29
+      },
+      {
+        "start": 158.29,
+        "end": 158.44,
+        "resumeAt": 160.32
+      },
+      {
+        "start": 160.32,
+        "end": 163.81,
+        "resumeAt": 166.58
+      },
+      {
+        "start": 166.58,
+        "end": 166.73,
+        "resumeAt": 176.72
+      },
+      {
+        "start": 176.72,
+        "end": 176.87,
+        "resumeAt": 178.92
+      },
+      {
+        "start": 178.92,
+        "end": 182.88,
+        "resumeAt": 185.01
+      },
+      {
+        "start": 185.01,
+        "end": 185.16,
+        "resumeAt": 195.16
+      },
+      {
+        "start": 195.16,
+        "end": 195.3,
+        "resumeAt": 197.33
+      }
+    ]
+  },
+  "T1_26": {
+    "file": "task1/situation/event/T1_26.mp3",
+    "duration": 216.82,
+    "segments": [
+      {
+        "start": 0,
+        "end": 1.87,
+        "resumeAt": 4.01
+      },
+      {
+        "start": 4.01,
+        "end": 6.49,
+        "resumeAt": 9.69
+      },
+      {
+        "start": 9.69,
+        "end": 9.84,
+        "resumeAt": 19.83
+      },
+      {
+        "start": 19.83,
+        "end": 19.98,
+        "resumeAt": 22.03
+      },
+      {
+        "start": 22.03,
+        "end": 25.7,
+        "resumeAt": 28.84
+      },
+      {
+        "start": 28.84,
+        "end": 28.98,
+        "resumeAt": 38.98
+      },
+      {
+        "start": 38.98,
+        "end": 39.12,
+        "resumeAt": 41.17
+      },
+      {
+        "start": 41.17,
+        "end": 44.68,
+        "resumeAt": 47.65
+      },
+      {
+        "start": 47.65,
+        "end": 47.8,
+        "resumeAt": 57.8
+      },
+      {
+        "start": 57.8,
+        "end": 57.94,
+        "resumeAt": 59.98
+      },
+      {
+        "start": 59.98,
+        "end": 63.88,
+        "resumeAt": 66.97
+      },
+      {
+        "start": 66.97,
+        "end": 67.11,
+        "resumeAt": 77.11
+      },
+      {
+        "start": 77.11,
+        "end": 77.26,
+        "resumeAt": 79.29
+      },
+      {
+        "start": 79.29,
+        "end": 83.14,
+        "resumeAt": 86.23
+      },
+      {
+        "start": 86.23,
+        "end": 86.38,
+        "resumeAt": 96.38
+      },
+      {
+        "start": 96.38,
+        "end": 96.52,
+        "resumeAt": 98.62
+      },
+      {
+        "start": 98.62,
+        "end": 104.7,
+        "resumeAt": 107.79
+      },
+      {
+        "start": 107.79,
+        "end": 107.93,
+        "resumeAt": 117.93
+      },
+      {
+        "start": 117.93,
+        "end": 124.4,
+        "resumeAt": 127.53
+      },
+      {
+        "start": 127.53,
+        "end": 127.67,
+        "resumeAt": 137.67
+      },
+      {
+        "start": 137.67,
+        "end": 137.82,
+        "resumeAt": 139.86
+      },
+      {
+        "start": 139.86,
+        "end": 145.12,
+        "resumeAt": 148.43
+      },
+      {
+        "start": 148.43,
+        "end": 148.58,
+        "resumeAt": 158.57
+      },
+      {
+        "start": 158.57,
+        "end": 158.72,
+        "resumeAt": 160.78
+      },
+      {
+        "start": 160.78,
+        "end": 164.73,
+        "resumeAt": 167.85
+      },
+      {
+        "start": 167.85,
+        "end": 167.99,
+        "resumeAt": 177.99
+      },
+      {
+        "start": 177.99,
+        "end": 178.13,
+        "resumeAt": 180.21
+      },
+      {
+        "start": 180.21,
+        "end": 183.16,
+        "resumeAt": 186.24
+      },
+      {
+        "start": 186.24,
+        "end": 186.39,
+        "resumeAt": 196.39
+      },
+      {
+        "start": 196.39,
+        "end": 196.53,
+        "resumeAt": 198.61
+      },
+      {
+        "start": 198.61,
+        "end": 201.43,
+        "resumeAt": 204.49
+      },
+      {
+        "start": 204.49,
+        "end": 204.63,
+        "resumeAt": 214.63
+      },
+      {
+        "start": 214.63,
+        "end": 214.77,
+        "resumeAt": 216.82
+      }
+    ]
+  },
+  "T1_27": {
+    "file": "task1/situation/event/T1_27.mp3",
+    "duration": 203.68,
+    "segments": [
+      {
+        "start": 0,
+        "end": 2.38,
+        "resumeAt": 4.45
+      },
+      {
+        "start": 4.45,
+        "end": 7.55,
+        "resumeAt": 10.6
+      },
+      {
+        "start": 10.6,
+        "end": 10.74,
+        "resumeAt": 20.74
+      },
+      {
+        "start": 20.74,
+        "end": 20.89,
+        "resumeAt": 22.97
+      },
+      {
+        "start": 22.97,
+        "end": 26.78,
+        "resumeAt": 29.88
+      },
+      {
+        "start": 29.88,
+        "end": 30.02,
+        "resumeAt": 40.02
+      },
+      {
+        "start": 40.02,
+        "end": 40.17,
+        "resumeAt": 42.24
+      },
+      {
+        "start": 42.24,
+        "end": 46.54,
+        "resumeAt": 49.68
+      },
+      {
+        "start": 49.68,
+        "end": 49.82,
+        "resumeAt": 59.82
+      },
+      {
+        "start": 59.82,
+        "end": 59.97,
+        "resumeAt": 62.09
+      },
+      {
+        "start": 62.09,
+        "end": 66.86,
+        "resumeAt": 69.98
+      },
+      {
+        "start": 69.98,
+        "end": 70.13,
+        "resumeAt": 80.13
+      },
+      {
+        "start": 80.13,
+        "end": 80.27,
+        "resumeAt": 82.36
+      },
+      {
+        "start": 82.36,
+        "end": 87.0,
+        "resumeAt": 90.05
+      },
+      {
+        "start": 90.05,
+        "end": 90.2,
+        "resumeAt": 100.2
+      },
+      {
+        "start": 100.2,
+        "end": 100.34,
+        "resumeAt": 102.44
+      },
+      {
+        "start": 102.44,
+        "end": 107.98,
+        "resumeAt": 111.14
+      },
+      {
+        "start": 111.14,
+        "end": 111.28,
+        "resumeAt": 121.28
+      },
+      {
+        "start": 121.28,
+        "end": 121.42,
+        "resumeAt": 123.49
+      },
+      {
+        "start": 123.49,
+        "end": 131.0,
+        "resumeAt": 134.17
+      },
+      {
+        "start": 134.17,
+        "end": 134.31,
+        "resumeAt": 144.31
+      },
+      {
+        "start": 144.31,
+        "end": 144.45,
+        "resumeAt": 146.49
+      },
+      {
+        "start": 146.49,
+        "end": 151.1,
+        "resumeAt": 154.22
+      },
+      {
+        "start": 154.22,
+        "end": 154.37,
+        "resumeAt": 164.36
+      },
+      {
+        "start": 164.36,
+        "end": 164.51,
+        "resumeAt": 166.57
+      },
+      {
+        "start": 166.57,
+        "end": 169.59,
+        "resumeAt": 172.76
+      },
+      {
+        "start": 172.76,
+        "end": 172.91,
+        "resumeAt": 182.9
+      },
+      {
+        "start": 182.9,
+        "end": 183.05,
+        "resumeAt": 185.15
+      },
+      {
+        "start": 185.15,
+        "end": 188.21,
+        "resumeAt": 191.31
+      },
+      {
+        "start": 191.31,
+        "end": 191.46,
+        "resumeAt": 201.46
+      },
+      {
+        "start": 201.46,
+        "end": 201.6,
+        "resumeAt": 203.68
+      }
+    ]
+  },
+  "T1_28": {
+    "file": "task1/situation/event/T1_28.mp3",
+    "duration": 214.87,
+    "segments": [
+      {
+        "start": 0,
+        "end": 0.78,
+        "resumeAt": 2.83
+      },
+      {
+        "start": 2.83,
+        "end": 5.97,
+        "resumeAt": 9.03
+      },
+      {
+        "start": 9.03,
+        "end": 9.18,
+        "resumeAt": 19.17
+      },
+      {
+        "start": 19.17,
+        "end": 19.32,
+        "resumeAt": 21.41
+      },
+      {
+        "start": 21.41,
+        "end": 24.51,
+        "resumeAt": 27.7
+      },
+      {
+        "start": 27.7,
+        "end": 27.85,
+        "resumeAt": 37.84
+      },
+      {
+        "start": 37.84,
+        "end": 37.99,
+        "resumeAt": 40.06
+      },
+      {
+        "start": 40.06,
+        "end": 43.71,
+        "resumeAt": 46.89
+      },
+      {
+        "start": 46.89,
+        "end": 47.04,
+        "resumeAt": 57.03
+      },
+      {
+        "start": 57.03,
+        "end": 57.18,
+        "resumeAt": 59.27
+      },
+      {
+        "start": 59.27,
+        "end": 63.56,
+        "resumeAt": 66.68
+      },
+      {
+        "start": 66.68,
+        "end": 66.83,
+        "resumeAt": 76.83
+      },
+      {
+        "start": 76.83,
+        "end": 76.97,
+        "resumeAt": 79.15
+      },
+      {
+        "start": 79.15,
+        "end": 83.93,
+        "resumeAt": 87.08
+      },
+      {
+        "start": 87.08,
+        "end": 87.22,
+        "resumeAt": 97.22
+      },
+      {
+        "start": 97.22,
+        "end": 97.36,
+        "resumeAt": 99.44
+      },
+      {
+        "start": 99.44,
+        "end": 105.18,
+        "resumeAt": 108.28
+      },
+      {
+        "start": 108.28,
+        "end": 108.43,
+        "resumeAt": 118.42
+      },
+      {
+        "start": 118.42,
+        "end": 118.57,
+        "resumeAt": 120.67
+      },
+      {
+        "start": 120.67,
+        "end": 125.61,
+        "resumeAt": 128.77
+      },
+      {
+        "start": 128.77,
+        "end": 128.92,
+        "resumeAt": 138.91
+      },
+      {
+        "start": 138.91,
+        "end": 139.06,
+        "resumeAt": 141.1
+      },
+      {
+        "start": 141.1,
+        "end": 145.73,
+        "resumeAt": 148.85
+      },
+      {
+        "start": 148.85,
+        "end": 148.99,
+        "resumeAt": 158.99
+      },
+      {
+        "start": 158.99,
+        "end": 159.14,
+        "resumeAt": 161.2
+      },
+      {
+        "start": 161.2,
+        "end": 164.0,
+        "resumeAt": 167.12
+      },
+      {
+        "start": 167.12,
+        "end": 167.27,
+        "resumeAt": 177.27
+      },
+      {
+        "start": 177.27,
+        "end": 177.41,
+        "resumeAt": 179.47
+      },
+      {
+        "start": 179.47,
+        "end": 181.11,
+        "resumeAt": 184.37
+      },
+      {
+        "start": 184.37,
+        "end": 184.52,
+        "resumeAt": 194.52
+      },
+      {
+        "start": 194.52,
+        "end": 194.66,
+        "resumeAt": 196.74
+      },
+      {
+        "start": 196.74,
+        "end": 199.31,
+        "resumeAt": 202.46
+      },
+      {
+        "start": 202.46,
+        "end": 202.61,
+        "resumeAt": 212.6
+      },
+      {
+        "start": 212.6,
+        "end": 212.75,
+        "resumeAt": 214.86
+      }
+    ]
+  },
+  "T1_29": {
+    "file": "task1/situation/event/T1_29.mp3",
+    "duration": 167.35,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.86,
+        "resumeAt": 13.92
+      },
+      {
+        "start": 13.92,
+        "end": 15.91,
+        "resumeAt": 19.01
+      },
+      {
+        "start": 19.01,
+        "end": 19.16,
+        "resumeAt": 27.21
+      },
+      {
+        "start": 27.21,
+        "end": 29.02,
+        "resumeAt": 31.09
+      },
+      {
+        "start": 31.09,
+        "end": 35.17,
+        "resumeAt": 38.41
+      },
+      {
+        "start": 38.41,
+        "end": 38.56,
+        "resumeAt": 46.61
+      },
+      {
+        "start": 46.61,
+        "end": 48.42,
+        "resumeAt": 50.49
+      },
+      {
+        "start": 50.49,
+        "end": 53.84,
+        "resumeAt": 56.87
+      },
+      {
+        "start": 56.87,
+        "end": 57.01,
+        "resumeAt": 67.01
+      },
+      {
+        "start": 67.01,
+        "end": 68.89,
+        "resumeAt": 71.03
+      },
+      {
+        "start": 71.03,
+        "end": 76.72,
+        "resumeAt": 79.67
+      },
+      {
+        "start": 79.67,
+        "end": 79.82,
+        "resumeAt": 89.81
+      },
+      {
+        "start": 89.81,
+        "end": 91.68,
+        "resumeAt": 93.84
+      },
+      {
+        "start": 93.84,
+        "end": 98.94,
+        "resumeAt": 102.03
+      },
+      {
+        "start": 102.03,
+        "end": 102.18,
+        "resumeAt": 112.17
+      },
+      {
+        "start": 112.17,
+        "end": 114.04,
+        "resumeAt": 116.19
+      },
+      {
+        "start": 116.19,
+        "end": 122.14,
+        "resumeAt": 125.19
+      },
+      {
+        "start": 125.19,
+        "end": 125.34,
+        "resumeAt": 137.39
+      },
+      {
+        "start": 137.39,
+        "end": 139.23,
+        "resumeAt": 141.43
+      },
+      {
+        "start": 141.43,
+        "end": 148.05,
+        "resumeAt": 151.13
+      },
+      {
+        "start": 151.13,
+        "end": 151.28,
+        "resumeAt": 163.33
+      },
+      {
+        "start": 163.33,
+        "end": 165.17,
+        "resumeAt": 167.34
+      }
+    ]
+  },
+  "T1_30": {
+    "file": "task1/situation/event/T1_30.mp3",
+    "duration": 172.34,
+    "segments": [
+      {
+        "start": 0,
+        "end": 10.5,
+        "resumeAt": 12.6
+      },
+      {
+        "start": 12.6,
+        "end": 16.39,
+        "resumeAt": 19.54
+      },
+      {
+        "start": 19.54,
+        "end": 19.69,
+        "resumeAt": 27.73
+      },
+      {
+        "start": 27.73,
+        "end": 29.55,
+        "resumeAt": 31.54
+      },
+      {
+        "start": 31.54,
+        "end": 35.08,
+        "resumeAt": 38.31
+      },
+      {
+        "start": 38.31,
+        "end": 38.45,
+        "resumeAt": 46.5
+      },
+      {
+        "start": 46.5,
+        "end": 48.32,
+        "resumeAt": 50.34
+      },
+      {
+        "start": 50.34,
+        "end": 54.69,
+        "resumeAt": 57.9
+      },
+      {
+        "start": 57.9,
+        "end": 58.05,
+        "resumeAt": 68.05
+      },
+      {
+        "start": 68.05,
+        "end": 69.93,
+        "resumeAt": 72.03
+      },
+      {
+        "start": 72.03,
+        "end": 76.9,
+        "resumeAt": 79.94
+      },
+      {
+        "start": 79.94,
+        "end": 80.09,
+        "resumeAt": 90.08
+      },
+      {
+        "start": 90.08,
+        "end": 91.96,
+        "resumeAt": 94.07
+      },
+      {
+        "start": 94.07,
+        "end": 100.65,
+        "resumeAt": 103.73
+      },
+      {
+        "start": 103.73,
+        "end": 103.88,
+        "resumeAt": 113.87
+      },
+      {
+        "start": 113.87,
+        "end": 115.74,
+        "resumeAt": 117.85
+      },
+      {
+        "start": 117.85,
+        "end": 125.42,
+        "resumeAt": 128.57
+      },
+      {
+        "start": 128.57,
+        "end": 128.72,
+        "resumeAt": 140.77
+      },
+      {
+        "start": 140.77,
+        "end": 142.72,
+        "resumeAt": 144.92
+      },
+      {
+        "start": 144.92,
+        "end": 152.86,
+        "resumeAt": 156.02
+      },
+      {
+        "start": 156.02,
+        "end": 156.16,
+        "resumeAt": 168.21
+      },
+      {
+        "start": 168.21,
+        "end": 170.17,
+        "resumeAt": 172.33
+      }
+    ]
+  },
+  "T1_31": {
+    "file": "task1/situation/event/T1_31.mp3",
+    "duration": 166.41,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.38,
+        "resumeAt": 13.47
+      },
+      {
+        "start": 13.47,
+        "end": 17.07,
+        "resumeAt": 20.13
+      },
+      {
+        "start": 20.13,
+        "end": 20.28,
+        "resumeAt": 28.32
+      },
+      {
+        "start": 28.32,
+        "end": 30.13,
+        "resumeAt": 32.21
+      },
+      {
+        "start": 32.21,
+        "end": 35.67,
+        "resumeAt": 38.78
+      },
+      {
+        "start": 38.78,
+        "end": 38.93,
+        "resumeAt": 46.97
+      },
+      {
+        "start": 46.97,
+        "end": 48.79,
+        "resumeAt": 50.83
+      },
+      {
+        "start": 50.83,
+        "end": 54.69,
+        "resumeAt": 57.85
+      },
+      {
+        "start": 57.85,
+        "end": 57.99,
+        "resumeAt": 67.99
+      },
+      {
+        "start": 67.99,
+        "end": 69.86,
+        "resumeAt": 72.02
+      },
+      {
+        "start": 72.02,
+        "end": 76.15,
+        "resumeAt": 79.14
+      },
+      {
+        "start": 79.14,
+        "end": 79.29,
+        "resumeAt": 89.29
+      },
+      {
+        "start": 89.29,
+        "end": 91.16,
+        "resumeAt": 93.26
+      },
+      {
+        "start": 93.26,
+        "end": 99.13,
+        "resumeAt": 102.13
+      },
+      {
+        "start": 102.13,
+        "end": 102.28,
+        "resumeAt": 112.27
+      },
+      {
+        "start": 112.27,
+        "end": 114.15,
+        "resumeAt": 116.27
+      },
+      {
+        "start": 116.27,
+        "end": 122.34,
+        "resumeAt": 125.39
+      },
+      {
+        "start": 125.39,
+        "end": 125.54,
+        "resumeAt": 137.58
+      },
+      {
+        "start": 137.58,
+        "end": 139.54,
+        "resumeAt": 141.74
+      },
+      {
+        "start": 141.74,
+        "end": 147.02,
+        "resumeAt": 150.07
+      },
+      {
+        "start": 150.07,
+        "end": 150.21,
+        "resumeAt": 162.26
+      },
+      {
+        "start": 162.26,
+        "end": 164.22,
+        "resumeAt": 166.4
+      }
+    ]
+  },
+  "T1_32": {
+    "file": "task1/situation/event/T1_32.mp3",
+    "duration": 168.21,
+    "segments": [
+      {
+        "start": 0,
+        "end": 10.19,
+        "resumeAt": 12.37
+      },
+      {
+        "start": 12.37,
+        "end": 15.88,
+        "resumeAt": 18.94
+      },
+      {
+        "start": 18.94,
+        "end": 19.09,
+        "resumeAt": 27.27
+      },
+      {
+        "start": 27.27,
+        "end": 29.25,
+        "resumeAt": 31.35
+      },
+      {
+        "start": 31.35,
+        "end": 35.58,
+        "resumeAt": 38.72
+      },
+      {
+        "start": 38.72,
+        "end": 38.87,
+        "resumeAt": 47.06
+      },
+      {
+        "start": 47.06,
+        "end": 49.04,
+        "resumeAt": 51.1
+      },
+      {
+        "start": 51.1,
+        "end": 54.89,
+        "resumeAt": 58.07
+      },
+      {
+        "start": 58.07,
+        "end": 58.22,
+        "resumeAt": 68.21
+      },
+      {
+        "start": 68.21,
+        "end": 70.09,
+        "resumeAt": 72.27
+      },
+      {
+        "start": 72.27,
+        "end": 76.52,
+        "resumeAt": 79.62
+      },
+      {
+        "start": 79.62,
+        "end": 79.77,
+        "resumeAt": 89.76
+      },
+      {
+        "start": 89.76,
+        "end": 91.64,
+        "resumeAt": 93.75
+      },
+      {
+        "start": 93.75,
+        "end": 99.9,
+        "resumeAt": 102.96
+      },
+      {
+        "start": 102.96,
+        "end": 103.1,
+        "resumeAt": 113.1
+      },
+      {
+        "start": 113.1,
+        "end": 114.98,
+        "resumeAt": 117.14
+      },
+      {
+        "start": 117.14,
+        "end": 123.29,
+        "resumeAt": 126.46
+      },
+      {
+        "start": 126.46,
+        "end": 126.6,
+        "resumeAt": 138.65
+      },
+      {
+        "start": 138.65,
+        "end": 140.61,
+        "resumeAt": 142.82
+      },
+      {
+        "start": 142.82,
+        "end": 148.83,
+        "resumeAt": 151.88
+      },
+      {
+        "start": 151.88,
+        "end": 152.03,
+        "resumeAt": 164.08
+      },
+      {
+        "start": 164.08,
+        "end": 166.03,
+        "resumeAt": 168.2
+      }
+    ]
+  },
+  "T1_17": {
+    "file": "task1/situation/facility/T1_17.mp3",
+    "duration": 141.33,
+    "segments": [
+      {
+        "start": 0,
+        "end": 1.45,
+        "resumeAt": 3.57
+      },
+      {
+        "start": 3.57,
+        "end": 5.99,
+        "resumeAt": 9.1
+      },
+      {
+        "start": 9.1,
+        "end": 9.25,
+        "resumeAt": 19.25
+      },
+      {
+        "start": 19.25,
+        "end": 19.39,
+        "resumeAt": 21.45
+      },
+      {
+        "start": 21.45,
+        "end": 24.22,
+        "resumeAt": 27.35
+      },
+      {
+        "start": 27.35,
+        "end": 27.5,
+        "resumeAt": 37.5
+      },
+      {
+        "start": 37.5,
+        "end": 37.64,
+        "resumeAt": 39.73
+      },
+      {
+        "start": 39.73,
+        "end": 42.89,
+        "resumeAt": 46.04
+      },
+      {
+        "start": 46.04,
+        "end": 46.19,
+        "resumeAt": 56.18
+      },
+      {
+        "start": 56.18,
+        "end": 56.33,
+        "resumeAt": 58.43
+      },
+      {
+        "start": 58.43,
+        "end": 63.08,
+        "resumeAt": 66.28
+      },
+      {
+        "start": 66.28,
+        "end": 66.42,
+        "resumeAt": 76.42
+      },
+      {
+        "start": 76.42,
+        "end": 76.57,
+        "resumeAt": 78.67
+      },
+      {
+        "start": 78.67,
+        "end": 83.89,
+        "resumeAt": 87.11
+      },
+      {
+        "start": 87.11,
+        "end": 87.25,
+        "resumeAt": 97.25
+      },
+      {
+        "start": 97.25,
+        "end": 97.4,
+        "resumeAt": 99.46
+      },
+      {
+        "start": 99.46,
+        "end": 104.72,
+        "resumeAt": 107.96
+      },
+      {
+        "start": 107.96,
+        "end": 108.1,
+        "resumeAt": 118.1
+      },
+      {
+        "start": 118.1,
+        "end": 118.25,
+        "resumeAt": 120.34
+      },
+      {
+        "start": 120.34,
+        "end": 125.89,
+        "resumeAt": 128.99
+      },
+      {
+        "start": 128.99,
+        "end": 129.14,
+        "resumeAt": 139.14
+      },
+      {
+        "start": 139.14,
+        "end": 139.28,
+        "resumeAt": 141.32
+      }
+    ]
+  },
+  "T1_18": {
+    "file": "task1/situation/facility/T1_18.mp3",
+    "duration": 200.11,
+    "segments": [
+      {
+        "start": 0,
+        "end": 1.49,
+        "resumeAt": 3.51
+      },
+      {
+        "start": 3.51,
+        "end": 6.17,
+        "resumeAt": 9.32
+      },
+      {
+        "start": 9.32,
+        "end": 9.47,
+        "resumeAt": 19.46
+      },
+      {
+        "start": 19.46,
+        "end": 19.61,
+        "resumeAt": 21.68
+      },
+      {
+        "start": 21.68,
+        "end": 25.25,
+        "resumeAt": 28.33
+      },
+      {
+        "start": 28.33,
+        "end": 28.48,
+        "resumeAt": 38.47
+      },
+      {
+        "start": 38.47,
+        "end": 38.62,
+        "resumeAt": 40.7
+      },
+      {
+        "start": 40.7,
+        "end": 43.85,
+        "resumeAt": 47.08
+      },
+      {
+        "start": 47.08,
+        "end": 47.22,
+        "resumeAt": 57.22
+      },
+      {
+        "start": 57.22,
+        "end": 57.37,
+        "resumeAt": 59.43
+      },
+      {
+        "start": 59.43,
+        "end": 64.01,
+        "resumeAt": 67.14
+      },
+      {
+        "start": 67.14,
+        "end": 67.29,
+        "resumeAt": 77.28
+      },
+      {
+        "start": 77.28,
+        "end": 77.43,
+        "resumeAt": 79.56
+      },
+      {
+        "start": 79.56,
+        "end": 84.28,
+        "resumeAt": 87.48
+      },
+      {
+        "start": 87.48,
+        "end": 87.63,
+        "resumeAt": 97.62
+      },
+      {
+        "start": 97.62,
+        "end": 97.77,
+        "resumeAt": 99.92
+      },
+      {
+        "start": 99.92,
+        "end": 104.61,
+        "resumeAt": 107.72
+      },
+      {
+        "start": 107.72,
+        "end": 107.86,
+        "resumeAt": 117.86
+      },
+      {
+        "start": 117.86,
+        "end": 118.0,
+        "resumeAt": 120.14
+      },
+      {
+        "start": 120.14,
+        "end": 124.68,
+        "resumeAt": 127.89
+      },
+      {
+        "start": 127.89,
+        "end": 128.04,
+        "resumeAt": 138.04
+      },
+      {
+        "start": 138.04,
+        "end": 138.18,
+        "resumeAt": 140.3
+      },
+      {
+        "start": 140.3,
+        "end": 145.69,
+        "resumeAt": 148.77
+      },
+      {
+        "start": 148.77,
+        "end": 148.92,
+        "resumeAt": 158.91
+      },
+      {
+        "start": 158.91,
+        "end": 159.06,
+        "resumeAt": 161.39
+      },
+      {
+        "start": 161.39,
+        "end": 164.39,
+        "resumeAt": 167.55
+      },
+      {
+        "start": 167.55,
+        "end": 167.7,
+        "resumeAt": 177.7
+      },
+      {
+        "start": 177.7,
+        "end": 177.84,
+        "resumeAt": 180.23
+      },
+      {
+        "start": 180.23,
+        "end": 184.28,
+        "resumeAt": 187.38
+      },
+      {
+        "start": 187.38,
+        "end": 187.53,
+        "resumeAt": 197.53
+      },
+      {
+        "start": 197.53,
+        "end": 197.67,
+        "resumeAt": 200.1
+      }
+    ]
+  },
+  "T1_19": {
+    "file": "task1/situation/facility/T1_19.mp3",
+    "duration": 215.05,
+    "segments": [
+      {
+        "start": 0,
+        "end": 1.0,
+        "resumeAt": 3.07
+      },
+      {
+        "start": 3.07,
+        "end": 5.41,
+        "resumeAt": 8.58
+      },
+      {
+        "start": 8.58,
+        "end": 8.72,
+        "resumeAt": 18.72
+      },
+      {
+        "start": 18.72,
+        "end": 18.86,
+        "resumeAt": 20.98
+      },
+      {
+        "start": 20.98,
+        "end": 24.66,
+        "resumeAt": 27.81
+      },
+      {
+        "start": 27.81,
+        "end": 27.96,
+        "resumeAt": 37.95
+      },
+      {
+        "start": 37.95,
+        "end": 38.1,
+        "resumeAt": 40.22
+      },
+      {
+        "start": 40.22,
+        "end": 43.71,
+        "resumeAt": 45.97
+      },
+      {
+        "start": 45.97,
+        "end": 46.12,
+        "resumeAt": 56.11
+      },
+      {
+        "start": 56.11,
+        "end": 56.26,
+        "resumeAt": 58.38
+      },
+      {
+        "start": 58.38,
+        "end": 62.58,
+        "resumeAt": 65.76
+      },
+      {
+        "start": 65.76,
+        "end": 65.91,
+        "resumeAt": 75.9
+      },
+      {
+        "start": 75.9,
+        "end": 76.05,
+        "resumeAt": 78.17
+      },
+      {
+        "start": 78.17,
+        "end": 82.16,
+        "resumeAt": 85.22
+      },
+      {
+        "start": 85.22,
+        "end": 85.37,
+        "resumeAt": 95.36
+      },
+      {
+        "start": 95.36,
+        "end": 95.51,
+        "resumeAt": 97.63
+      },
+      {
+        "start": 97.63,
+        "end": 103.05,
+        "resumeAt": 106.15
+      },
+      {
+        "start": 106.15,
+        "end": 106.3,
+        "resumeAt": 116.29
+      },
+      {
+        "start": 116.29,
+        "end": 116.44,
+        "resumeAt": 118.56
+      },
+      {
+        "start": 118.56,
+        "end": 123.82,
+        "resumeAt": 126.98
+      },
+      {
+        "start": 126.98,
+        "end": 127.13,
+        "resumeAt": 137.12
+      },
+      {
+        "start": 137.12,
+        "end": 137.27,
+        "resumeAt": 139.36
+      },
+      {
+        "start": 139.36,
+        "end": 143.62,
+        "resumeAt": 146.81
+      },
+      {
+        "start": 146.81,
+        "end": 146.96,
+        "resumeAt": 156.95
+      },
+      {
+        "start": 156.95,
+        "end": 157.1,
+        "resumeAt": 159.25
+      },
+      {
+        "start": 159.25,
+        "end": 162.19,
+        "resumeAt": 165.33
+      },
+      {
+        "start": 165.33,
+        "end": 165.48,
+        "resumeAt": 175.47
+      },
+      {
+        "start": 175.47,
+        "end": 175.62,
+        "resumeAt": 177.75
+      },
+      {
+        "start": 177.75,
+        "end": 181.57,
+        "resumeAt": 184.75
+      },
+      {
+        "start": 184.75,
+        "end": 184.9,
+        "resumeAt": 194.89
+      },
+      {
+        "start": 194.89,
+        "end": 195.04,
+        "resumeAt": 197.16
+      },
+      {
+        "start": 197.16,
+        "end": 199.56,
+        "resumeAt": 202.63
+      },
+      {
+        "start": 202.63,
+        "end": 202.78,
+        "resumeAt": 212.77
+      },
+      {
+        "start": 212.77,
+        "end": 212.92,
+        "resumeAt": 215.04
+      }
+    ]
+  },
+  "T1_20": {
+    "file": "task1/situation/facility/T1_20.mp3",
+    "duration": 216.88,
+    "segments": [
+      {
+        "start": 0,
+        "end": 0.53,
+        "resumeAt": 2.56
+      },
+      {
+        "start": 2.56,
+        "end": 5.07,
+        "resumeAt": 8.22
+      },
+      {
+        "start": 8.22,
+        "end": 8.37,
+        "resumeAt": 18.37
+      },
+      {
+        "start": 18.37,
+        "end": 18.51,
+        "resumeAt": 20.59
+      },
+      {
+        "start": 20.59,
+        "end": 24.84,
+        "resumeAt": 27.99
+      },
+      {
+        "start": 27.99,
+        "end": 28.14,
+        "resumeAt": 38.13
+      },
+      {
+        "start": 38.13,
+        "end": 38.28,
+        "resumeAt": 40.35
+      },
+      {
+        "start": 40.35,
+        "end": 44.79,
+        "resumeAt": 47.9
+      },
+      {
+        "start": 47.9,
+        "end": 48.04,
+        "resumeAt": 58.04
+      },
+      {
+        "start": 58.04,
+        "end": 58.18,
+        "resumeAt": 60.26
+      },
+      {
+        "start": 60.26,
+        "end": 64.72,
+        "resumeAt": 67.93
+      },
+      {
+        "start": 67.93,
+        "end": 68.08,
+        "resumeAt": 78.08
+      },
+      {
+        "start": 78.08,
+        "end": 78.22,
+        "resumeAt": 80.35
+      },
+      {
+        "start": 80.35,
+        "end": 85.36,
+        "resumeAt": 88.51
+      },
+      {
+        "start": 88.51,
+        "end": 88.66,
+        "resumeAt": 98.66
+      },
+      {
+        "start": 98.66,
+        "end": 98.8,
+        "resumeAt": 100.89
+      },
+      {
+        "start": 100.89,
+        "end": 105.6,
+        "resumeAt": 108.73
+      },
+      {
+        "start": 108.73,
+        "end": 108.87,
+        "resumeAt": 118.87
+      },
+      {
+        "start": 118.87,
+        "end": 119.01,
+        "resumeAt": 121.09
+      },
+      {
+        "start": 121.09,
+        "end": 126.04,
+        "resumeAt": 129.21
+      },
+      {
+        "start": 129.21,
+        "end": 129.35,
+        "resumeAt": 139.35
+      },
+      {
+        "start": 139.35,
+        "end": 139.49,
+        "resumeAt": 141.52
+      },
+      {
+        "start": 141.52,
+        "end": 145.3,
+        "resumeAt": 148.43
+      },
+      {
+        "start": 148.43,
+        "end": 148.58,
+        "resumeAt": 158.57
+      },
+      {
+        "start": 158.57,
+        "end": 158.72,
+        "resumeAt": 160.8
+      },
+      {
+        "start": 160.8,
+        "end": 163.48,
+        "resumeAt": 166.6
+      },
+      {
+        "start": 166.6,
+        "end": 166.75,
+        "resumeAt": 176.74
+      },
+      {
+        "start": 176.74,
+        "end": 176.89,
+        "resumeAt": 178.96
+      },
+      {
+        "start": 178.96,
+        "end": 182.37,
+        "resumeAt": 185.5
+      },
+      {
+        "start": 185.5,
+        "end": 185.65,
+        "resumeAt": 195.64
+      },
+      {
+        "start": 195.64,
+        "end": 195.79,
+        "resumeAt": 197.87
+      },
+      {
+        "start": 197.87,
+        "end": 201.3,
+        "resumeAt": 204.47
+      },
+      {
+        "start": 204.47,
+        "end": 204.62,
+        "resumeAt": 214.61
+      },
+      {
+        "start": 214.61,
+        "end": 214.76,
+        "resumeAt": 216.87
+      }
+    ]
+  },
+  "T1_21": {
+    "file": "task1/situation/facility/T1_21.mp3",
+    "duration": 159.64,
+    "segments": [
+      {
+        "start": 0,
+        "end": 10.69,
+        "resumeAt": 12.77
+      },
+      {
+        "start": 12.77,
+        "end": 15.5,
+        "resumeAt": 18.57
+      },
+      {
+        "start": 18.57,
+        "end": 18.72,
+        "resumeAt": 26.76
+      },
+      {
+        "start": 26.76,
+        "end": 28.67,
+        "resumeAt": 30.8
+      },
+      {
+        "start": 30.8,
+        "end": 34.85,
+        "resumeAt": 37.95
+      },
+      {
+        "start": 37.95,
+        "end": 38.1,
+        "resumeAt": 46.14
+      },
+      {
+        "start": 46.14,
+        "end": 47.89,
+        "resumeAt": 50.03
+      },
+      {
+        "start": 50.03,
+        "end": 53.78,
+        "resumeAt": 56.97
+      },
+      {
+        "start": 56.97,
+        "end": 57.12,
+        "resumeAt": 65.08
+      },
+      {
+        "start": 65.08,
+        "end": 66.99,
+        "resumeAt": 69.02
+      },
+      {
+        "start": 69.02,
+        "end": 74.25,
+        "resumeAt": 77.43
+      },
+      {
+        "start": 77.43,
+        "end": 77.57,
+        "resumeAt": 85.54
+      },
+      {
+        "start": 85.54,
+        "end": 87.21,
+        "resumeAt": 89.36
+      },
+      {
+        "start": 89.36,
+        "end": 93.91,
+        "resumeAt": 97.04
+      },
+      {
+        "start": 97.04,
+        "end": 97.18,
+        "resumeAt": 105.15
+      },
+      {
+        "start": 105.15,
+        "end": 107.09,
+        "resumeAt": 109.15
+      },
+      {
+        "start": 109.15,
+        "end": 114.3,
+        "resumeAt": 117.47
+      },
+      {
+        "start": 117.47,
+        "end": 117.61,
+        "resumeAt": 129.66
+      },
+      {
+        "start": 129.66,
+        "end": 131.53,
+        "resumeAt": 133.61
+      },
+      {
+        "start": 133.61,
+        "end": 140.3,
+        "resumeAt": 143.36
+      },
+      {
+        "start": 143.36,
+        "end": 143.51,
+        "resumeAt": 155.56
+      },
+      {
+        "start": 155.56,
+        "end": 157.48,
+        "resumeAt": 159.63
+      }
+    ]
+  },
+  "T1_22": {
+    "file": "task1/situation/facility/T1_22.mp3",
+    "duration": 162.44,
+    "segments": [
+      {
+        "start": 0,
+        "end": 10.61,
+        "resumeAt": 12.67
+      },
+      {
+        "start": 12.67,
+        "end": 15.45,
+        "resumeAt": 18.58
+      },
+      {
+        "start": 18.58,
+        "end": 18.73,
+        "resumeAt": 26.78
+      },
+      {
+        "start": 26.78,
+        "end": 28.55,
+        "resumeAt": 30.62
+      },
+      {
+        "start": 30.62,
+        "end": 33.84,
+        "resumeAt": 36.96
+      },
+      {
+        "start": 36.96,
+        "end": 37.1,
+        "resumeAt": 45.15
+      },
+      {
+        "start": 45.15,
+        "end": 46.99,
+        "resumeAt": 49.05
+      },
+      {
+        "start": 49.05,
+        "end": 52.9,
+        "resumeAt": 56.04
+      },
+      {
+        "start": 56.04,
+        "end": 56.18,
+        "resumeAt": 66.27
+      },
+      {
+        "start": 66.27,
+        "end": 68.05,
+        "resumeAt": 70.11
+      },
+      {
+        "start": 70.11,
+        "end": 74.08,
+        "resumeAt": 77.2
+      },
+      {
+        "start": 77.2,
+        "end": 77.34,
+        "resumeAt": 87.43
+      },
+      {
+        "start": 87.43,
+        "end": 89.17,
+        "resumeAt": 91.31
+      },
+      {
+        "start": 91.31,
+        "end": 96.35,
+        "resumeAt": 99.63
+      },
+      {
+        "start": 99.63,
+        "end": 99.78,
+        "resumeAt": 109.77
+      },
+      {
+        "start": 109.77,
+        "end": 111.48,
+        "resumeAt": 113.61
+      },
+      {
+        "start": 113.61,
+        "end": 118.39,
+        "resumeAt": 133.5
+      },
+      {
+        "start": 133.5,
+        "end": 135.38,
+        "resumeAt": 137.42
+      },
+      {
+        "start": 137.42,
+        "end": 143.32,
+        "resumeAt": 146.28
+      },
+      {
+        "start": 146.28,
+        "end": 146.43,
+        "resumeAt": 158.48
+      },
+      {
+        "start": 158.48,
+        "end": 160.35,
+        "resumeAt": 162.43
+      }
+    ]
+  },
+  "T1_23": {
+    "file": "task1/situation/facility/T1_23.mp3",
+    "duration": 168.97,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.43,
+        "resumeAt": 14.57
+      },
+      {
+        "start": 14.57,
+        "end": 17.85,
+        "resumeAt": 20.84
+      },
+      {
+        "start": 20.84,
+        "end": 20.99,
+        "resumeAt": 29.03
+      },
+      {
+        "start": 29.03,
+        "end": 30.85,
+        "resumeAt": 32.91
+      },
+      {
+        "start": 32.91,
+        "end": 35.83,
+        "resumeAt": 38.73
+      },
+      {
+        "start": 38.73,
+        "end": 38.88,
+        "resumeAt": 46.92
+      },
+      {
+        "start": 46.92,
+        "end": 48.74,
+        "resumeAt": 50.8
+      },
+      {
+        "start": 50.8,
+        "end": 55.26,
+        "resumeAt": 58.39
+      },
+      {
+        "start": 58.39,
+        "end": 58.53,
+        "resumeAt": 68.53
+      },
+      {
+        "start": 68.53,
+        "end": 70.47,
+        "resumeAt": 72.58
+      },
+      {
+        "start": 72.58,
+        "end": 77.28,
+        "resumeAt": 80.56
+      },
+      {
+        "start": 80.56,
+        "end": 80.71,
+        "resumeAt": 90.7
+      },
+      {
+        "start": 90.7,
+        "end": 92.54,
+        "resumeAt": 94.62
+      },
+      {
+        "start": 94.62,
+        "end": 100.03,
+        "resumeAt": 103.03
+      },
+      {
+        "start": 103.03,
+        "end": 103.17,
+        "resumeAt": 113.17
+      },
+      {
+        "start": 113.17,
+        "end": 115.04,
+        "resumeAt": 117.14
+      },
+      {
+        "start": 117.14,
+        "end": 122.66,
+        "resumeAt": 125.76
+      },
+      {
+        "start": 125.76,
+        "end": 125.9,
+        "resumeAt": 137.95
+      },
+      {
+        "start": 137.95,
+        "end": 139.8,
+        "resumeAt": 141.84
+      },
+      {
+        "start": 141.84,
+        "end": 149.62,
+        "resumeAt": 152.73
+      },
+      {
+        "start": 152.73,
+        "end": 152.87,
+        "resumeAt": 164.92
+      },
+      {
+        "start": 164.92,
+        "end": 166.77,
+        "resumeAt": 168.96
+      }
+    ]
+  },
+  "T1_24": {
+    "file": "task1/situation/facility/T1_24.mp3",
+    "duration": 160.19,
+    "segments": [
+      {
+        "start": 0,
+        "end": 9.33,
+        "resumeAt": 11.36
+      },
+      {
+        "start": 11.36,
+        "end": 13.63,
+        "resumeAt": 16.66
+      },
+      {
+        "start": 16.66,
+        "end": 16.81,
+        "resumeAt": 24.85
+      },
+      {
+        "start": 24.85,
+        "end": 26.5,
+        "resumeAt": 28.6
+      },
+      {
+        "start": 28.6,
+        "end": 32.92,
+        "resumeAt": 36.0
+      },
+      {
+        "start": 36.0,
+        "end": 36.15,
+        "resumeAt": 44.2
+      },
+      {
+        "start": 44.2,
+        "end": 46.01,
+        "resumeAt": 48.08
+      },
+      {
+        "start": 48.08,
+        "end": 51.5,
+        "resumeAt": 54.63
+      },
+      {
+        "start": 54.63,
+        "end": 54.77,
+        "resumeAt": 64.77
+      },
+      {
+        "start": 64.77,
+        "end": 66.62,
+        "resumeAt": 68.69
+      },
+      {
+        "start": 68.69,
+        "end": 73.31,
+        "resumeAt": 76.45
+      },
+      {
+        "start": 76.45,
+        "end": 76.6,
+        "resumeAt": 86.59
+      },
+      {
+        "start": 86.59,
+        "end": 88.55,
+        "resumeAt": 90.61
+      },
+      {
+        "start": 90.61,
+        "end": 95.2,
+        "resumeAt": 98.26
+      },
+      {
+        "start": 98.26,
+        "end": 98.41,
+        "resumeAt": 108.41
+      },
+      {
+        "start": 108.41,
+        "end": 110.2,
+        "resumeAt": 112.28
+      },
+      {
+        "start": 112.28,
+        "end": 116.44,
+        "resumeAt": 119.6
+      },
+      {
+        "start": 119.6,
+        "end": 119.75,
+        "resumeAt": 131.8
+      },
+      {
+        "start": 131.8,
+        "end": 133.61,
+        "resumeAt": 135.86
+      },
+      {
+        "start": 135.86,
+        "end": 140.89,
+        "resumeAt": 144.02
+      },
+      {
+        "start": 144.02,
+        "end": 144.16,
+        "resumeAt": 156.21
+      },
+      {
+        "start": 156.21,
+        "end": 158.05,
+        "resumeAt": 160.18
+      }
+    ]
+  },
+  "T1_33": {
+    "file": "task1/situation/procedure/T1_33.mp3",
+    "duration": 195.19,
+    "segments": [
+      {
+        "start": 0,
+        "end": 0.56,
+        "resumeAt": 2.66
+      },
+      {
+        "start": 2.66,
+        "end": 4.92,
+        "resumeAt": 8.18
+      },
+      {
+        "start": 8.18,
+        "end": 8.33,
+        "resumeAt": 18.32
+      },
+      {
+        "start": 18.32,
+        "end": 18.47,
+        "resumeAt": 20.59
+      },
+      {
+        "start": 20.59,
+        "end": 23.64,
+        "resumeAt": 26.71
+      },
+      {
+        "start": 26.71,
+        "end": 26.86,
+        "resumeAt": 36.85
+      },
+      {
+        "start": 36.85,
+        "end": 37.0,
+        "resumeAt": 39.11
+      },
+      {
+        "start": 39.11,
+        "end": 43.14,
+        "resumeAt": 46.15
+      },
+      {
+        "start": 46.15,
+        "end": 46.29,
+        "resumeAt": 56.29
+      },
+      {
+        "start": 56.29,
+        "end": 56.43,
+        "resumeAt": 58.54
+      },
+      {
+        "start": 58.54,
+        "end": 62.39,
+        "resumeAt": 65.53
+      },
+      {
+        "start": 65.53,
+        "end": 65.68,
+        "resumeAt": 75.68
+      },
+      {
+        "start": 75.68,
+        "end": 75.82,
+        "resumeAt": 77.93
+      },
+      {
+        "start": 77.93,
+        "end": 82.08,
+        "resumeAt": 85.25
+      },
+      {
+        "start": 85.25,
+        "end": 85.4,
+        "resumeAt": 95.39
+      },
+      {
+        "start": 95.39,
+        "end": 95.54,
+        "resumeAt": 97.63
+      },
+      {
+        "start": 97.63,
+        "end": 102.68,
+        "resumeAt": 105.79
+      },
+      {
+        "start": 105.79,
+        "end": 105.93,
+        "resumeAt": 115.93
+      },
+      {
+        "start": 115.93,
+        "end": 116.07,
+        "resumeAt": 118.17
+      },
+      {
+        "start": 118.17,
+        "end": 123.9,
+        "resumeAt": 126.99
+      },
+      {
+        "start": 126.99,
+        "end": 127.13,
+        "resumeAt": 137.13
+      },
+      {
+        "start": 137.13,
+        "end": 137.27,
+        "resumeAt": 139.35
+      },
+      {
+        "start": 139.35,
+        "end": 143.17,
+        "resumeAt": 146.27
+      },
+      {
+        "start": 146.27,
+        "end": 146.42,
+        "resumeAt": 156.41
+      },
+      {
+        "start": 156.41,
+        "end": 156.56,
+        "resumeAt": 158.62
+      },
+      {
+        "start": 158.62,
+        "end": 160.8,
+        "resumeAt": 163.89
+      },
+      {
+        "start": 163.89,
+        "end": 164.04,
+        "resumeAt": 174.04
+      },
+      {
+        "start": 174.04,
+        "end": 174.18,
+        "resumeAt": 176.25
+      },
+      {
+        "start": 176.25,
+        "end": 179.75,
+        "resumeAt": 182.89
+      },
+      {
+        "start": 182.89,
+        "end": 183.04,
+        "resumeAt": 193.03
+      },
+      {
+        "start": 193.03,
+        "end": 193.18,
+        "resumeAt": 195.19
+      }
+    ]
+  },
+  "T1_34": {
+    "file": "task1/situation/procedure/T1_34.mp3",
+    "duration": 211.05,
+    "segments": [
+      {
+        "start": 0,
+        "end": 0.63,
+        "resumeAt": 2.78
+      },
+      {
+        "start": 2.78,
+        "end": 5.92,
+        "resumeAt": 8.94
+      },
+      {
+        "start": 8.94,
+        "end": 9.08,
+        "resumeAt": 19.08
+      },
+      {
+        "start": 19.08,
+        "end": 19.22,
+        "resumeAt": 21.33
+      },
+      {
+        "start": 21.33,
+        "end": 25.03,
+        "resumeAt": 28.07
+      },
+      {
+        "start": 28.07,
+        "end": 28.22,
+        "resumeAt": 38.21
+      },
+      {
+        "start": 38.21,
+        "end": 38.36,
+        "resumeAt": 40.45
+      },
+      {
+        "start": 40.45,
+        "end": 43.94,
+        "resumeAt": 47.1
+      },
+      {
+        "start": 47.1,
+        "end": 47.24,
+        "resumeAt": 57.24
+      },
+      {
+        "start": 57.24,
+        "end": 57.38,
+        "resumeAt": 59.52
+      },
+      {
+        "start": 59.52,
+        "end": 63.14,
+        "resumeAt": 66.18
+      },
+      {
+        "start": 66.18,
+        "end": 66.32,
+        "resumeAt": 76.32
+      },
+      {
+        "start": 76.32,
+        "end": 76.47,
+        "resumeAt": 78.55
+      },
+      {
+        "start": 78.55,
+        "end": 82.98,
+        "resumeAt": 86.02
+      },
+      {
+        "start": 86.02,
+        "end": 86.16,
+        "resumeAt": 96.16
+      },
+      {
+        "start": 96.16,
+        "end": 96.3,
+        "resumeAt": 98.4
+      },
+      {
+        "start": 98.4,
+        "end": 102.59,
+        "resumeAt": 105.64
+      },
+      {
+        "start": 105.64,
+        "end": 105.79,
+        "resumeAt": 115.78
+      },
+      {
+        "start": 115.78,
+        "end": 115.93,
+        "resumeAt": 118.03
+      },
+      {
+        "start": 118.03,
+        "end": 122.87,
+        "resumeAt": 125.91
+      },
+      {
+        "start": 125.91,
+        "end": 126.05,
+        "resumeAt": 136.05
+      },
+      {
+        "start": 136.05,
+        "end": 136.19,
+        "resumeAt": 138.25
+      },
+      {
+        "start": 138.25,
+        "end": 141.66,
+        "resumeAt": 144.69
+      },
+      {
+        "start": 144.69,
+        "end": 144.84,
+        "resumeAt": 154.83
+      },
+      {
+        "start": 154.83,
+        "end": 154.98,
+        "resumeAt": 157.07
+      },
+      {
+        "start": 157.07,
+        "end": 159.31,
+        "resumeAt": 162.33
+      },
+      {
+        "start": 162.33,
+        "end": 162.47,
+        "resumeAt": 172.47
+      },
+      {
+        "start": 172.47,
+        "end": 172.61,
+        "resumeAt": 174.7
+      },
+      {
+        "start": 174.7,
+        "end": 176.75,
+        "resumeAt": 179.78
+      },
+      {
+        "start": 179.78,
+        "end": 179.92,
+        "resumeAt": 189.92
+      },
+      {
+        "start": 189.92,
+        "end": 190.06,
+        "resumeAt": 192.14
+      },
+      {
+        "start": 192.14,
+        "end": 195.65,
+        "resumeAt": 198.7
+      },
+      {
+        "start": 198.7,
+        "end": 198.85,
+        "resumeAt": 208.84
+      },
+      {
+        "start": 208.84,
+        "end": 208.99,
+        "resumeAt": 211.04
+      }
+    ]
+  },
+  "T1_35": {
+    "file": "task1/situation/procedure/T1_35.mp3",
+    "duration": 195.85,
+    "segments": [
+      {
+        "start": 0,
+        "end": 0.63,
+        "resumeAt": 2.71
+      },
+      {
+        "start": 2.71,
+        "end": 5.27,
+        "resumeAt": 8.31
+      },
+      {
+        "start": 8.31,
+        "end": 8.46,
+        "resumeAt": 18.46
+      },
+      {
+        "start": 18.46,
+        "end": 18.6,
+        "resumeAt": 20.68
+      },
+      {
+        "start": 20.68,
+        "end": 23.74,
+        "resumeAt": 26.8
+      },
+      {
+        "start": 26.8,
+        "end": 26.94,
+        "resumeAt": 36.94
+      },
+      {
+        "start": 36.94,
+        "end": 37.09,
+        "resumeAt": 39.12
+      },
+      {
+        "start": 39.12,
+        "end": 43.28,
+        "resumeAt": 46.36
+      },
+      {
+        "start": 46.36,
+        "end": 46.5,
+        "resumeAt": 56.5
+      },
+      {
+        "start": 56.5,
+        "end": 56.64,
+        "resumeAt": 58.72
+      },
+      {
+        "start": 58.72,
+        "end": 62.46,
+        "resumeAt": 65.51
+      },
+      {
+        "start": 65.51,
+        "end": 65.65,
+        "resumeAt": 75.65
+      },
+      {
+        "start": 75.65,
+        "end": 75.79,
+        "resumeAt": 77.83
+      },
+      {
+        "start": 77.83,
+        "end": 82.59,
+        "resumeAt": 85.65
+      },
+      {
+        "start": 85.65,
+        "end": 85.8,
+        "resumeAt": 95.79
+      },
+      {
+        "start": 95.79,
+        "end": 95.94,
+        "resumeAt": 97.98
+      },
+      {
+        "start": 97.98,
+        "end": 103.81,
+        "resumeAt": 106.88
+      },
+      {
+        "start": 106.88,
+        "end": 107.03,
+        "resumeAt": 117.03
+      },
+      {
+        "start": 117.03,
+        "end": 117.17,
+        "resumeAt": 119.21
+      },
+      {
+        "start": 119.21,
+        "end": 125.76,
+        "resumeAt": 128.82
+      },
+      {
+        "start": 128.82,
+        "end": 128.96,
+        "resumeAt": 138.96
+      },
+      {
+        "start": 138.96,
+        "end": 139.11,
+        "resumeAt": 141.07
+      },
+      {
+        "start": 141.07,
+        "end": 145.01,
+        "resumeAt": 148.05
+      },
+      {
+        "start": 148.05,
+        "end": 148.2,
+        "resumeAt": 158.19
+      },
+      {
+        "start": 158.19,
+        "end": 158.34,
+        "resumeAt": 160.35
+      },
+      {
+        "start": 160.35,
+        "end": 162.51,
+        "resumeAt": 165.57
+      },
+      {
+        "start": 165.57,
+        "end": 165.72,
+        "resumeAt": 175.72
+      },
+      {
+        "start": 175.72,
+        "end": 175.86,
+        "resumeAt": 178.0
+      },
+      {
+        "start": 178.0,
+        "end": 180.45,
+        "resumeAt": 183.52
+      },
+      {
+        "start": 183.52,
+        "end": 183.66,
+        "resumeAt": 193.66
+      },
+      {
+        "start": 193.66,
+        "end": 193.81,
+        "resumeAt": 195.84
+      }
+    ]
+  },
+  "T1_36": {
+    "file": "task1/situation/procedure/T1_36.mp3",
+    "duration": 195.87,
+    "segments": [
+      {
+        "start": 0,
+        "end": 0.98,
+        "resumeAt": 3.06
+      },
+      {
+        "start": 3.06,
+        "end": 5.07,
+        "resumeAt": 8.09
+      },
+      {
+        "start": 8.09,
+        "end": 8.24,
+        "resumeAt": 18.23
+      },
+      {
+        "start": 18.23,
+        "end": 18.38,
+        "resumeAt": 20.42
+      },
+      {
+        "start": 20.42,
+        "end": 22.91,
+        "resumeAt": 25.89
+      },
+      {
+        "start": 25.89,
+        "end": 26.03,
+        "resumeAt": 36.03
+      },
+      {
+        "start": 36.03,
+        "end": 36.18,
+        "resumeAt": 38.27
+      },
+      {
+        "start": 38.27,
+        "end": 42.09,
+        "resumeAt": 45.08
+      },
+      {
+        "start": 45.08,
+        "end": 45.22,
+        "resumeAt": 55.22
+      },
+      {
+        "start": 55.22,
+        "end": 55.36,
+        "resumeAt": 57.46
+      },
+      {
+        "start": 57.46,
+        "end": 62.12,
+        "resumeAt": 65.12
+      },
+      {
+        "start": 65.12,
+        "end": 65.27,
+        "resumeAt": 75.26
+      },
+      {
+        "start": 75.26,
+        "end": 75.41,
+        "resumeAt": 77.49
+      },
+      {
+        "start": 77.49,
+        "end": 82.54,
+        "resumeAt": 85.54
+      },
+      {
+        "start": 85.54,
+        "end": 85.68,
+        "resumeAt": 95.68
+      },
+      {
+        "start": 95.68,
+        "end": 95.82,
+        "resumeAt": 97.89
+      },
+      {
+        "start": 97.89,
+        "end": 102.64,
+        "resumeAt": 105.67
+      },
+      {
+        "start": 105.67,
+        "end": 105.81,
+        "resumeAt": 115.81
+      },
+      {
+        "start": 115.81,
+        "end": 115.95,
+        "resumeAt": 118.04
+      },
+      {
+        "start": 118.04,
+        "end": 123.56,
+        "resumeAt": 126.54
+      },
+      {
+        "start": 126.54,
+        "end": 126.69,
+        "resumeAt": 136.68
+      },
+      {
+        "start": 136.68,
+        "end": 136.83,
+        "resumeAt": 138.84
+      },
+      {
+        "start": 138.84,
+        "end": 142.96,
+        "resumeAt": 145.99
+      },
+      {
+        "start": 145.99,
+        "end": 146.14,
+        "resumeAt": 156.13
+      },
+      {
+        "start": 156.13,
+        "end": 156.28,
+        "resumeAt": 158.35
+      },
+      {
+        "start": 158.35,
+        "end": 161.67,
+        "resumeAt": 164.72
+      },
+      {
+        "start": 164.72,
+        "end": 164.86,
+        "resumeAt": 174.86
+      },
+      {
+        "start": 174.86,
+        "end": 175.0,
+        "resumeAt": 177.07
+      },
+      {
+        "start": 177.07,
+        "end": 180.28,
+        "resumeAt": 183.52
+      },
+      {
+        "start": 183.52,
+        "end": 183.66,
+        "resumeAt": 193.66
+      },
+      {
+        "start": 193.66,
+        "end": 193.81,
+        "resumeAt": 195.87
+      }
+    ]
+  },
+  "T1_37": {
+    "file": "task1/situation/procedure/T1_37.mp3",
+    "duration": 170.43,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.54,
+        "resumeAt": 14.63
+      },
+      {
+        "start": 14.63,
+        "end": 18.11,
+        "resumeAt": 21.24
+      },
+      {
+        "start": 21.24,
+        "end": 21.38,
+        "resumeAt": 29.43
+      },
+      {
+        "start": 29.43,
+        "end": 31.16,
+        "resumeAt": 33.27
+      },
+      {
+        "start": 33.27,
+        "end": 37.13,
+        "resumeAt": 40.31
+      },
+      {
+        "start": 40.31,
+        "end": 40.45,
+        "resumeAt": 48.5
+      },
+      {
+        "start": 48.5,
+        "end": 50.32,
+        "resumeAt": 52.39
+      },
+      {
+        "start": 52.39,
+        "end": 56.35,
+        "resumeAt": 59.44
+      },
+      {
+        "start": 59.44,
+        "end": 59.59,
+        "resumeAt": 69.64
+      },
+      {
+        "start": 69.64,
+        "end": 71.46,
+        "resumeAt": 73.55
+      },
+      {
+        "start": 73.55,
+        "end": 78.03,
+        "resumeAt": 81.1
+      },
+      {
+        "start": 81.1,
+        "end": 81.25,
+        "resumeAt": 91.24
+      },
+      {
+        "start": 91.24,
+        "end": 93.12,
+        "resumeAt": 95.23
+      },
+      {
+        "start": 95.23,
+        "end": 101.89,
+        "resumeAt": 104.92
+      },
+      {
+        "start": 104.92,
+        "end": 105.07,
+        "resumeAt": 115.07
+      },
+      {
+        "start": 115.07,
+        "end": 116.95,
+        "resumeAt": 119.05
+      },
+      {
+        "start": 119.05,
+        "end": 125.3,
+        "resumeAt": 128.32
+      },
+      {
+        "start": 128.32,
+        "end": 128.46,
+        "resumeAt": 140.51
+      },
+      {
+        "start": 140.51,
+        "end": 142.47,
+        "resumeAt": 144.66
+      },
+      {
+        "start": 144.66,
+        "end": 151.08,
+        "resumeAt": 154.11
+      },
+      {
+        "start": 154.11,
+        "end": 154.25,
+        "resumeAt": 166.3
+      },
+      {
+        "start": 166.3,
+        "end": 168.26,
+        "resumeAt": 170.42
+      }
+    ]
+  },
+  "T1_38": {
+    "file": "task1/situation/procedure/T1_38.mp3",
+    "duration": 163.4,
+    "segments": [
+      {
+        "start": 0,
+        "end": 10.71,
+        "resumeAt": 12.82
+      },
+      {
+        "start": 12.82,
+        "end": 16.04,
+        "resumeAt": 19.12
+      },
+      {
+        "start": 19.12,
+        "end": 19.26,
+        "resumeAt": 27.45
+      },
+      {
+        "start": 27.45,
+        "end": 29.36,
+        "resumeAt": 31.45
+      },
+      {
+        "start": 31.45,
+        "end": 34.73,
+        "resumeAt": 37.82
+      },
+      {
+        "start": 37.82,
+        "end": 37.97,
+        "resumeAt": 46.15
+      },
+      {
+        "start": 46.15,
+        "end": 48.03,
+        "resumeAt": 50.13
+      },
+      {
+        "start": 50.13,
+        "end": 53.72,
+        "resumeAt": 56.76
+      },
+      {
+        "start": 56.76,
+        "end": 56.91,
+        "resumeAt": 66.9
+      },
+      {
+        "start": 66.9,
+        "end": 68.75,
+        "resumeAt": 71.09
+      },
+      {
+        "start": 71.09,
+        "end": 75.78,
+        "resumeAt": 78.8
+      },
+      {
+        "start": 78.8,
+        "end": 78.94,
+        "resumeAt": 88.95
+      },
+      {
+        "start": 88.95,
+        "end": 90.8,
+        "resumeAt": 92.98
+      },
+      {
+        "start": 92.98,
+        "end": 97.59,
+        "resumeAt": 100.61
+      },
+      {
+        "start": 100.61,
+        "end": 100.75,
+        "resumeAt": 110.75
+      },
+      {
+        "start": 110.75,
+        "end": 112.77,
+        "resumeAt": 114.87
+      },
+      {
+        "start": 114.87,
+        "end": 120.05,
+        "resumeAt": 123.13
+      },
+      {
+        "start": 123.13,
+        "end": 123.28,
+        "resumeAt": 135.33
+      },
+      {
+        "start": 135.33,
+        "end": 137.28,
+        "resumeAt": 139.5
+      },
+      {
+        "start": 139.5,
+        "end": 144.21,
+        "resumeAt": 147.23
+      },
+      {
+        "start": 147.23,
+        "end": 147.37,
+        "resumeAt": 159.42
+      },
+      {
+        "start": 159.42,
+        "end": 161.38,
+        "resumeAt": 163.4
+      }
+    ]
+  },
+  "T1_39": {
+    "file": "task1/situation/procedure/T1_39.mp3",
+    "duration": 171.61,
+    "segments": [
+      {
+        "start": 0,
+        "end": 10.43,
+        "resumeAt": 12.54
+      },
+      {
+        "start": 12.54,
+        "end": 15.71,
+        "resumeAt": 18.75
+      },
+      {
+        "start": 18.75,
+        "end": 18.89,
+        "resumeAt": 26.94
+      },
+      {
+        "start": 26.94,
+        "end": 28.75,
+        "resumeAt": 30.82
+      },
+      {
+        "start": 30.82,
+        "end": 34.59,
+        "resumeAt": 37.65
+      },
+      {
+        "start": 37.65,
+        "end": 37.8,
+        "resumeAt": 45.84
+      },
+      {
+        "start": 45.84,
+        "end": 47.65,
+        "resumeAt": 49.72
+      },
+      {
+        "start": 49.72,
+        "end": 54.81,
+        "resumeAt": 57.85
+      },
+      {
+        "start": 57.85,
+        "end": 57.99,
+        "resumeAt": 67.99
+      },
+      {
+        "start": 67.99,
+        "end": 69.87,
+        "resumeAt": 71.99
+      },
+      {
+        "start": 71.99,
+        "end": 76.99,
+        "resumeAt": 80.0
+      },
+      {
+        "start": 80.0,
+        "end": 80.14,
+        "resumeAt": 90.14
+      },
+      {
+        "start": 90.14,
+        "end": 92.02,
+        "resumeAt": 94.14
+      },
+      {
+        "start": 94.14,
+        "end": 101.18,
+        "resumeAt": 104.19
+      },
+      {
+        "start": 104.19,
+        "end": 104.34,
+        "resumeAt": 114.34
+      },
+      {
+        "start": 114.34,
+        "end": 116.22,
+        "resumeAt": 118.32
+      },
+      {
+        "start": 118.32,
+        "end": 125.41,
+        "resumeAt": 128.43
+      },
+      {
+        "start": 128.43,
+        "end": 128.58,
+        "resumeAt": 140.63
+      },
+      {
+        "start": 140.63,
+        "end": 142.59,
+        "resumeAt": 144.82
+      },
+      {
+        "start": 144.82,
+        "end": 152.38,
+        "resumeAt": 155.38
+      },
+      {
+        "start": 155.38,
+        "end": 155.53,
+        "resumeAt": 167.58
+      },
+      {
+        "start": 167.58,
+        "end": 169.53,
+        "resumeAt": 171.6
+      }
+    ]
+  },
+  "T1_40": {
+    "file": "task1/situation/procedure/T1_40.mp3",
+    "duration": 163.87,
+    "segments": [
+      {
+        "start": 0,
+        "end": 10.85,
+        "resumeAt": 13.02
+      },
+      {
+        "start": 13.02,
+        "end": 15.71,
+        "resumeAt": 18.74
+      },
+      {
+        "start": 18.74,
+        "end": 18.89,
+        "resumeAt": 26.93
+      },
+      {
+        "start": 26.93,
+        "end": 28.75,
+        "resumeAt": 30.8
+      },
+      {
+        "start": 30.8,
+        "end": 33.51,
+        "resumeAt": 36.58
+      },
+      {
+        "start": 36.58,
+        "end": 36.73,
+        "resumeAt": 44.77
+      },
+      {
+        "start": 44.77,
+        "end": 46.59,
+        "resumeAt": 48.66
+      },
+      {
+        "start": 48.66,
+        "end": 52.37,
+        "resumeAt": 55.37
+      },
+      {
+        "start": 55.37,
+        "end": 55.52,
+        "resumeAt": 65.51
+      },
+      {
+        "start": 65.51,
+        "end": 67.34,
+        "resumeAt": 69.57
+      },
+      {
+        "start": 69.57,
+        "end": 74.8,
+        "resumeAt": 77.78
+      },
+      {
+        "start": 77.78,
+        "end": 77.92,
+        "resumeAt": 87.92
+      },
+      {
+        "start": 87.92,
+        "end": 89.88,
+        "resumeAt": 91.99
+      },
+      {
+        "start": 91.99,
+        "end": 96.95,
+        "resumeAt": 100.07
+      },
+      {
+        "start": 100.07,
+        "end": 100.21,
+        "resumeAt": 110.29
+      },
+      {
+        "start": 110.29,
+        "end": 112.19,
+        "resumeAt": 114.33
+      },
+      {
+        "start": 114.33,
+        "end": 119.33,
+        "resumeAt": 122.36
+      },
+      {
+        "start": 122.36,
+        "end": 122.51,
+        "resumeAt": 134.56
+      },
+      {
+        "start": 134.56,
+        "end": 136.5,
+        "resumeAt": 138.7
+      },
+      {
+        "start": 138.7,
+        "end": 144.44,
+        "resumeAt": 147.54
+      },
+      {
+        "start": 147.54,
+        "end": 147.69,
+        "resumeAt": 159.74
+      },
+      {
+        "start": 159.74,
+        "end": 161.69,
+        "resumeAt": 163.87
+      }
+    ]
+  },
+  "T1_10": {
+    "file": "task1/strategy/T1_10.mp3",
+    "duration": 163.43,
+    "segments": [
+      {
+        "start": 0,
+        "end": 9.77,
+        "resumeAt": 12.06
+      },
+      {
+        "start": 12.06,
+        "end": 15.14,
+        "resumeAt": 18.18
+      },
+      {
+        "start": 18.18,
+        "end": 18.33,
+        "resumeAt": 26.28
+      },
+      {
+        "start": 26.28,
+        "end": 28.2,
+        "resumeAt": 30.35
+      },
+      {
+        "start": 30.35,
+        "end": 33.87,
+        "resumeAt": 36.97
+      },
+      {
+        "start": 36.97,
+        "end": 37.12,
+        "resumeAt": 45.2
+      },
+      {
+        "start": 45.2,
+        "end": 47.15,
+        "resumeAt": 49.24
+      },
+      {
+        "start": 49.24,
+        "end": 52.6,
+        "resumeAt": 55.65
+      },
+      {
+        "start": 55.65,
+        "end": 55.8,
+        "resumeAt": 65.73
+      },
+      {
+        "start": 65.73,
+        "end": 67.65,
+        "resumeAt": 69.77
+      },
+      {
+        "start": 69.77,
+        "end": 74.03,
+        "resumeAt": 77.14
+      },
+      {
+        "start": 77.14,
+        "end": 77.28,
+        "resumeAt": 87.26
+      },
+      {
+        "start": 87.26,
+        "end": 89.11,
+        "resumeAt": 91.12
+      },
+      {
+        "start": 91.12,
+        "end": 95.81,
+        "resumeAt": 98.83
+      },
+      {
+        "start": 98.83,
+        "end": 98.98,
+        "resumeAt": 108.94
+      },
+      {
+        "start": 108.94,
+        "end": 110.8,
+        "resumeAt": 112.98
+      },
+      {
+        "start": 112.98,
+        "end": 118.59,
+        "resumeAt": 121.71
+      },
+      {
+        "start": 121.71,
+        "end": 121.85,
+        "resumeAt": 133.82
+      },
+      {
+        "start": 133.82,
+        "end": 135.74,
+        "resumeAt": 137.83
+      },
+      {
+        "start": 137.83,
+        "end": 144.15,
+        "resumeAt": 147.24
+      },
+      {
+        "start": 147.24,
+        "end": 147.39,
+        "resumeAt": 159.42
+      },
+      {
+        "start": 159.42,
+        "end": 161.25,
+        "resumeAt": 163.42
+      }
+    ]
+  },
+  "T1_11": {
+    "file": "task1/strategy/T1_11.mp3",
+    "duration": 166.67,
+    "segments": [
+      {
+        "start": 0,
+        "end": 10.58,
+        "resumeAt": 12.66
+      },
+      {
+        "start": 12.66,
+        "end": 15.37,
+        "resumeAt": 18.44
+      },
+      {
+        "start": 18.44,
+        "end": 18.59,
+        "resumeAt": 26.64
+      },
+      {
+        "start": 26.64,
+        "end": 28.45,
+        "resumeAt": 30.52
+      },
+      {
+        "start": 30.52,
+        "end": 34.96,
+        "resumeAt": 38.07
+      },
+      {
+        "start": 38.07,
+        "end": 38.22,
+        "resumeAt": 46.26
+      },
+      {
+        "start": 46.26,
+        "end": 48.08,
+        "resumeAt": 50.15
+      },
+      {
+        "start": 50.15,
+        "end": 54.7,
+        "resumeAt": 57.81
+      },
+      {
+        "start": 57.81,
+        "end": 57.96,
+        "resumeAt": 67.84
+      },
+      {
+        "start": 67.84,
+        "end": 69.67,
+        "resumeAt": 71.78
+      },
+      {
+        "start": 71.78,
+        "end": 76.62,
+        "resumeAt": 79.69
+      },
+      {
+        "start": 79.69,
+        "end": 79.83,
+        "resumeAt": 89.83
+      },
+      {
+        "start": 89.83,
+        "end": 91.68,
+        "resumeAt": 93.86
+      },
+      {
+        "start": 93.86,
+        "end": 99.64,
+        "resumeAt": 102.71
+      },
+      {
+        "start": 102.71,
+        "end": 102.86,
+        "resumeAt": 112.85
+      },
+      {
+        "start": 112.85,
+        "end": 114.7,
+        "resumeAt": 116.78
+      },
+      {
+        "start": 116.78,
+        "end": 121.64,
+        "resumeAt": 124.77
+      },
+      {
+        "start": 124.77,
+        "end": 124.92,
+        "resumeAt": 136.96
+      },
+      {
+        "start": 136.96,
+        "end": 138.87,
+        "resumeAt": 140.97
+      },
+      {
+        "start": 140.97,
+        "end": 147.34,
+        "resumeAt": 150.44
+      },
+      {
+        "start": 150.44,
+        "end": 150.59,
+        "resumeAt": 162.63
+      },
+      {
+        "start": 162.63,
+        "end": 164.48,
+        "resumeAt": 166.66
+      }
+    ]
+  },
+  "T1_12": {
+    "file": "task1/strategy/T1_12.mp3",
+    "duration": 164.24,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.06,
+        "resumeAt": 13.17
+      },
+      {
+        "start": 13.17,
+        "end": 15.49,
+        "resumeAt": 18.7
+      },
+      {
+        "start": 18.7,
+        "end": 18.85,
+        "resumeAt": 26.89
+      },
+      {
+        "start": 26.89,
+        "end": 28.71,
+        "resumeAt": 30.75
+      },
+      {
+        "start": 30.75,
+        "end": 34.94,
+        "resumeAt": 38.1
+      },
+      {
+        "start": 38.1,
+        "end": 38.25,
+        "resumeAt": 46.29
+      },
+      {
+        "start": 46.29,
+        "end": 48.11,
+        "resumeAt": 50.21
+      },
+      {
+        "start": 50.21,
+        "end": 54.47,
+        "resumeAt": 57.58
+      },
+      {
+        "start": 57.58,
+        "end": 57.73,
+        "resumeAt": 65.7
+      },
+      {
+        "start": 65.7,
+        "end": 67.52,
+        "resumeAt": 69.59
+      },
+      {
+        "start": 69.59,
+        "end": 74.06,
+        "resumeAt": 77.16
+      },
+      {
+        "start": 77.16,
+        "end": 77.31,
+        "resumeAt": 87.3
+      },
+      {
+        "start": 87.3,
+        "end": 89.15,
+        "resumeAt": 91.36
+      },
+      {
+        "start": 91.36,
+        "end": 96.1,
+        "resumeAt": 99.31
+      },
+      {
+        "start": 99.31,
+        "end": 99.46,
+        "resumeAt": 109.46
+      },
+      {
+        "start": 109.46,
+        "end": 111.31,
+        "resumeAt": 113.42
+      },
+      {
+        "start": 113.42,
+        "end": 118.39,
+        "resumeAt": 121.5
+      },
+      {
+        "start": 121.5,
+        "end": 121.65,
+        "resumeAt": 133.69
+      },
+      {
+        "start": 133.69,
+        "end": 135.59,
+        "resumeAt": 137.71
+      },
+      {
+        "start": 137.71,
+        "end": 144.97,
+        "resumeAt": 148.04
+      },
+      {
+        "start": 148.04,
+        "end": 148.18,
+        "resumeAt": 160.23
+      },
+      {
+        "start": 160.23,
+        "end": 162.14,
+        "resumeAt": 164.23
+      }
+    ]
+  },
+  "T1_13": {
+    "file": "task1/strategy/T1_13.mp3",
+    "duration": 170.27,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.17,
+        "resumeAt": 13.27
+      },
+      {
+        "start": 13.27,
+        "end": 17.03,
+        "resumeAt": 19.99
+      },
+      {
+        "start": 19.99,
+        "end": 20.14,
+        "resumeAt": 28.19
+      },
+      {
+        "start": 28.19,
+        "end": 30.0,
+        "resumeAt": 32.06
+      },
+      {
+        "start": 32.06,
+        "end": 35.72,
+        "resumeAt": 38.88
+      },
+      {
+        "start": 38.88,
+        "end": 39.03,
+        "resumeAt": 47.07
+      },
+      {
+        "start": 47.07,
+        "end": 48.89,
+        "resumeAt": 50.93
+      },
+      {
+        "start": 50.93,
+        "end": 55.39,
+        "resumeAt": 58.52
+      },
+      {
+        "start": 58.52,
+        "end": 58.66,
+        "resumeAt": 68.66
+      },
+      {
+        "start": 68.66,
+        "end": 70.51,
+        "resumeAt": 72.69
+      },
+      {
+        "start": 72.69,
+        "end": 78.85,
+        "resumeAt": 82.02
+      },
+      {
+        "start": 82.02,
+        "end": 82.16,
+        "resumeAt": 92.16
+      },
+      {
+        "start": 92.16,
+        "end": 94.0,
+        "resumeAt": 96.21
+      },
+      {
+        "start": 96.21,
+        "end": 103.16,
+        "resumeAt": 106.28
+      },
+      {
+        "start": 106.28,
+        "end": 106.42,
+        "resumeAt": 116.42
+      },
+      {
+        "start": 116.42,
+        "end": 118.27,
+        "resumeAt": 120.41
+      },
+      {
+        "start": 120.41,
+        "end": 125.67,
+        "resumeAt": 128.7
+      },
+      {
+        "start": 128.7,
+        "end": 128.85,
+        "resumeAt": 140.89
+      },
+      {
+        "start": 140.89,
+        "end": 142.79,
+        "resumeAt": 144.89
+      },
+      {
+        "start": 144.89,
+        "end": 150.99,
+        "resumeAt": 154.07
+      },
+      {
+        "start": 154.07,
+        "end": 154.22,
+        "resumeAt": 166.27
+      },
+      {
+        "start": 166.27,
+        "end": 168.17,
+        "resumeAt": 170.27
+      }
+    ]
+  },
+  "T1_14": {
+    "file": "task1/strategy/T1_14.mp3",
+    "duration": 169.2,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.1,
+        "resumeAt": 13.33
+      },
+      {
+        "start": 13.33,
+        "end": 15.77,
+        "resumeAt": 18.96
+      },
+      {
+        "start": 18.96,
+        "end": 19.1,
+        "resumeAt": 27.15
+      },
+      {
+        "start": 27.15,
+        "end": 29.05,
+        "resumeAt": 31.14
+      },
+      {
+        "start": 31.14,
+        "end": 35.1,
+        "resumeAt": 38.25
+      },
+      {
+        "start": 38.25,
+        "end": 38.4,
+        "resumeAt": 46.44
+      },
+      {
+        "start": 46.44,
+        "end": 48.26,
+        "resumeAt": 50.44
+      },
+      {
+        "start": 50.44,
+        "end": 55.86,
+        "resumeAt": 59.04
+      },
+      {
+        "start": 59.04,
+        "end": 59.19,
+        "resumeAt": 69.24
+      },
+      {
+        "start": 69.24,
+        "end": 71.05,
+        "resumeAt": 73.23
+      },
+      {
+        "start": 73.23,
+        "end": 78.1,
+        "resumeAt": 81.21
+      },
+      {
+        "start": 81.21,
+        "end": 81.35,
+        "resumeAt": 91.35
+      },
+      {
+        "start": 91.35,
+        "end": 93.2,
+        "resumeAt": 95.56
+      },
+      {
+        "start": 95.56,
+        "end": 100.83,
+        "resumeAt": 104.0
+      },
+      {
+        "start": 104.0,
+        "end": 104.14,
+        "resumeAt": 114.14
+      },
+      {
+        "start": 114.14,
+        "end": 115.99,
+        "resumeAt": 118.13
+      },
+      {
+        "start": 118.13,
+        "end": 123.28,
+        "resumeAt": 126.37
+      },
+      {
+        "start": 126.37,
+        "end": 126.52,
+        "resumeAt": 138.51
+      },
+      {
+        "start": 138.51,
+        "end": 140.35,
+        "resumeAt": 142.47
+      },
+      {
+        "start": 142.47,
+        "end": 149.91,
+        "resumeAt": 152.92
+      },
+      {
+        "start": 152.92,
+        "end": 153.07,
+        "resumeAt": 165.12
+      },
+      {
+        "start": 165.12,
+        "end": 166.95,
+        "resumeAt": 169.2
+      }
+    ]
+  },
+  "T1_15": {
+    "file": "task1/strategy/T1_15.mp3",
+    "duration": 164.21,
+    "segments": [
+      {
+        "start": 0,
+        "end": 10.69,
+        "resumeAt": 12.81
+      },
+      {
+        "start": 12.81,
+        "end": 14.69,
+        "resumeAt": 17.79
+      },
+      {
+        "start": 17.79,
+        "end": 17.94,
+        "resumeAt": 25.98
+      },
+      {
+        "start": 25.98,
+        "end": 27.8,
+        "resumeAt": 29.82
+      },
+      {
+        "start": 29.82,
+        "end": 33.77,
+        "resumeAt": 36.95
+      },
+      {
+        "start": 36.95,
+        "end": 37.1,
+        "resumeAt": 45.15
+      },
+      {
+        "start": 45.15,
+        "end": 46.97,
+        "resumeAt": 48.99
+      },
+      {
+        "start": 48.99,
+        "end": 53.81,
+        "resumeAt": 57.04
+      },
+      {
+        "start": 57.04,
+        "end": 57.19,
+        "resumeAt": 67.15
+      },
+      {
+        "start": 67.15,
+        "end": 68.98,
+        "resumeAt": 71.06
+      },
+      {
+        "start": 71.06,
+        "end": 74.83,
+        "resumeAt": 77.97
+      },
+      {
+        "start": 77.97,
+        "end": 78.12,
+        "resumeAt": 88.12
+      },
+      {
+        "start": 88.12,
+        "end": 89.97,
+        "resumeAt": 92.2
+      },
+      {
+        "start": 92.2,
+        "end": 97.34,
+        "resumeAt": 100.47
+      },
+      {
+        "start": 100.47,
+        "end": 100.62,
+        "resumeAt": 110.61
+      },
+      {
+        "start": 110.61,
+        "end": 112.46,
+        "resumeAt": 114.6
+      },
+      {
+        "start": 114.6,
+        "end": 120.17,
+        "resumeAt": 123.26
+      },
+      {
+        "start": 123.26,
+        "end": 123.41,
+        "resumeAt": 135.46
+      },
+      {
+        "start": 135.46,
+        "end": 137.35,
+        "resumeAt": 139.42
+      },
+      {
+        "start": 139.42,
+        "end": 144.95,
+        "resumeAt": 148.03
+      },
+      {
+        "start": 148.03,
+        "end": 148.18,
+        "resumeAt": 160.23
+      },
+      {
+        "start": 160.23,
+        "end": 162.13,
+        "resumeAt": 164.21
+      }
+    ]
+  },
+  "T1_16": {
+    "file": "task1/strategy/T1_16.mp3",
+    "duration": 162.25,
+    "segments": [
+      {
+        "start": 0,
+        "end": 9.49,
+        "resumeAt": 11.5
+      },
+      {
+        "start": 11.5,
+        "end": 14.28,
+        "resumeAt": 17.45
+      },
+      {
+        "start": 17.45,
+        "end": 17.59,
+        "resumeAt": 25.64
+      },
+      {
+        "start": 25.64,
+        "end": 27.46,
+        "resumeAt": 29.59
+      },
+      {
+        "start": 29.59,
+        "end": 33.49,
+        "resumeAt": 36.62
+      },
+      {
+        "start": 36.62,
+        "end": 36.77,
+        "resumeAt": 44.81
+      },
+      {
+        "start": 44.81,
+        "end": 46.63,
+        "resumeAt": 48.73
+      },
+      {
+        "start": 48.73,
+        "end": 52.66,
+        "resumeAt": 55.76
+      },
+      {
+        "start": 55.76,
+        "end": 55.91,
+        "resumeAt": 65.91
+      },
+      {
+        "start": 65.91,
+        "end": 67.76,
+        "resumeAt": 69.98
+      },
+      {
+        "start": 69.98,
+        "end": 73.74,
+        "resumeAt": 76.91
+      },
+      {
+        "start": 76.91,
+        "end": 77.05,
+        "resumeAt": 87.05
+      },
+      {
+        "start": 87.05,
+        "end": 88.89,
+        "resumeAt": 91.14
+      },
+      {
+        "start": 91.14,
+        "end": 96.48,
+        "resumeAt": 99.48
+      },
+      {
+        "start": 99.48,
+        "end": 99.62,
+        "resumeAt": 109.62
+      },
+      {
+        "start": 109.62,
+        "end": 111.46,
+        "resumeAt": 113.71
+      },
+      {
+        "start": 113.71,
+        "end": 117.82,
+        "resumeAt": 121.03
+      },
+      {
+        "start": 121.03,
+        "end": 121.17,
+        "resumeAt": 133.22
+      },
+      {
+        "start": 133.22,
+        "end": 135.12,
+        "resumeAt": 137.27
+      },
+      {
+        "start": 137.27,
+        "end": 142.86,
+        "resumeAt": 146.07
+      },
+      {
+        "start": 146.07,
+        "end": 146.21,
+        "resumeAt": 158.26
+      },
+      {
+        "start": 158.26,
+        "end": 160.17,
+        "resumeAt": 162.25
+      }
+    ]
+  },
+  "T1_7": {
+    "file": "task1/strategy/T1_7.mp3",
+    "duration": 167.19,
+    "segments": [
+      {
+        "start": 0,
+        "end": 9.34,
+        "resumeAt": 11.44
+      },
+      {
+        "start": 11.44,
+        "end": 14.44,
+        "resumeAt": 17.4
+      },
+      {
+        "start": 17.4,
+        "end": 17.54,
+        "resumeAt": 25.51
+      },
+      {
+        "start": 25.51,
+        "end": 27.3,
+        "resumeAt": 29.6
+      },
+      {
+        "start": 29.6,
+        "end": 34.49,
+        "resumeAt": 37.5
+      },
+      {
+        "start": 37.5,
+        "end": 37.65,
+        "resumeAt": 45.62
+      },
+      {
+        "start": 45.62,
+        "end": 47.44,
+        "resumeAt": 49.54
+      },
+      {
+        "start": 49.54,
+        "end": 54.07,
+        "resumeAt": 57.11
+      },
+      {
+        "start": 57.11,
+        "end": 57.26,
+        "resumeAt": 67.25
+      },
+      {
+        "start": 67.25,
+        "end": 69.07,
+        "resumeAt": 71.3
+      },
+      {
+        "start": 71.3,
+        "end": 76.1,
+        "resumeAt": 79.4
+      },
+      {
+        "start": 79.4,
+        "end": 79.55,
+        "resumeAt": 89.55
+      },
+      {
+        "start": 89.55,
+        "end": 91.39,
+        "resumeAt": 93.44
+      },
+      {
+        "start": 93.44,
+        "end": 98.44,
+        "resumeAt": 101.71
+      },
+      {
+        "start": 101.71,
+        "end": 101.86,
+        "resumeAt": 111.85
+      },
+      {
+        "start": 111.85,
+        "end": 113.7,
+        "resumeAt": 115.88
+      },
+      {
+        "start": 115.88,
+        "end": 121.65,
+        "resumeAt": 124.79
+      },
+      {
+        "start": 124.79,
+        "end": 124.93,
+        "resumeAt": 136.98
+      },
+      {
+        "start": 136.98,
+        "end": 138.81,
+        "resumeAt": 140.82
+      },
+      {
+        "start": 140.82,
+        "end": 147.83,
+        "resumeAt": 151.1
+      },
+      {
+        "start": 151.1,
+        "end": 151.25,
+        "resumeAt": 163.3
+      },
+      {
+        "start": 163.3,
+        "end": 165.12,
+        "resumeAt": 167.18
+      }
+    ]
+  },
+  "T1_8": {
+    "file": "task1/strategy/T1_8.mp3",
+    "duration": 253.81,
+    "segments": [
+      {
+        "start": 0,
+        "end": 5.68,
+        "resumeAt": 8.93
+      },
+      {
+        "start": 8.93,
+        "end": 9.08,
+        "resumeAt": 18.58
+      },
+      {
+        "start": 18.58,
+        "end": 20.34,
+        "resumeAt": 22.47
+      },
+      {
+        "start": 22.47,
+        "end": 25.62,
+        "resumeAt": 29.21
+      },
+      {
+        "start": 29.21,
+        "end": 29.35,
+        "resumeAt": 38.85
+      },
+      {
+        "start": 38.85,
+        "end": 40.67,
+        "resumeAt": 42.64
+      },
+      {
+        "start": 42.64,
+        "end": 45.54,
+        "resumeAt": 48.8
+      },
+      {
+        "start": 48.8,
+        "end": 48.94,
+        "resumeAt": 58.44
+      },
+      {
+        "start": 58.44,
+        "end": 60.26,
+        "resumeAt": 62.29
+      },
+      {
+        "start": 62.29,
+        "end": 65.6,
+        "resumeAt": 68.8
+      },
+      {
+        "start": 68.8,
+        "end": 68.95,
+        "resumeAt": 78.45
+      },
+      {
+        "start": 78.45,
+        "end": 80.28,
+        "resumeAt": 82.43
+      },
+      {
+        "start": 82.43,
+        "end": 85.83,
+        "resumeAt": 89.05
+      },
+      {
+        "start": 89.05,
+        "end": 89.19,
+        "resumeAt": 98.69
+      },
+      {
+        "start": 98.69,
+        "end": 100.52,
+        "resumeAt": 102.54
+      },
+      {
+        "start": 102.54,
+        "end": 106.51,
+        "resumeAt": 109.63
+      },
+      {
+        "start": 109.63,
+        "end": 109.78,
+        "resumeAt": 119.28
+      },
+      {
+        "start": 119.28,
+        "end": 121.11,
+        "resumeAt": 123.04
+      },
+      {
+        "start": 123.04,
+        "end": 127.15,
+        "resumeAt": 130.5
+      },
+      {
+        "start": 130.5,
+        "end": 130.65,
+        "resumeAt": 140.15
+      },
+      {
+        "start": 140.15,
+        "end": 141.98,
+        "resumeAt": 143.93
+      },
+      {
+        "start": 143.93,
+        "end": 148.48,
+        "resumeAt": 151.57
+      },
+      {
+        "start": 151.57,
+        "end": 151.72,
+        "resumeAt": 161.21
+      },
+      {
+        "start": 161.21,
+        "end": 163.04,
+        "resumeAt": 165.02
+      },
+      {
+        "start": 165.02,
+        "end": 169.9,
+        "resumeAt": 173.41
+      },
+      {
+        "start": 173.41,
+        "end": 173.55,
+        "resumeAt": 183.05
+      },
+      {
+        "start": 183.05,
+        "end": 184.87,
+        "resumeAt": 186.81
+      },
+      {
+        "start": 186.81,
+        "end": 192.4,
+        "resumeAt": 195.75
+      },
+      {
+        "start": 195.75,
+        "end": 195.9,
+        "resumeAt": 205.39
+      },
+      {
+        "start": 205.39,
+        "end": 207.21,
+        "resumeAt": 209.21
+      },
+      {
+        "start": 209.21,
+        "end": 214.2,
+        "resumeAt": 218.23
+      },
+      {
+        "start": 218.23,
+        "end": 218.38,
+        "resumeAt": 227.87
+      },
+      {
+        "start": 227.87,
+        "end": 229.69,
+        "resumeAt": 231.68
+      },
+      {
+        "start": 231.68,
+        "end": 237.23,
+        "resumeAt": 240.35
+      },
+      {
+        "start": 240.35,
+        "end": 240.49,
+        "resumeAt": 249.99
+      },
+      {
+        "start": 249.99,
+        "end": 251.82,
+        "resumeAt": 253.81
+      }
+    ]
+  },
+  "T1_9": {
+    "file": "task1/strategy/T1_9.mp3",
+    "duration": 168.16,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.85,
+        "resumeAt": 14.08
+      },
+      {
+        "start": 14.08,
+        "end": 17.45,
+        "resumeAt": 20.54
+      },
+      {
+        "start": 20.54,
+        "end": 20.69,
+        "resumeAt": 28.65
+      },
+      {
+        "start": 28.65,
+        "end": 30.48,
+        "resumeAt": 32.46
+      },
+      {
+        "start": 32.46,
+        "end": 36.4,
+        "resumeAt": 39.45
+      },
+      {
+        "start": 39.45,
+        "end": 39.6,
+        "resumeAt": 47.61
+      },
+      {
+        "start": 47.61,
+        "end": 49.45,
+        "resumeAt": 51.51
+      },
+      {
+        "start": 51.51,
+        "end": 55.5,
+        "resumeAt": 58.58
+      },
+      {
+        "start": 58.58,
+        "end": 58.73,
+        "resumeAt": 68.73
+      },
+      {
+        "start": 68.73,
+        "end": 70.52,
+        "resumeAt": 72.63
+      },
+      {
+        "start": 72.63,
+        "end": 77.69,
+        "resumeAt": 81.24
+      },
+      {
+        "start": 81.24,
+        "end": 81.38,
+        "resumeAt": 90.88
+      },
+      {
+        "start": 90.88,
+        "end": 92.64,
+        "resumeAt": 94.71
+      },
+      {
+        "start": 94.71,
+        "end": 100.06,
+        "resumeAt": 103.42
+      },
+      {
+        "start": 103.42,
+        "end": 103.57,
+        "resumeAt": 113.65
+      },
+      {
+        "start": 113.65,
+        "end": 115.4,
+        "resumeAt": 117.37
+      },
+      {
+        "start": 117.37,
+        "end": 123.09,
+        "resumeAt": 126.1
+      },
+      {
+        "start": 126.1,
+        "end": 126.25,
+        "resumeAt": 138.3
+      },
+      {
+        "start": 138.3,
+        "end": 140.15,
+        "resumeAt": 142.14
+      },
+      {
+        "start": 142.14,
+        "end": 149.0,
+        "resumeAt": 152.04
+      },
+      {
+        "start": 152.04,
+        "end": 152.19,
+        "resumeAt": 164.25
+      },
+      {
+        "start": 164.25,
+        "end": 166.08,
+        "resumeAt": 168.15
+      }
+    ]
+  },
+  "T2_1": {
+    "file": "task2/basic/T2_1.mp3",
+    "duration": 336.73,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.84,
+        "resumeAt": 13.99
+      },
+      {
+        "start": 13.99,
+        "end": 22.48,
+        "resumeAt": 24.57
+      },
+      {
+        "start": 24.57,
+        "end": 37.04,
+        "resumeAt": 39.16
+      },
+      {
+        "start": 39.16,
+        "end": 47.86,
+        "resumeAt": 50.08
+      },
+      {
+        "start": 50.08,
+        "end": 59.23,
+        "resumeAt": 61.37
+      },
+      {
+        "start": 61.37,
+        "end": 69.17,
+        "resumeAt": 71.25
+      },
+      {
+        "start": 71.25,
+        "end": 81.34,
+        "resumeAt": 83.36
+      },
+      {
+        "start": 83.36,
+        "end": 95.25,
+        "resumeAt": 97.33
+      },
+      {
+        "start": 97.33,
+        "end": 108.57,
+        "resumeAt": 110.68
+      },
+      {
+        "start": 110.68,
+        "end": 120.05,
+        "resumeAt": 122.13
+      },
+      {
+        "start": 122.13,
+        "end": 136.31,
+        "resumeAt": 138.42
+      },
+      {
+        "start": 138.42,
+        "end": 150.7,
+        "resumeAt": 152.77
+      },
+      {
+        "start": 152.77,
+        "end": 164.08,
+        "resumeAt": 166.22
+      },
+      {
+        "start": 166.22,
+        "end": 180.56,
+        "resumeAt": 182.65
+      },
+      {
+        "start": 182.65,
+        "end": 197.31,
+        "resumeAt": 199.38
+      },
+      {
+        "start": 199.38,
+        "end": 211.52,
+        "resumeAt": 213.63
+      },
+      {
+        "start": 213.63,
+        "end": 225.22,
+        "resumeAt": 227.3
+      },
+      {
+        "start": 227.3,
+        "end": 240.48,
+        "resumeAt": 242.53
+      },
+      {
+        "start": 242.53,
+        "end": 257.84,
+        "resumeAt": 259.86
+      },
+      {
+        "start": 259.86,
+        "end": 276.59,
+        "resumeAt": 278.62
+      },
+      {
+        "start": 278.62,
+        "end": 292.09,
+        "resumeAt": 294.1
+      },
+      {
+        "start": 294.1,
+        "end": 308.03,
+        "resumeAt": 310.1
+      },
+      {
+        "start": 310.1,
+        "end": 323.23,
+        "resumeAt": 325.33
+      },
+      {
+        "start": 325.33,
+        "end": 334.56,
+        "resumeAt": 336.72
+      }
+    ]
+  },
+  "T2_2": {
+    "file": "task2/basic/T2_2.mp3",
+    "duration": 94.52,
+    "segments": [
+      {
+        "start": 0,
+        "end": 3.98,
+        "resumeAt": 6.02
+      },
+      {
+        "start": 6.02,
+        "end": 10.84,
+        "resumeAt": 12.86
+      },
+      {
+        "start": 12.86,
+        "end": 17.26,
+        "resumeAt": 19.28
+      },
+      {
+        "start": 19.28,
+        "end": 24.41,
+        "resumeAt": 26.45
+      },
+      {
+        "start": 26.45,
+        "end": 32.39,
+        "resumeAt": 34.44
+      },
+      {
+        "start": 34.44,
+        "end": 40.1,
+        "resumeAt": 42.21
+      },
+      {
+        "start": 42.21,
+        "end": 48.14,
+        "resumeAt": 50.21
+      },
+      {
+        "start": 50.21,
+        "end": 55.93,
+        "resumeAt": 58.02
+      },
+      {
+        "start": 58.02,
+        "end": 64.67,
+        "resumeAt": 66.69
+      },
+      {
+        "start": 66.69,
+        "end": 72.94,
+        "resumeAt": 75.26
+      },
+      {
+        "start": 75.26,
+        "end": 82.42,
+        "resumeAt": 84.52
+      },
+      {
+        "start": 84.52,
+        "end": 92.37,
+        "resumeAt": 94.51
+      }
+    ]
+  },
+  "T2_3": {
+    "file": "task2/basic/T2_3.mp3",
+    "duration": 429.25,
+    "segments": [
+      {
+        "start": 0,
+        "end": 9.4,
+        "resumeAt": 11.45
+      },
+      {
+        "start": 11.45,
+        "end": 20.66,
+        "resumeAt": 22.79
+      },
+      {
+        "start": 22.79,
+        "end": 36.48,
+        "resumeAt": 38.56
+      },
+      {
+        "start": 38.56,
+        "end": 53.42,
+        "resumeAt": 55.75
+      },
+      {
+        "start": 55.75,
+        "end": 68.79,
+        "resumeAt": 70.98
+      },
+      {
+        "start": 70.98,
+        "end": 84.64,
+        "resumeAt": 86.73
+      },
+      {
+        "start": 86.73,
+        "end": 109.03,
+        "resumeAt": 111.43
+      },
+      {
+        "start": 111.43,
+        "end": 127.39,
+        "resumeAt": 129.54
+      },
+      {
+        "start": 129.54,
+        "end": 142.24,
+        "resumeAt": 144.34
+      },
+      {
+        "start": 144.34,
+        "end": 160.5,
+        "resumeAt": 162.6
+      },
+      {
+        "start": 162.6,
+        "end": 182.46,
+        "resumeAt": 184.57
+      },
+      {
+        "start": 184.57,
+        "end": 197.14,
+        "resumeAt": 199.23
+      },
+      {
+        "start": 199.23,
+        "end": 214.89,
+        "resumeAt": 217.0
+      },
+      {
+        "start": 217.0,
+        "end": 235.49,
+        "resumeAt": 237.57
+      },
+      {
+        "start": 237.57,
+        "end": 252.07,
+        "resumeAt": 254.18
+      },
+      {
+        "start": 254.18,
+        "end": 267.42,
+        "resumeAt": 269.59
+      },
+      {
+        "start": 269.59,
+        "end": 284.41,
+        "resumeAt": 286.49
+      },
+      {
+        "start": 286.49,
+        "end": 304.35,
+        "resumeAt": 306.48
+      },
+      {
+        "start": 306.48,
+        "end": 320.49,
+        "resumeAt": 322.6
+      },
+      {
+        "start": 322.6,
+        "end": 336.77,
+        "resumeAt": 338.81
+      },
+      {
+        "start": 338.81,
+        "end": 352.97,
+        "resumeAt": 355.05
+      },
+      {
+        "start": 355.05,
+        "end": 370.89,
+        "resumeAt": 373.07
+      },
+      {
+        "start": 373.07,
+        "end": 389.0,
+        "resumeAt": 391.09
+      },
+      {
+        "start": 391.09,
+        "end": 411.08,
+        "resumeAt": 413.15
+      },
+      {
+        "start": 413.15,
+        "end": 427.14,
+        "resumeAt": 429.24
+      }
+    ]
+  },
+  "T2_4": {
+    "file": "task2/basic/T2_4.mp3",
+    "duration": 106.82,
+    "segments": [
+      {
+        "start": 0,
+        "end": 6.21,
+        "resumeAt": 8.32
+      },
+      {
+        "start": 8.32,
+        "end": 13.57,
+        "resumeAt": 15.5
+      },
+      {
+        "start": 15.5,
+        "end": 21.67,
+        "resumeAt": 24.09
+      },
+      {
+        "start": 24.09,
+        "end": 30.21,
+        "resumeAt": 32.37
+      },
+      {
+        "start": 32.37,
+        "end": 40.49,
+        "resumeAt": 42.52
+      },
+      {
+        "start": 42.52,
+        "end": 49.78,
+        "resumeAt": 51.9
+      },
+      {
+        "start": 51.9,
+        "end": 58.36,
+        "resumeAt": 60.56
+      },
+      {
+        "start": 60.56,
+        "end": 67.37,
+        "resumeAt": 69.43
+      },
+      {
+        "start": 69.43,
+        "end": 77.18,
+        "resumeAt": 79.4
+      },
+      {
+        "start": 79.4,
+        "end": 85.57,
+        "resumeAt": 87.67
+      },
+      {
+        "start": 87.67,
+        "end": 93.15,
+        "resumeAt": 95.27
+      },
+      {
+        "start": 95.27,
+        "end": 104.13,
+        "resumeAt": 106.81
+      }
+    ]
+  },
+  "T2_5": {
+    "file": "task2/basic/T2_5.mp3",
+    "duration": 201.8,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.44,
+        "resumeAt": 15.52
+      },
+      {
+        "start": 15.52,
+        "end": 30.41,
+        "resumeAt": 32.65
+      },
+      {
+        "start": 32.65,
+        "end": 48.73,
+        "resumeAt": 50.85
+      },
+      {
+        "start": 50.85,
+        "end": 58.63,
+        "resumeAt": 60.85
+      },
+      {
+        "start": 60.85,
+        "end": 68.58,
+        "resumeAt": 70.68
+      },
+      {
+        "start": 70.68,
+        "end": 86.13,
+        "resumeAt": 88.25
+      },
+      {
+        "start": 88.25,
+        "end": 102.52,
+        "resumeAt": 104.7
+      },
+      {
+        "start": 104.7,
+        "end": 116.83,
+        "resumeAt": 118.96
+      },
+      {
+        "start": 118.96,
+        "end": 133.17,
+        "resumeAt": 135.27
+      },
+      {
+        "start": 135.27,
+        "end": 148.37,
+        "resumeAt": 150.54
+      },
+      {
+        "start": 150.54,
+        "end": 161.26,
+        "resumeAt": 163.34
+      },
+      {
+        "start": 163.34,
+        "end": 182.71,
+        "resumeAt": 184.86
+      },
+      {
+        "start": 184.86,
+        "end": 199.7,
+        "resumeAt": 201.8
+      }
+    ]
+  },
+  "T2_6": {
+    "file": "task2/basic/T2_6.mp3",
+    "duration": 106.93,
+    "segments": [
+      {
+        "start": 0,
+        "end": 7.16,
+        "resumeAt": 9.27
+      },
+      {
+        "start": 9.27,
+        "end": 15.11,
+        "resumeAt": 17.35
+      },
+      {
+        "start": 17.35,
+        "end": 23.77,
+        "resumeAt": 25.95
+      },
+      {
+        "start": 25.95,
+        "end": 32.35,
+        "resumeAt": 34.51
+      },
+      {
+        "start": 34.51,
+        "end": 42.32,
+        "resumeAt": 44.48
+      },
+      {
+        "start": 44.48,
+        "end": 51.92,
+        "resumeAt": 54.06
+      },
+      {
+        "start": 54.06,
+        "end": 59.73,
+        "resumeAt": 61.85
+      },
+      {
+        "start": 61.85,
+        "end": 67.87,
+        "resumeAt": 69.99
+      },
+      {
+        "start": 69.99,
+        "end": 75.29,
+        "resumeAt": 77.44
+      },
+      {
+        "start": 77.44,
+        "end": 85.68,
+        "resumeAt": 87.78
+      },
+      {
+        "start": 87.78,
+        "end": 95.26,
+        "resumeAt": 97.4
+      },
+      {
+        "start": 97.4,
+        "end": 104.82,
+        "resumeAt": 106.92
+      }
+    ]
+  },
+  "PT_1_01_질문&모범답안": {
+    "file": "task2/power-test/PT_1_01_질문&모범답안.mp3",
+    "duration": 63.98,
+    "segments": [
+      {
+        "start": 0,
+        "end": 55.38,
+        "resumeAt": 63.97
+      }
+    ]
+  },
+  "PT_1_02_질문&모범답안": {
+    "file": "task2/power-test/PT_1_02_질문&모범답안.mp3",
+    "duration": 53.98,
+    "segments": [
+      {
+        "start": 0,
+        "end": 47.77,
+        "resumeAt": 53.97
+      }
+    ]
+  },
+  "PT_1_03_질문&모범답안": {
+    "file": "task2/power-test/PT_1_03_질문&모범답안.mp3",
+    "duration": 66.1,
+    "segments": [
+      {
+        "start": 0,
+        "end": 66.1,
+        "resumeAt": 66.1
+      }
+    ]
+  },
+  "PT_1_04_질문&모범답안": {
+    "file": "task2/power-test/PT_1_04_질문&모범답안.mp3",
+    "duration": 59.93,
+    "segments": [
+      {
+        "start": 0,
+        "end": 59.93,
+        "resumeAt": 59.93
+      }
+    ]
+  },
+  "PT_2_01_질문&모범답안": {
+    "file": "task2/power-test/PT_2_01_질문&모범답안.mp3",
+    "duration": 65.65,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.42,
+        "resumeAt": 65.65
+      }
+    ]
+  },
+  "PT_2_02_질문&모범답안": {
+    "file": "task2/power-test/PT_2_02_질문&모범답안.mp3",
+    "duration": 57.11,
+    "segments": [
+      {
+        "start": 0,
+        "end": 57.11,
+        "resumeAt": 57.11
+      }
+    ]
+  },
+  "PT_2_03_질문&모범답안": {
+    "file": "task2/power-test/PT_2_03_질문&모범답안.mp3",
+    "duration": 66.23,
+    "segments": [
+      {
+        "start": 0,
+        "end": 66.23,
+        "resumeAt": 66.23
+      }
+    ]
+  },
+  "PT_2_04_질문&모범답안": {
+    "file": "task2/power-test/PT_2_04_질문&모범답안.mp3",
+    "duration": 60.93,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.76,
+        "resumeAt": 60.92
+      }
+    ]
+  },
+  "T2_10": {
+    "file": "task2/strategy/T2_10.mp3",
+    "duration": 296.65,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.55,
+        "resumeAt": 14.68
+      },
+      {
+        "start": 14.68,
+        "end": 33.76,
+        "resumeAt": 78.8
+      },
+      {
+        "start": 78.8,
+        "end": 80.78,
+        "resumeAt": 82.98
+      },
+      {
+        "start": 82.98,
+        "end": 103.44,
+        "resumeAt": 148.47
+      },
+      {
+        "start": 148.47,
+        "end": 150.45,
+        "resumeAt": 152.52
+      },
+      {
+        "start": 152.52,
+        "end": 173.87,
+        "resumeAt": 218.91
+      },
+      {
+        "start": 218.91,
+        "end": 220.84,
+        "resumeAt": 222.94
+      },
+      {
+        "start": 222.94,
+        "end": 247.67,
+        "resumeAt": 292.7
+      },
+      {
+        "start": 292.7,
+        "end": 294.61,
+        "resumeAt": 296.65
+      }
+    ]
+  },
+  "T2_10_05_질문&모범답안": {
+    "file": "task2/strategy/T2_10_05_질문&모범답안.mp3",
+    "duration": 65.37,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.37,
+        "resumeAt": 65.37
+      }
+    ]
+  },
+  "T2_10_06_질문&모범답안": {
+    "file": "task2/strategy/T2_10_06_질문&모범답안.mp3",
+    "duration": 66.91,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.06,
+        "resumeAt": 66.9
+      }
+    ]
+  },
+  "T2_10_07_질문&모범답안": {
+    "file": "task2/strategy/T2_10_07_질문&모범답안.mp3",
+    "duration": 66.12,
+    "segments": [
+      {
+        "start": 0,
+        "end": 66.12,
+        "resumeAt": 66.12
+      }
+    ]
+  },
+  "T2_10_08_질문&모범답안": {
+    "file": "task2/strategy/T2_10_08_질문&모범답안.mp3",
+    "duration": 70.98,
+    "segments": [
+      {
+        "start": 0,
+        "end": 70.98,
+        "resumeAt": 70.98
+      }
+    ]
+  },
+  "T2_11": {
+    "file": "task2/strategy/T2_11.mp3",
+    "duration": 284.4,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.39,
+        "resumeAt": 14.51
+      },
+      {
+        "start": 14.51,
+        "end": 29.12,
+        "resumeAt": 74.16
+      },
+      {
+        "start": 74.16,
+        "end": 76.09,
+        "resumeAt": 78.13
+      },
+      {
+        "start": 78.13,
+        "end": 99.88,
+        "resumeAt": 144.91
+      },
+      {
+        "start": 144.91,
+        "end": 146.84,
+        "resumeAt": 149.11
+      },
+      {
+        "start": 149.11,
+        "end": 168.69,
+        "resumeAt": 213.72
+      },
+      {
+        "start": 213.72,
+        "end": 215.65,
+        "resumeAt": 217.96
+      },
+      {
+        "start": 217.96,
+        "end": 235.39,
+        "resumeAt": 280.42
+      },
+      {
+        "start": 280.42,
+        "end": 282.35,
+        "resumeAt": 284.4
+      }
+    ]
+  },
+  "T2_11_09_질문&모범답안": {
+    "file": "task2/strategy/T2_11_09_질문&모범답안.mp3",
+    "duration": 60.72,
+    "segments": [
+      {
+        "start": 0,
+        "end": 55.3,
+        "resumeAt": 60.71
+      }
+    ]
+  },
+  "T2_11_10_질문&모범답안": {
+    "file": "task2/strategy/T2_11_10_질문&모범답안.mp3",
+    "duration": 68.89,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.69,
+        "resumeAt": 68.88
+      }
+    ]
+  },
+  "T2_11_11_질문&모범답안": {
+    "file": "task2/strategy/T2_11_11_질문&모범답안.mp3",
+    "duration": 66.62,
+    "segments": [
+      {
+        "start": 0,
+        "end": 66.62,
+        "resumeAt": 66.62
+      }
+    ]
+  },
+  "T2_11_12_질문&모범답안": {
+    "file": "task2/strategy/T2_11_12_질문&모범답안.mp3",
+    "duration": 64.58,
+    "segments": [
+      {
+        "start": 0,
+        "end": 60.91,
+        "resumeAt": 64.57
+      }
+    ]
+  },
+  "T2_12": {
+    "file": "task2/strategy/T2_12.mp3",
+    "duration": 295.48,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.32,
+        "resumeAt": 15.42
+      },
+      {
+        "start": 15.42,
+        "end": 34.53,
+        "resumeAt": 79.56
+      },
+      {
+        "start": 79.56,
+        "end": 81.49,
+        "resumeAt": 83.64
+      },
+      {
+        "start": 83.64,
+        "end": 101.53,
+        "resumeAt": 146.56
+      },
+      {
+        "start": 146.56,
+        "end": 148.5,
+        "resumeAt": 150.76
+      },
+      {
+        "start": 150.76,
+        "end": 174.33,
+        "resumeAt": 219.36
+      },
+      {
+        "start": 219.36,
+        "end": 221.3,
+        "resumeAt": 223.4
+      },
+      {
+        "start": 223.4,
+        "end": 246.44,
+        "resumeAt": 291.47
+      },
+      {
+        "start": 291.47,
+        "end": 293.41,
+        "resumeAt": 295.47
+      }
+    ]
+  },
+  "T2_12_13_질문&모범답안": {
+    "file": "task2/strategy/T2_12_13_질문&모범답안.mp3",
+    "duration": 66.28,
+    "segments": [
+      {
+        "start": 0,
+        "end": 56.21,
+        "resumeAt": 66.27
+      }
+    ]
+  },
+  "T2_12_14_질문&모범답안": {
+    "file": "task2/strategy/T2_12_14_질문&모범답안.mp3",
+    "duration": 64.87,
+    "segments": [
+      {
+        "start": 0,
+        "end": 56.88,
+        "resumeAt": 64.86
+      }
+    ]
+  },
+  "T2_12_15_질문&모범답안": {
+    "file": "task2/strategy/T2_12_15_질문&모범답안.mp3",
+    "duration": 70.46,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.93,
+        "resumeAt": 70.45
+      }
+    ]
+  },
+  "T2_12_16_질문&모범답안": {
+    "file": "task2/strategy/T2_12_16_질문&모범답안.mp3",
+    "duration": 69.23,
+    "segments": [
+      {
+        "start": 0,
+        "end": 69.23,
+        "resumeAt": 69.23
+      }
+    ]
+  },
+  "T2_7": {
+    "file": "task2/strategy/T2_7.mp3",
+    "duration": 148.28,
+    "segments": [
+      {
+        "start": 0,
+        "end": 9.6,
+        "resumeAt": 11.81
+      },
+      {
+        "start": 11.81,
+        "end": 77.78,
+        "resumeAt": 79.72
+      },
+      {
+        "start": 79.72,
+        "end": 81.65,
+        "resumeAt": 83.84
+      },
+      {
+        "start": 83.84,
+        "end": 146.15,
+        "resumeAt": 148.27
+      }
+    ]
+  },
+  "T2_8": {
+    "file": "task2/strategy/T2_8.mp3",
+    "duration": 278.42,
+    "segments": [
+      {
+        "start": 0,
+        "end": 9.97,
+        "resumeAt": 12.1
+      },
+      {
+        "start": 12.1,
+        "end": 27.4,
+        "resumeAt": 73.25
+      },
+      {
+        "start": 73.25,
+        "end": 75.18,
+        "resumeAt": 77.31
+      },
+      {
+        "start": 77.31,
+        "end": 95.51,
+        "resumeAt": 140.54
+      },
+      {
+        "start": 140.54,
+        "end": 142.48,
+        "resumeAt": 144.61
+      },
+      {
+        "start": 144.61,
+        "end": 161.04,
+        "resumeAt": 206.07
+      },
+      {
+        "start": 206.07,
+        "end": 208.0,
+        "resumeAt": 210.17
+      },
+      {
+        "start": 210.17,
+        "end": 229.42,
+        "resumeAt": 274.45
+      },
+      {
+        "start": 274.45,
+        "end": 276.38,
+        "resumeAt": 278.41
+      }
+    ]
+  },
+  "T2_8_01_질문&모범답안": {
+    "file": "task2/strategy/T2_8_01_질문&모범답안.mp3",
+    "duration": 61.13,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.13,
+        "resumeAt": 61.13
+      }
+    ]
+  },
+  "T2_8_02_질문&모범답안": {
+    "file": "task2/strategy/T2_8_02_질문&모범답안.mp3",
+    "duration": 64.35,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.83,
+        "resumeAt": 64.34
+      }
+    ]
+  },
+  "T2_8_03_질문&모범답안": {
+    "file": "task2/strategy/T2_8_03_질문&모범답안.mp3",
+    "duration": 61.53,
+    "segments": [
+      {
+        "start": 0,
+        "end": 56.28,
+        "resumeAt": 61.52
+      }
+    ]
+  },
+  "T2_8_04_질문&모범답안": {
+    "file": "task2/strategy/T2_8_04_질문&모범답안.mp3",
+    "duration": 65.47,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.47,
+        "resumeAt": 65.47
+      }
+    ]
+  },
+  "T2_9": {
+    "file": "task2/strategy/T2_9.mp3",
+    "duration": 271.42,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.77,
+        "resumeAt": 15.98
+      },
+      {
+        "start": 15.98,
+        "end": 30.58,
+        "resumeAt": 75.61
+      },
+      {
+        "start": 75.61,
+        "end": 77.55,
+        "resumeAt": 79.63
+      },
+      {
+        "start": 79.63,
+        "end": 95.21,
+        "resumeAt": 140.24
+      },
+      {
+        "start": 140.24,
+        "end": 142.17,
+        "resumeAt": 144.44
+      },
+      {
+        "start": 144.44,
+        "end": 155.8,
+        "resumeAt": 200.83
+      },
+      {
+        "start": 200.83,
+        "end": 202.77,
+        "resumeAt": 204.83
+      },
+      {
+        "start": 204.83,
+        "end": 222.51,
+        "resumeAt": 267.54
+      },
+      {
+        "start": 267.54,
+        "end": 269.48,
+        "resumeAt": 271.41
+      }
+    ]
+  },
+  "T2_9_01_질문&모범답안": {
+    "file": "task2/strategy/T2_9_01_질문&모범답안.mp3",
+    "duration": 60.82,
+    "segments": [
+      {
+        "start": 0,
+        "end": 60.82,
+        "resumeAt": 60.82
+      }
+    ]
+  },
+  "T2_9_02_질문&모범답안": {
+    "file": "task2/strategy/T2_9_02_질문&모범답안.mp3",
+    "duration": 61.89,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.89,
+        "resumeAt": 61.89
+      }
+    ]
+  },
+  "T2_9_03_질문&모범답안": {
+    "file": "task2/strategy/T2_9_03_질문&모범답안.mp3",
+    "duration": 56.93,
+    "segments": [
+      {
+        "start": 0,
+        "end": 56.93,
+        "resumeAt": 56.93
+      }
+    ]
+  },
+  "T2_9_04_질문&모범답안": {
+    "file": "task2/strategy/T2_9_04_질문&모범답안.mp3",
+    "duration": 62.73,
+    "segments": [
+      {
+        "start": 0,
+        "end": 62.73,
+        "resumeAt": 62.73
+      }
+    ]
+  },
+  "T2_29": {
+    "file": "task2/topic/career/T2_29.mp3",
+    "duration": 280.28,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.87,
+        "resumeAt": 15.71
+      },
+      {
+        "start": 15.71,
+        "end": 28.96,
+        "resumeAt": 73.99
+      },
+      {
+        "start": 73.99,
+        "end": 75.93,
+        "resumeAt": 78.37
+      },
+      {
+        "start": 78.37,
+        "end": 92.82,
+        "resumeAt": 137.85
+      },
+      {
+        "start": 137.85,
+        "end": 139.78,
+        "resumeAt": 142.15
+      },
+      {
+        "start": 142.15,
+        "end": 157.75,
+        "resumeAt": 202.78
+      },
+      {
+        "start": 202.78,
+        "end": 204.71,
+        "resumeAt": 207.03
+      },
+      {
+        "start": 207.03,
+        "end": 231.02,
+        "resumeAt": 276.05
+      },
+      {
+        "start": 276.05,
+        "end": 277.99,
+        "resumeAt": 280.27
+      }
+    ]
+  },
+  "T2_29_01_질문&모범답안": {
+    "file": "task2/topic/career/T2_29_01_질문&모범답안.mp3",
+    "duration": 58.76,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.76,
+        "resumeAt": 58.76
+      }
+    ]
+  },
+  "T2_29_02_질문&모범답안": {
+    "file": "task2/topic/career/T2_29_02_질문&모범답안.mp3",
+    "duration": 60.43,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.31,
+        "resumeAt": 60.42
+      }
+    ]
+  },
+  "T2_29_03_질문&모범답안": {
+    "file": "task2/topic/career/T2_29_03_질문&모범답안.mp3",
+    "duration": 62.21,
+    "segments": [
+      {
+        "start": 0,
+        "end": 62.21,
+        "resumeAt": 62.21
+      }
+    ]
+  },
+  "T2_29_04_질문&모범답안": {
+    "file": "task2/topic/career/T2_29_04_질문&모범답안.mp3",
+    "duration": 69.81,
+    "segments": [
+      {
+        "start": 0,
+        "end": 69.81,
+        "resumeAt": 69.81
+      }
+    ]
+  },
+  "T2_30": {
+    "file": "task2/topic/career/T2_30.mp3",
+    "duration": 298.82,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.28,
+        "resumeAt": 15.51
+      },
+      {
+        "start": 15.51,
+        "end": 38.02,
+        "resumeAt": 83.05
+      },
+      {
+        "start": 83.05,
+        "end": 84.98,
+        "resumeAt": 87.26
+      },
+      {
+        "start": 87.26,
+        "end": 111.24,
+        "resumeAt": 156.27
+      },
+      {
+        "start": 156.27,
+        "end": 158.2,
+        "resumeAt": 160.43
+      },
+      {
+        "start": 160.43,
+        "end": 179.46,
+        "resumeAt": 224.49
+      },
+      {
+        "start": 224.49,
+        "end": 226.42,
+        "resumeAt": 228.77
+      },
+      {
+        "start": 228.77,
+        "end": 249.78,
+        "resumeAt": 294.81
+      },
+      {
+        "start": 294.81,
+        "end": 296.75,
+        "resumeAt": 298.81
+      }
+    ]
+  },
+  "T2_30_05_질문&모범답안": {
+    "file": "task2/topic/career/T2_30_05_질문&모범답안.mp3",
+    "duration": 69.42,
+    "segments": [
+      {
+        "start": 0,
+        "end": 66.28,
+        "resumeAt": 69.41
+      }
+    ]
+  },
+  "T2_30_06_질문&모범답안": {
+    "file": "task2/topic/career/T2_30_06_질문&모범답안.mp3",
+    "duration": 71.14,
+    "segments": [
+      {
+        "start": 0,
+        "end": 71.14,
+        "resumeAt": 71.14
+      }
+    ]
+  },
+  "T2_30_07_질문&모범답안": {
+    "file": "task2/topic/career/T2_30_07_질문&모범답안.mp3",
+    "duration": 65.89,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.89,
+        "resumeAt": 65.89
+      }
+    ]
+  },
+  "T2_30_08_질문&모범답안": {
+    "file": "task2/topic/career/T2_30_08_질문&모범답안.mp3",
+    "duration": 67.74,
+    "segments": [
+      {
+        "start": 0,
+        "end": 67.74,
+        "resumeAt": 67.74
+      }
+    ]
+  },
+  "T2_31": {
+    "file": "task2/topic/career/T2_31.mp3",
+    "duration": 288.37,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.32,
+        "resumeAt": 14.73
+      },
+      {
+        "start": 14.73,
+        "end": 36.45,
+        "resumeAt": 81.48
+      },
+      {
+        "start": 81.48,
+        "end": 83.42,
+        "resumeAt": 85.87
+      },
+      {
+        "start": 85.87,
+        "end": 98.9,
+        "resumeAt": 143.93
+      },
+      {
+        "start": 143.93,
+        "end": 145.87,
+        "resumeAt": 148.52
+      },
+      {
+        "start": 148.52,
+        "end": 169.43,
+        "resumeAt": 214.46
+      },
+      {
+        "start": 214.46,
+        "end": 216.39,
+        "resumeAt": 218.98
+      },
+      {
+        "start": 218.98,
+        "end": 239.01,
+        "resumeAt": 284.04
+      },
+      {
+        "start": 284.04,
+        "end": 285.98,
+        "resumeAt": 288.37
+      }
+    ]
+  },
+  "T2_31_09_질문&모범답안": {
+    "file": "task2/topic/career/T2_31_09_질문&모범답안.mp3",
+    "duration": 68.03,
+    "segments": [
+      {
+        "start": 0,
+        "end": 68.03,
+        "resumeAt": 68.03
+      }
+    ]
+  },
+  "T2_31_10_질문&모범답안": {
+    "file": "task2/topic/career/T2_31_10_질문&모범답안.mp3",
+    "duration": 59.15,
+    "segments": [
+      {
+        "start": 0,
+        "end": 56.94,
+        "resumeAt": 59.14
+      }
+    ]
+  },
+  "T2_31_11_질문&모범답안": {
+    "file": "task2/topic/career/T2_31_11_질문&모범답안.mp3",
+    "duration": 67.27,
+    "segments": [
+      {
+        "start": 0,
+        "end": 67.27,
+        "resumeAt": 67.27
+      }
+    ]
+  },
+  "T2_31_12_질문&모범답안": {
+    "file": "task2/topic/career/T2_31_12_질문&모범답안.mp3",
+    "duration": 66.59,
+    "segments": [
+      {
+        "start": 0,
+        "end": 66.59,
+        "resumeAt": 66.59
+      }
+    ]
+  },
+  "T2_32": {
+    "file": "task2/topic/career/T2_32.mp3",
+    "duration": 290.83,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.85,
+        "resumeAt": 15.97
+      },
+      {
+        "start": 15.97,
+        "end": 32.05,
+        "resumeAt": 77.09
+      },
+      {
+        "start": 77.09,
+        "end": 79.02,
+        "resumeAt": 81.36
+      },
+      {
+        "start": 81.36,
+        "end": 102.89,
+        "resumeAt": 147.92
+      },
+      {
+        "start": 147.92,
+        "end": 149.85,
+        "resumeAt": 151.99
+      },
+      {
+        "start": 151.99,
+        "end": 172.04,
+        "resumeAt": 217.07
+      },
+      {
+        "start": 217.07,
+        "end": 219.01,
+        "resumeAt": 221.18
+      },
+      {
+        "start": 221.18,
+        "end": 241.78,
+        "resumeAt": 286.81
+      },
+      {
+        "start": 286.81,
+        "end": 288.74,
+        "resumeAt": 290.82
+      }
+    ]
+  },
+  "T2_32_13_질문&모범답안": {
+    "file": "task2/topic/career/T2_32_13_질문&모범답안.mp3",
+    "duration": 63.3,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.32,
+        "resumeAt": 63.29
+      }
+    ]
+  },
+  "T2_32_14_질문&모범답안": {
+    "file": "task2/topic/career/T2_32_14_질문&모범답안.mp3",
+    "duration": 68.03,
+    "segments": [
+      {
+        "start": 0,
+        "end": 64.92,
+        "resumeAt": 68.02
+      }
+    ]
+  },
+  "T2_32_15_질문&모범답안": {
+    "file": "task2/topic/career/T2_32_15_질문&모범답안.mp3",
+    "duration": 67.12,
+    "segments": [
+      {
+        "start": 0,
+        "end": 63.16,
+        "resumeAt": 67.11
+      }
+    ]
+  },
+  "T2_32_16_질문&모범답안": {
+    "file": "task2/topic/career/T2_32_16_질문&모범답안.mp3",
+    "duration": 67.12,
+    "segments": [
+      {
+        "start": 0,
+        "end": 67.12,
+        "resumeAt": 67.12
+      }
+    ]
+  },
+  "T2_33": {
+    "file": "task2/topic/daily/T2_33.mp3",
+    "duration": 277.06,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.19,
+        "resumeAt": 15.37
+      },
+      {
+        "start": 15.37,
+        "end": 29.78,
+        "resumeAt": 74.81
+      },
+      {
+        "start": 74.81,
+        "end": 76.74,
+        "resumeAt": 79.26
+      },
+      {
+        "start": 79.26,
+        "end": 92.46,
+        "resumeAt": 137.49
+      },
+      {
+        "start": 137.49,
+        "end": 139.43,
+        "resumeAt": 141.95
+      },
+      {
+        "start": 141.95,
+        "end": 162.13,
+        "resumeAt": 207.16
+      },
+      {
+        "start": 207.16,
+        "end": 209.1,
+        "resumeAt": 211.56
+      },
+      {
+        "start": 211.56,
+        "end": 227.66,
+        "resumeAt": 272.69
+      },
+      {
+        "start": 272.69,
+        "end": 274.62,
+        "resumeAt": 277.05
+      }
+    ]
+  },
+  "T2_33_01_질문&모범답안": {
+    "file": "task2/topic/daily/T2_33_01_질문&모범답안.mp3",
+    "duration": 60.46,
+    "segments": [
+      {
+        "start": 0,
+        "end": 57.58,
+        "resumeAt": 60.45
+      }
+    ]
+  },
+  "T2_33_02_질문&모범답안": {
+    "file": "task2/topic/daily/T2_33_02_질문&모범답안.mp3",
+    "duration": 59.36,
+    "segments": [
+      {
+        "start": 0,
+        "end": 59.36,
+        "resumeAt": 59.36
+      }
+    ]
+  },
+  "T2_33_03_질문&모범답안": {
+    "file": "task2/topic/daily/T2_33_03_질문&모범답안.mp3",
+    "duration": 67.48,
+    "segments": [
+      {
+        "start": 0,
+        "end": 67.48,
+        "resumeAt": 67.48
+      }
+    ]
+  },
+  "T2_33_04_질문&모범답안": {
+    "file": "task2/topic/daily/T2_33_04_질문&모범답안.mp3",
+    "duration": 63.04,
+    "segments": [
+      {
+        "start": 0,
+        "end": 63.04,
+        "resumeAt": 63.04
+      }
+    ]
+  },
+  "T2_34": {
+    "file": "task2/topic/daily/T2_34.mp3",
+    "duration": 269.93,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.75,
+        "resumeAt": 14.86
+      },
+      {
+        "start": 14.86,
+        "end": 28.22,
+        "resumeAt": 73.25
+      },
+      {
+        "start": 73.25,
+        "end": 75.19,
+        "resumeAt": 77.36
+      },
+      {
+        "start": 77.36,
+        "end": 90.16,
+        "resumeAt": 135.19
+      },
+      {
+        "start": 135.19,
+        "end": 137.12,
+        "resumeAt": 139.24
+      },
+      {
+        "start": 139.24,
+        "end": 152.45,
+        "resumeAt": 197.48
+      },
+      {
+        "start": 197.48,
+        "end": 199.41,
+        "resumeAt": 201.54
+      },
+      {
+        "start": 201.54,
+        "end": 220.89,
+        "resumeAt": 265.92
+      },
+      {
+        "start": 265.92,
+        "end": 267.85,
+        "resumeAt": 269.92
+      }
+    ]
+  },
+  "T2_34_05_질문&모범답안": {
+    "file": "task2/topic/daily/T2_34_05_질문&모범답안.mp3",
+    "duration": 59.2,
+    "segments": [
+      {
+        "start": 0,
+        "end": 44.63,
+        "resumeAt": 59.19
+      }
+    ]
+  },
+  "T2_34_06_질문&모범답안": {
+    "file": "task2/topic/daily/T2_34_06_질문&모범답안.mp3",
+    "duration": 59.2,
+    "segments": [
+      {
+        "start": 0,
+        "end": 49.19,
+        "resumeAt": 59.19
+      }
+    ]
+  },
+  "T2_34_07_질문&모범답안": {
+    "file": "task2/topic/daily/T2_34_07_질문&모범답안.mp3",
+    "duration": 59.59,
+    "segments": [
+      {
+        "start": 0,
+        "end": 49.72,
+        "resumeAt": 59.59
+      }
+    ]
+  },
+  "T2_34_08_질문&모범답안": {
+    "file": "task2/topic/daily/T2_34_08_질문&모범답안.mp3",
+    "duration": 66.57,
+    "segments": [
+      {
+        "start": 0,
+        "end": 64.72,
+        "resumeAt": 66.56
+      }
+    ]
+  },
+  "T2_35": {
+    "file": "task2/topic/daily/T2_35.mp3",
+    "duration": 279.26,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.93,
+        "resumeAt": 14.08
+      },
+      {
+        "start": 14.08,
+        "end": 31.16,
+        "resumeAt": 76.18
+      },
+      {
+        "start": 76.18,
+        "end": 78.12,
+        "resumeAt": 80.61
+      },
+      {
+        "start": 80.61,
+        "end": 96.91,
+        "resumeAt": 141.94
+      },
+      {
+        "start": 141.94,
+        "end": 143.88,
+        "resumeAt": 146.48
+      },
+      {
+        "start": 146.48,
+        "end": 159.84,
+        "resumeAt": 204.87
+      },
+      {
+        "start": 204.87,
+        "end": 206.81,
+        "resumeAt": 209.39
+      },
+      {
+        "start": 209.39,
+        "end": 229.81,
+        "resumeAt": 274.84
+      },
+      {
+        "start": 274.84,
+        "end": 276.78,
+        "resumeAt": 279.25
+      }
+    ]
+  },
+  "T2_35_09_질문&모범답안": {
+    "file": "task2/topic/daily/T2_35_09_질문&모범답안.mp3",
+    "duration": 63.33,
+    "segments": [
+      {
+        "start": 0,
+        "end": 63.33,
+        "resumeAt": 63.33
+      }
+    ]
+  },
+  "T2_35_10_질문&모범답안": {
+    "file": "task2/topic/daily/T2_35_10_질문&모범답안.mp3",
+    "duration": 62.18,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.64,
+        "resumeAt": 62.17
+      }
+    ]
+  },
+  "T2_35_11_질문&모범답안": {
+    "file": "task2/topic/daily/T2_35_11_질문&모범답안.mp3",
+    "duration": 59.85,
+    "segments": [
+      {
+        "start": 0,
+        "end": 55.0,
+        "resumeAt": 59.85
+      }
+    ]
+  },
+  "T2_35_12_질문&모범답안": {
+    "file": "task2/topic/daily/T2_35_12_질문&모범답안.mp3",
+    "duration": 66.93,
+    "segments": [
+      {
+        "start": 0,
+        "end": 66.93,
+        "resumeAt": 66.93
+      }
+    ]
+  },
+  "T2_36": {
+    "file": "task2/topic/daily/T2_36.mp3",
+    "duration": 265.59,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.28,
+        "resumeAt": 14.36
+      },
+      {
+        "start": 14.36,
+        "end": 28.32,
+        "resumeAt": 73.35
+      },
+      {
+        "start": 73.35,
+        "end": 75.28,
+        "resumeAt": 77.52
+      },
+      {
+        "start": 77.52,
+        "end": 90.3,
+        "resumeAt": 135.33
+      },
+      {
+        "start": 135.33,
+        "end": 137.26,
+        "resumeAt": 139.46
+      },
+      {
+        "start": 139.46,
+        "end": 155.83,
+        "resumeAt": 200.86
+      },
+      {
+        "start": 200.86,
+        "end": 202.8,
+        "resumeAt": 205.0
+      },
+      {
+        "start": 205.0,
+        "end": 216.56,
+        "resumeAt": 261.59
+      },
+      {
+        "start": 261.59,
+        "end": 263.52,
+        "resumeAt": 265.59
+      }
+    ]
+  },
+  "T2_36_13_질문&모범답안": {
+    "file": "task2/topic/daily/T2_36_13_질문&모범답안.mp3",
+    "duration": 60.72,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.5,
+        "resumeAt": 60.71
+      }
+    ]
+  },
+  "T2_36_14_질문&모범답안": {
+    "file": "task2/topic/daily/T2_36_14_질문&모범답안.mp3",
+    "duration": 59.49,
+    "segments": [
+      {
+        "start": 0,
+        "end": 59.49,
+        "resumeAt": 59.49
+      }
+    ]
+  },
+  "T2_36_15_질문&모범답안": {
+    "file": "task2/topic/daily/T2_36_15_질문&모범답안.mp3",
+    "duration": 63.22,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.21,
+        "resumeAt": 63.22
+      }
+    ]
+  },
+  "T2_36_16_질문&모범답안": {
+    "file": "task2/topic/daily/T2_36_16_질문&모범답안.mp3",
+    "duration": 58.6,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.6,
+        "resumeAt": 58.6
+      }
+    ]
+  },
+  "T2_13": {
+    "file": "task2/topic/education/T2_13.mp3",
+    "duration": 282.23,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.44,
+        "resumeAt": 15.53
+      },
+      {
+        "start": 15.53,
+        "end": 29.89,
+        "resumeAt": 74.92
+      },
+      {
+        "start": 74.92,
+        "end": 76.85,
+        "resumeAt": 79.04
+      },
+      {
+        "start": 79.04,
+        "end": 96.35,
+        "resumeAt": 141.38
+      },
+      {
+        "start": 141.38,
+        "end": 143.32,
+        "resumeAt": 145.48
+      },
+      {
+        "start": 145.48,
+        "end": 164.73,
+        "resumeAt": 209.76
+      },
+      {
+        "start": 209.76,
+        "end": 211.69,
+        "resumeAt": 213.84
+      },
+      {
+        "start": 213.84,
+        "end": 233.22,
+        "resumeAt": 278.25
+      },
+      {
+        "start": 278.25,
+        "end": 280.18,
+        "resumeAt": 282.23
+      }
+    ]
+  },
+  "T2_13_01_질문&모범답안": {
+    "file": "task2/topic/education/T2_13_01_질문&모범답안.mp3",
+    "duration": 60.22,
+    "segments": [
+      {
+        "start": 0,
+        "end": 60.22,
+        "resumeAt": 60.22
+      }
+    ]
+  },
+  "T2_13_02_질문&모범답안": {
+    "file": "task2/topic/education/T2_13_02_질문&모범답안.mp3",
+    "duration": 63.98,
+    "segments": [
+      {
+        "start": 0,
+        "end": 63.98,
+        "resumeAt": 63.98
+      }
+    ]
+  },
+  "T2_13_03_질문&모범답안": {
+    "file": "task2/topic/education/T2_13_03_질문&모범답안.mp3",
+    "duration": 66.33,
+    "segments": [
+      {
+        "start": 0,
+        "end": 66.33,
+        "resumeAt": 66.33
+      }
+    ]
+  },
+  "T2_13_04_질문&모범답안": {
+    "file": "task2/topic/education/T2_13_04_질문&모범답안.mp3",
+    "duration": 65.81,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.81,
+        "resumeAt": 65.81
+      }
+    ]
+  },
+  "T2_14": {
+    "file": "task2/topic/education/T2_14.mp3",
+    "duration": 273.17,
+    "segments": [
+      {
+        "start": 0,
+        "end": 10.42,
+        "resumeAt": 12.54
+      },
+      {
+        "start": 12.54,
+        "end": 29.2,
+        "resumeAt": 74.35
+      },
+      {
+        "start": 74.35,
+        "end": 76.27,
+        "resumeAt": 78.45
+      },
+      {
+        "start": 78.45,
+        "end": 91.76,
+        "resumeAt": 136.79
+      },
+      {
+        "start": 136.79,
+        "end": 138.73,
+        "resumeAt": 140.81
+      },
+      {
+        "start": 140.81,
+        "end": 155.1,
+        "resumeAt": 200.13
+      },
+      {
+        "start": 200.13,
+        "end": 202.07,
+        "resumeAt": 204.16
+      },
+      {
+        "start": 204.16,
+        "end": 224.06,
+        "resumeAt": 269.12
+      },
+      {
+        "start": 269.12,
+        "end": 271.05,
+        "resumeAt": 273.16
+      }
+    ]
+  },
+  "T2_14_05_질문&모범답안": {
+    "file": "task2/topic/education/T2_14_05_질문&모범답안.mp3",
+    "duration": 62.34,
+    "segments": [
+      {
+        "start": 0,
+        "end": 52.07,
+        "resumeAt": 62.33
+      }
+    ]
+  },
+  "T2_14_06_질문&모범답안": {
+    "file": "task2/topic/education/T2_14_06_질문&모범답안.mp3",
+    "duration": 59.25,
+    "segments": [
+      {
+        "start": 0,
+        "end": 57.06,
+        "resumeAt": 59.25
+      }
+    ]
+  },
+  "T2_14_07_질문&모범답안": {
+    "file": "task2/topic/education/T2_14_07_질문&모범답안.mp3",
+    "duration": 60.43,
+    "segments": [
+      {
+        "start": 0,
+        "end": 60.43,
+        "resumeAt": 60.43
+      }
+    ]
+  },
+  "T2_14_08_질문&모범답안": {
+    "file": "task2/topic/education/T2_14_08_질문&모범답안.mp3",
+    "duration": 66.67,
+    "segments": [
+      {
+        "start": 0,
+        "end": 63.69,
+        "resumeAt": 66.66
+      }
+    ]
+  },
+  "T2_15": {
+    "file": "task2/topic/education/T2_15.mp3",
+    "duration": 280.59,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.6,
+        "resumeAt": 13.83
+      },
+      {
+        "start": 13.83,
+        "end": 30.47,
+        "resumeAt": 75.5
+      },
+      {
+        "start": 75.5,
+        "end": 77.44,
+        "resumeAt": 79.66
+      },
+      {
+        "start": 79.66,
+        "end": 99.17,
+        "resumeAt": 144.2
+      },
+      {
+        "start": 144.2,
+        "end": 146.14,
+        "resumeAt": 148.32
+      },
+      {
+        "start": 148.32,
+        "end": 163.57,
+        "resumeAt": 208.6
+      },
+      {
+        "start": 208.6,
+        "end": 210.53,
+        "resumeAt": 212.89
+      },
+      {
+        "start": 212.89,
+        "end": 231.56,
+        "resumeAt": 276.59
+      },
+      {
+        "start": 276.59,
+        "end": 278.52,
+        "resumeAt": 280.58
+      }
+    ]
+  },
+  "T2_15_09_질문&모범답안": {
+    "file": "task2/topic/education/T2_15_09_질문&모범답안.mp3",
+    "duration": 63.38,
+    "segments": [
+      {
+        "start": 0,
+        "end": 63.38,
+        "resumeAt": 63.38
+      }
+    ]
+  },
+  "T2_15_10_질문&모범답안": {
+    "file": "task2/topic/education/T2_15_10_질문&모범답안.mp3",
+    "duration": 66.67,
+    "segments": [
+      {
+        "start": 0,
+        "end": 64.73,
+        "resumeAt": 66.66
+      }
+    ]
+  },
+  "T2_15_11_질문&모범답안": {
+    "file": "task2/topic/education/T2_15_11_질문&모범답안.mp3",
+    "duration": 61.32,
+    "segments": [
+      {
+        "start": 0,
+        "end": 53.16,
+        "resumeAt": 61.31
+      }
+    ]
+  },
+  "T2_15_12_질문&모범답안": {
+    "file": "task2/topic/education/T2_15_12_질문&모범답안.mp3",
+    "duration": 65.65,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.65,
+        "resumeAt": 65.65
+      }
+    ]
+  },
+  "T2_16": {
+    "file": "task2/topic/education/T2_16.mp3",
+    "duration": 299.03,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.67,
+        "resumeAt": 15.86
+      },
+      {
+        "start": 15.86,
+        "end": 33.77,
+        "resumeAt": 78.8
+      },
+      {
+        "start": 78.8,
+        "end": 80.73,
+        "resumeAt": 82.89
+      },
+      {
+        "start": 82.89,
+        "end": 101.91,
+        "resumeAt": 146.94
+      },
+      {
+        "start": 146.94,
+        "end": 148.87,
+        "resumeAt": 151.04
+      },
+      {
+        "start": 151.04,
+        "end": 173.68,
+        "resumeAt": 218.71
+      },
+      {
+        "start": 218.71,
+        "end": 220.64,
+        "resumeAt": 222.8
+      },
+      {
+        "start": 222.8,
+        "end": 250.01,
+        "resumeAt": 295.04
+      },
+      {
+        "start": 295.04,
+        "end": 296.97,
+        "resumeAt": 299.02
+      }
+    ]
+  },
+  "T2_16_13_질문&모범답안": {
+    "file": "task2/topic/education/T2_16_13_질문&모범답안.mp3",
+    "duration": 64.77,
+    "segments": [
+      {
+        "start": 0,
+        "end": 64.77,
+        "resumeAt": 64.77
+      }
+    ]
+  },
+  "T2_16_14_질문&모범답안": {
+    "file": "task2/topic/education/T2_16_14_질문&모범답안.mp3",
+    "duration": 65.24,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.24,
+        "resumeAt": 65.24
+      }
+    ]
+  },
+  "T2_16_15_질문&모범답안": {
+    "file": "task2/topic/education/T2_16_15_질문&모범답안.mp3",
+    "duration": 69.52,
+    "segments": [
+      {
+        "start": 0,
+        "end": 69.52,
+        "resumeAt": 69.52
+      }
+    ]
+  },
+  "T2_16_16_질문&모범답안": {
+    "file": "task2/topic/education/T2_16_16_질문&모범답안.mp3",
+    "duration": 74.3,
+    "segments": [
+      {
+        "start": 0,
+        "end": 74.3,
+        "resumeAt": 74.3
+      }
+    ]
+  },
+  "T2_21": {
+    "file": "task2/topic/environment/T2_21.mp3",
+    "duration": 279.1,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.11,
+        "resumeAt": 14.43
+      },
+      {
+        "start": 14.43,
+        "end": 32.6,
+        "resumeAt": 77.63
+      },
+      {
+        "start": 77.63,
+        "end": 79.57,
+        "resumeAt": 81.67
+      },
+      {
+        "start": 81.67,
+        "end": 94.92,
+        "resumeAt": 139.95
+      },
+      {
+        "start": 139.95,
+        "end": 141.89,
+        "resumeAt": 144.0
+      },
+      {
+        "start": 144.0,
+        "end": 159.56,
+        "resumeAt": 204.6
+      },
+      {
+        "start": 204.6,
+        "end": 206.53,
+        "resumeAt": 208.63
+      },
+      {
+        "start": 208.63,
+        "end": 230.07,
+        "resumeAt": 275.1
+      },
+      {
+        "start": 275.1,
+        "end": 277.03,
+        "resumeAt": 279.09
+      }
+    ]
+  },
+  "T2_21_01_질문&모범답안": {
+    "file": "task2/topic/environment/T2_21_01_질문&모범답안.mp3",
+    "duration": 65.11,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.95,
+        "resumeAt": 65.1
+      }
+    ]
+  },
+  "T2_21_02_질문&모범답안": {
+    "file": "task2/topic/environment/T2_21_02_질문&모범답안.mp3",
+    "duration": 60.04,
+    "segments": [
+      {
+        "start": 0,
+        "end": 53.95,
+        "resumeAt": 60.03
+      }
+    ]
+  },
+  "T2_21_03_질문&모범답안": {
+    "file": "task2/topic/environment/T2_21_03_질문&모범답안.mp3",
+    "duration": 62.78,
+    "segments": [
+      {
+        "start": 0,
+        "end": 62.78,
+        "resumeAt": 62.78
+      }
+    ]
+  },
+  "T2_21_04_질문&모범답안": {
+    "file": "task2/topic/environment/T2_21_04_질문&모범답안.mp3",
+    "duration": 68.58,
+    "segments": [
+      {
+        "start": 0,
+        "end": 68.58,
+        "resumeAt": 68.58
+      }
+    ]
+  },
+  "T2_22": {
+    "file": "task2/topic/environment/T2_22.mp3",
+    "duration": 270.22,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.78,
+        "resumeAt": 14.89
+      },
+      {
+        "start": 14.89,
+        "end": 28.93,
+        "resumeAt": 73.97
+      },
+      {
+        "start": 73.97,
+        "end": 75.9,
+        "resumeAt": 78.01
+      },
+      {
+        "start": 78.01,
+        "end": 93.78,
+        "resumeAt": 138.81
+      },
+      {
+        "start": 138.81,
+        "end": 140.75,
+        "resumeAt": 142.84
+      },
+      {
+        "start": 142.84,
+        "end": 158.28,
+        "resumeAt": 203.31
+      },
+      {
+        "start": 203.31,
+        "end": 205.25,
+        "resumeAt": 207.36
+      },
+      {
+        "start": 207.36,
+        "end": 221.18,
+        "resumeAt": 266.21
+      },
+      {
+        "start": 266.21,
+        "end": 268.14,
+        "resumeAt": 270.21
+      }
+    ]
+  },
+  "T2_22_05_질문&모범답안": {
+    "file": "task2/topic/environment/T2_22_05_질문&모범답안.mp3",
+    "duration": 61.32,
+    "segments": [
+      {
+        "start": 0,
+        "end": 59.19,
+        "resumeAt": 61.31
+      }
+    ]
+  },
+  "T2_22_06_질문&모범답안": {
+    "file": "task2/topic/environment/T2_22_06_질문&모범답안.mp3",
+    "duration": 62.96,
+    "segments": [
+      {
+        "start": 0,
+        "end": 62.96,
+        "resumeAt": 62.96
+      }
+    ]
+  },
+  "T2_22_07_질문&모범답안": {
+    "file": "task2/topic/environment/T2_22_07_질문&모범답안.mp3",
+    "duration": 62.26,
+    "segments": [
+      {
+        "start": 0,
+        "end": 62.26,
+        "resumeAt": 62.26
+      }
+    ]
+  },
+  "T2_22_08_질문&모범답안": {
+    "file": "task2/topic/environment/T2_22_08_질문&모범답안.mp3",
+    "duration": 60.79,
+    "segments": [
+      {
+        "start": 0,
+        "end": 57.27,
+        "resumeAt": 60.79
+      }
+    ]
+  },
+  "T2_23": {
+    "file": "task2/topic/environment/T2_23.mp3",
+    "duration": 267.63,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.12,
+        "resumeAt": 14.29
+      },
+      {
+        "start": 14.29,
+        "end": 30.32,
+        "resumeAt": 75.35
+      },
+      {
+        "start": 75.35,
+        "end": 77.28,
+        "resumeAt": 79.45
+      },
+      {
+        "start": 79.45,
+        "end": 93.45,
+        "resumeAt": 138.48
+      },
+      {
+        "start": 138.48,
+        "end": 140.42,
+        "resumeAt": 142.66
+      },
+      {
+        "start": 142.66,
+        "end": 155.66,
+        "resumeAt": 200.69
+      },
+      {
+        "start": 200.69,
+        "end": 202.63,
+        "resumeAt": 204.84
+      },
+      {
+        "start": 204.84,
+        "end": 218.6,
+        "resumeAt": 263.64
+      },
+      {
+        "start": 263.64,
+        "end": 265.57,
+        "resumeAt": 267.62
+      }
+    ]
+  },
+  "T2_23_09_질문&모범답안": {
+    "file": "task2/topic/environment/T2_23_09_질문&모범답안.mp3",
+    "duration": 62.86,
+    "segments": [
+      {
+        "start": 0,
+        "end": 59.58,
+        "resumeAt": 62.85
+      }
+    ]
+  },
+  "T2_23_10_질문&모범답안": {
+    "file": "task2/topic/environment/T2_23_10_질문&모범답안.mp3",
+    "duration": 61.34,
+    "segments": [
+      {
+        "start": 0,
+        "end": 56.68,
+        "resumeAt": 61.34
+      }
+    ]
+  },
+  "T2_23_11_질문&모범답안": {
+    "file": "task2/topic/environment/T2_23_11_질문&모범답안.mp3",
+    "duration": 60.19,
+    "segments": [
+      {
+        "start": 0,
+        "end": 55.41,
+        "resumeAt": 60.19
+      }
+    ]
+  },
+  "T2_23_12_질문&모범답안": {
+    "file": "task2/topic/environment/T2_23_12_질문&모범답안.mp3",
+    "duration": 60.46,
+    "segments": [
+      {
+        "start": 0,
+        "end": 55.42,
+        "resumeAt": 60.45
+      }
+    ]
+  },
+  "T2_24": {
+    "file": "task2/topic/environment/T2_24.mp3",
+    "duration": 274.03,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.27,
+        "resumeAt": 15.37
+      },
+      {
+        "start": 15.37,
+        "end": 32.23,
+        "resumeAt": 77.26
+      },
+      {
+        "start": 77.26,
+        "end": 79.2,
+        "resumeAt": 81.33
+      },
+      {
+        "start": 81.33,
+        "end": 91.75,
+        "resumeAt": 136.78
+      },
+      {
+        "start": 136.78,
+        "end": 138.71,
+        "resumeAt": 140.87
+      },
+      {
+        "start": 140.87,
+        "end": 156.11,
+        "resumeAt": 201.14
+      },
+      {
+        "start": 201.14,
+        "end": 203.08,
+        "resumeAt": 205.41
+      },
+      {
+        "start": 205.41,
+        "end": 225.0,
+        "resumeAt": 270.03
+      },
+      {
+        "start": 270.03,
+        "end": 271.96,
+        "resumeAt": 274.02
+      }
+    ]
+  },
+  "T2_24_13_질문&모범답안": {
+    "file": "task2/topic/environment/T2_24_13_질문&모범답안.mp3",
+    "duration": 63.98,
+    "segments": [
+      {
+        "start": 0,
+        "end": 60.11,
+        "resumeAt": 63.97
+      }
+    ]
+  },
+  "T2_24_14_질문&모범답안": {
+    "file": "task2/topic/environment/T2_24_14_질문&모범답안.mp3",
+    "duration": 57.48,
+    "segments": [
+      {
+        "start": 0,
+        "end": 50.48,
+        "resumeAt": 57.47
+      }
+    ]
+  },
+  "T2_24_15_질문&모범답안": {
+    "file": "task2/topic/environment/T2_24_15_질문&모범답안.mp3",
+    "duration": 63.07,
+    "segments": [
+      {
+        "start": 0,
+        "end": 60.8,
+        "resumeAt": 63.06
+      }
+    ]
+  },
+  "T2_24_16_질문&모범답안": {
+    "file": "task2/topic/environment/T2_24_16_질문&모범답안.mp3",
+    "duration": 66.28,
+    "segments": [
+      {
+        "start": 0,
+        "end": 66.28,
+        "resumeAt": 66.28
+      }
+    ]
+  },
+  "T2_37": {
+    "file": "task2/topic/leisure/T2_37.mp3",
+    "duration": 292.53,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.3,
+        "resumeAt": 14.55
+      },
+      {
+        "start": 14.55,
+        "end": 34.41,
+        "resumeAt": 79.43
+      },
+      {
+        "start": 79.43,
+        "end": 81.37,
+        "resumeAt": 84.05
+      },
+      {
+        "start": 84.05,
+        "end": 100.37,
+        "resumeAt": 145.4
+      },
+      {
+        "start": 145.4,
+        "end": 147.34,
+        "resumeAt": 149.87
+      },
+      {
+        "start": 149.87,
+        "end": 172.75,
+        "resumeAt": 217.78
+      },
+      {
+        "start": 217.78,
+        "end": 219.72,
+        "resumeAt": 222.23
+      },
+      {
+        "start": 222.23,
+        "end": 243.08,
+        "resumeAt": 288.11
+      },
+      {
+        "start": 288.11,
+        "end": 290.05,
+        "resumeAt": 292.52
+      }
+    ]
+  },
+  "T2_37_01_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_37_01_질문&모범답안.mp3",
+    "duration": 65.55,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.55,
+        "resumeAt": 65.55
+      }
+    ]
+  },
+  "T2_37_02_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_37_02_질문&모범답안.mp3",
+    "duration": 62.13,
+    "segments": [
+      {
+        "start": 0,
+        "end": 62.13,
+        "resumeAt": 62.13
+      }
+    ]
+  },
+  "T2_37_03_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_37_03_질문&모범답안.mp3",
+    "duration": 68.84,
+    "segments": [
+      {
+        "start": 0,
+        "end": 68.84,
+        "resumeAt": 68.84
+      }
+    ]
+  },
+  "T2_37_04_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_37_04_질문&모범답안.mp3",
+    "duration": 67.51,
+    "segments": [
+      {
+        "start": 0,
+        "end": 67.51,
+        "resumeAt": 67.51
+      }
+    ]
+  },
+  "T2_38": {
+    "file": "task2/topic/leisure/T2_38.mp3",
+    "duration": 284.22,
+    "segments": [
+      {
+        "start": 0,
+        "end": 10.91,
+        "resumeAt": 13.01
+      },
+      {
+        "start": 13.01,
+        "end": 28.43,
+        "resumeAt": 73.47
+      },
+      {
+        "start": 73.47,
+        "end": 75.4,
+        "resumeAt": 77.58
+      },
+      {
+        "start": 77.58,
+        "end": 96.81,
+        "resumeAt": 141.85
+      },
+      {
+        "start": 141.85,
+        "end": 143.78,
+        "resumeAt": 145.86
+      },
+      {
+        "start": 145.86,
+        "end": 168.47,
+        "resumeAt": 213.5
+      },
+      {
+        "start": 213.5,
+        "end": 215.43,
+        "resumeAt": 217.54
+      },
+      {
+        "start": 217.54,
+        "end": 235.18,
+        "resumeAt": 280.22
+      },
+      {
+        "start": 280.22,
+        "end": 282.15,
+        "resumeAt": 284.21
+      }
+    ]
+  },
+  "T2_38_05_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_38_05_질문&모범답안.mp3",
+    "duration": 62.36,
+    "segments": [
+      {
+        "start": 0,
+        "end": 57.1,
+        "resumeAt": 62.35
+      }
+    ]
+  },
+  "T2_38_06_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_38_06_질문&모범답안.mp3",
+    "duration": 66.2,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.92,
+        "resumeAt": 66.19
+      }
+    ]
+  },
+  "T2_38_07_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_38_07_질문&모범답안.mp3",
+    "duration": 69.57,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.19,
+        "resumeAt": 69.56
+      }
+    ]
+  },
+  "T2_38_08_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_38_08_질문&모범답안.mp3",
+    "duration": 64.61,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.08,
+        "resumeAt": 64.6
+      }
+    ]
+  },
+  "T2_39": {
+    "file": "task2/topic/leisure/T2_39.mp3",
+    "duration": 271.42,
+    "segments": [
+      {
+        "start": 0,
+        "end": 11.8,
+        "resumeAt": 14.55
+      },
+      {
+        "start": 14.55,
+        "end": 24.94,
+        "resumeAt": 69.97
+      },
+      {
+        "start": 69.97,
+        "end": 71.9,
+        "resumeAt": 74.63
+      },
+      {
+        "start": 74.63,
+        "end": 91.04,
+        "resumeAt": 136.07
+      },
+      {
+        "start": 136.07,
+        "end": 138.01,
+        "resumeAt": 140.79
+      },
+      {
+        "start": 140.79,
+        "end": 157.81,
+        "resumeAt": 202.84
+      },
+      {
+        "start": 202.84,
+        "end": 204.78,
+        "resumeAt": 207.51
+      },
+      {
+        "start": 207.51,
+        "end": 221.79,
+        "resumeAt": 266.82
+      },
+      {
+        "start": 266.82,
+        "end": 268.76,
+        "resumeAt": 271.41
+      }
+    ]
+  },
+  "T2_39_09_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_39_09_질문&모범답안.mp3",
+    "duration": 56.3,
+    "segments": [
+      {
+        "start": 0,
+        "end": 53.95,
+        "resumeAt": 56.29
+      }
+    ]
+  },
+  "T2_39_10_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_39_10_질문&모범답안.mp3",
+    "duration": 62.0,
+    "segments": [
+      {
+        "start": 0,
+        "end": 62.0,
+        "resumeAt": 62.0
+      }
+    ]
+  },
+  "T2_39_11_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_39_11_질문&모범답안.mp3",
+    "duration": 62.55,
+    "segments": [
+      {
+        "start": 0,
+        "end": 62.55,
+        "resumeAt": 62.55
+      }
+    ]
+  },
+  "T2_39_12_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_39_12_질문&모범답안.mp3",
+    "duration": 59.88,
+    "segments": [
+      {
+        "start": 0,
+        "end": 56.8,
+        "resumeAt": 59.87
+      }
+    ]
+  },
+  "T2_40": {
+    "file": "task2/topic/leisure/T2_40.mp3",
+    "duration": 266.35,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.17,
+        "resumeAt": 14.2
+      },
+      {
+        "start": 14.2,
+        "end": 29.43,
+        "resumeAt": 74.46
+      },
+      {
+        "start": 74.46,
+        "end": 76.4,
+        "resumeAt": 78.64
+      },
+      {
+        "start": 78.64,
+        "end": 89.09,
+        "resumeAt": 134.12
+      },
+      {
+        "start": 134.12,
+        "end": 136.05,
+        "resumeAt": 138.14
+      },
+      {
+        "start": 138.14,
+        "end": 153.34,
+        "resumeAt": 198.37
+      },
+      {
+        "start": 198.37,
+        "end": 200.3,
+        "resumeAt": 202.45
+      },
+      {
+        "start": 202.45,
+        "end": 217.32,
+        "resumeAt": 262.35
+      },
+      {
+        "start": 262.35,
+        "end": 264.29,
+        "resumeAt": 266.34
+      }
+    ]
+  },
+  "T2_40_13_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_40_13_질문&모범답안.mp3",
+    "duration": 61.89,
+    "segments": [
+      {
+        "start": 0,
+        "end": 55.91,
+        "resumeAt": 61.88
+      }
+    ]
+  },
+  "T2_40_14_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_40_14_질문&모범답안.mp3",
+    "duration": 57.27,
+    "segments": [
+      {
+        "start": 0,
+        "end": 48.19,
+        "resumeAt": 57.26
+      }
+    ]
+  },
+  "T2_40_15_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_40_15_질문&모범답안.mp3",
+    "duration": 62.31,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.39,
+        "resumeAt": 62.3
+      }
+    ]
+  },
+  "T2_40_16_질문&모범답안": {
+    "file": "task2/topic/leisure/T2_40_16_질문&모범답안.mp3",
+    "duration": 62.1,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.47,
+        "resumeAt": 62.09
+      }
+    ]
+  },
+  "T2_25": {
+    "file": "task2/topic/science/T2_25.mp3",
+    "duration": 286.15,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.89,
+        "resumeAt": 15.14
+      },
+      {
+        "start": 15.14,
+        "end": 37.01,
+        "resumeAt": 82.05
+      },
+      {
+        "start": 82.05,
+        "end": 83.98,
+        "resumeAt": 86.18
+      },
+      {
+        "start": 86.18,
+        "end": 100.06,
+        "resumeAt": 145.1
+      },
+      {
+        "start": 145.1,
+        "end": 147.03,
+        "resumeAt": 149.18
+      },
+      {
+        "start": 149.18,
+        "end": 167.92,
+        "resumeAt": 212.95
+      },
+      {
+        "start": 212.95,
+        "end": 214.89,
+        "resumeAt": 217.0
+      },
+      {
+        "start": 217.0,
+        "end": 237.1,
+        "resumeAt": 282.13
+      },
+      {
+        "start": 282.13,
+        "end": 284.07,
+        "resumeAt": 286.15
+      }
+    ]
+  },
+  "T2_25_01_질문&모범답안": {
+    "file": "task2/topic/science/T2_25_01_질문&모범답안.mp3",
+    "duration": 68.81,
+    "segments": [
+      {
+        "start": 0,
+        "end": 68.81,
+        "resumeAt": 68.81
+      }
+    ]
+  },
+  "T2_25_02_질문&모범답안": {
+    "file": "task2/topic/science/T2_25_02_질문&모범답안.mp3",
+    "duration": 61.47,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.47,
+        "resumeAt": 61.47
+      }
+    ]
+  },
+  "T2_25_03_질문&모범답안": {
+    "file": "task2/topic/science/T2_25_03_질문&모범답안.mp3",
+    "duration": 65.86,
+    "segments": [
+      {
+        "start": 0,
+        "end": 62.82,
+        "resumeAt": 65.85
+      }
+    ]
+  },
+  "T2_25_04_질문&모범답안": {
+    "file": "task2/topic/science/T2_25_04_질문&모범답안.mp3",
+    "duration": 67.64,
+    "segments": [
+      {
+        "start": 0,
+        "end": 67.64,
+        "resumeAt": 67.64
+      }
+    ]
+  },
+  "T2_26": {
+    "file": "task2/topic/science/T2_26.mp3",
+    "duration": 276.96,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.12,
+        "resumeAt": 15.21
+      },
+      {
+        "start": 15.21,
+        "end": 31.46,
+        "resumeAt": 76.49
+      },
+      {
+        "start": 76.49,
+        "end": 78.42,
+        "resumeAt": 80.6
+      },
+      {
+        "start": 80.6,
+        "end": 100.05,
+        "resumeAt": 145.08
+      },
+      {
+        "start": 145.08,
+        "end": 147.02,
+        "resumeAt": 149.1
+      },
+      {
+        "start": 149.1,
+        "end": 166.98,
+        "resumeAt": 212.01
+      },
+      {
+        "start": 212.01,
+        "end": 213.95,
+        "resumeAt": 216.09
+      },
+      {
+        "start": 216.09,
+        "end": 227.93,
+        "resumeAt": 272.96
+      },
+      {
+        "start": 272.96,
+        "end": 274.89,
+        "resumeAt": 276.95
+      }
+    ]
+  },
+  "T2_26_05_질문&모범답안": {
+    "file": "task2/topic/science/T2_26_05_질문&모범답안.mp3",
+    "duration": 63.35,
+    "segments": [
+      {
+        "start": 0,
+        "end": 63.35,
+        "resumeAt": 63.35
+      }
+    ]
+  },
+  "T2_26_06_질문&모범답안": {
+    "file": "task2/topic/science/T2_26_06_질문&모범답안.mp3",
+    "duration": 66.57,
+    "segments": [
+      {
+        "start": 0,
+        "end": 66.57,
+        "resumeAt": 66.57
+      }
+    ]
+  },
+  "T2_26_07_질문&모범답안": {
+    "file": "task2/topic/science/T2_26_07_질문&모범답안.mp3",
+    "duration": 64.92,
+    "segments": [
+      {
+        "start": 0,
+        "end": 60.96,
+        "resumeAt": 64.91
+      }
+    ]
+  },
+  "T2_26_08_질문&모범답안": {
+    "file": "task2/topic/science/T2_26_08_질문&모범답안.mp3",
+    "duration": 59.41,
+    "segments": [
+      {
+        "start": 0,
+        "end": 59.41,
+        "resumeAt": 59.41
+      }
+    ]
+  },
+  "T2_27": {
+    "file": "task2/topic/science/T2_27.mp3",
+    "duration": 286.21,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.95,
+        "resumeAt": 15.29
+      },
+      {
+        "start": 15.29,
+        "end": 30.27,
+        "resumeAt": 75.3
+      },
+      {
+        "start": 75.3,
+        "end": 77.24,
+        "resumeAt": 79.53
+      },
+      {
+        "start": 79.53,
+        "end": 97.94,
+        "resumeAt": 142.97
+      },
+      {
+        "start": 142.97,
+        "end": 144.91,
+        "resumeAt": 147.18
+      },
+      {
+        "start": 147.18,
+        "end": 165.6,
+        "resumeAt": 210.62
+      },
+      {
+        "start": 210.62,
+        "end": 212.56,
+        "resumeAt": 214.89
+      },
+      {
+        "start": 214.89,
+        "end": 236.99,
+        "resumeAt": 282.02
+      },
+      {
+        "start": 282.02,
+        "end": 283.95,
+        "resumeAt": 286.2
+      }
+    ]
+  },
+  "T2_27_09_질문&모범답안": {
+    "file": "task2/topic/science/T2_27_09_질문&모범답안.mp3",
+    "duration": 61.16,
+    "segments": [
+      {
+        "start": 0,
+        "end": 52.21,
+        "resumeAt": 61.15
+      }
+    ]
+  },
+  "T2_27_10_질문&모범답안": {
+    "file": "task2/topic/science/T2_27_10_질문&모범답안.mp3",
+    "duration": 63.83,
+    "segments": [
+      {
+        "start": 0,
+        "end": 63.83,
+        "resumeAt": 63.83
+      }
+    ]
+  },
+  "T2_27_11_질문&모범답안": {
+    "file": "task2/topic/science/T2_27_11_질문&모범답안.mp3",
+    "duration": 63.64,
+    "segments": [
+      {
+        "start": 0,
+        "end": 60.81,
+        "resumeAt": 63.63
+      }
+    ]
+  },
+  "T2_27_12_질문&모범답안": {
+    "file": "task2/topic/science/T2_27_12_질문&모범답안.mp3",
+    "duration": 67.17,
+    "segments": [
+      {
+        "start": 0,
+        "end": 64.26,
+        "resumeAt": 67.16
+      }
+    ]
+  },
+  "T2_28": {
+    "file": "task2/topic/science/T2_28.mp3",
+    "duration": 293.89,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.15,
+        "resumeAt": 15.24
+      },
+      {
+        "start": 15.24,
+        "end": 34.53,
+        "resumeAt": 79.56
+      },
+      {
+        "start": 79.56,
+        "end": 81.49,
+        "resumeAt": 83.64
+      },
+      {
+        "start": 83.64,
+        "end": 105.84,
+        "resumeAt": 150.88
+      },
+      {
+        "start": 150.88,
+        "end": 152.81,
+        "resumeAt": 155.08
+      },
+      {
+        "start": 155.08,
+        "end": 171.31,
+        "resumeAt": 216.34
+      },
+      {
+        "start": 216.34,
+        "end": 218.28,
+        "resumeAt": 220.41
+      },
+      {
+        "start": 220.41,
+        "end": 244.86,
+        "resumeAt": 289.89
+      },
+      {
+        "start": 289.89,
+        "end": 291.82,
+        "resumeAt": 293.88
+      }
+    ]
+  },
+  "T2_28_13_질문&모범답안": {
+    "file": "task2/topic/science/T2_28_13_질문&모범답안.mp3",
+    "duration": 66.33,
+    "segments": [
+      {
+        "start": 0,
+        "end": 63.98,
+        "resumeAt": 66.32
+      }
+    ]
+  },
+  "T2_28_14_질문&모범답안": {
+    "file": "task2/topic/science/T2_28_14_질문&모범답안.mp3",
+    "duration": 69.36,
+    "segments": [
+      {
+        "start": 0,
+        "end": 66.32,
+        "resumeAt": 69.36
+      }
+    ]
+  },
+  "T2_28_15_질문&모범답안": {
+    "file": "task2/topic/science/T2_28_15_질문&모범답안.mp3",
+    "duration": 63.22,
+    "segments": [
+      {
+        "start": 0,
+        "end": 63.22,
+        "resumeAt": 63.22
+      }
+    ]
+  },
+  "T2_28_16_질문&모범답안": {
+    "file": "task2/topic/science/T2_28_16_질문&모범답안.mp3",
+    "duration": 71.56,
+    "segments": [
+      {
+        "start": 0,
+        "end": 71.56,
+        "resumeAt": 71.56
+      }
+    ]
+  },
+  "T2_17": {
+    "file": "task2/topic/society/T2_17.mp3",
+    "duration": 276.07,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.62,
+        "resumeAt": 15.78
+      },
+      {
+        "start": 15.78,
+        "end": 34.02,
+        "resumeAt": 79.05
+      },
+      {
+        "start": 79.05,
+        "end": 80.99,
+        "resumeAt": 83.13
+      },
+      {
+        "start": 83.13,
+        "end": 96.23,
+        "resumeAt": 141.27
+      },
+      {
+        "start": 141.27,
+        "end": 143.2,
+        "resumeAt": 145.48
+      },
+      {
+        "start": 145.48,
+        "end": 160.54,
+        "resumeAt": 205.57
+      },
+      {
+        "start": 205.57,
+        "end": 207.5,
+        "resumeAt": 209.67
+      },
+      {
+        "start": 209.67,
+        "end": 227.04,
+        "resumeAt": 272.07
+      },
+      {
+        "start": 272.07,
+        "end": 274.01,
+        "resumeAt": 276.06
+      }
+    ]
+  },
+  "T2_17_01_질문&모범답안": {
+    "file": "task2/topic/society/T2_17_01_질문&모범답안.mp3",
+    "duration": 64.3,
+    "segments": [
+      {
+        "start": 0,
+        "end": 56.6,
+        "resumeAt": 64.29
+      }
+    ]
+  },
+  "T2_17_02_질문&모범답안": {
+    "file": "task2/topic/society/T2_17_02_질문&모범답안.mp3",
+    "duration": 59.02,
+    "segments": [
+      {
+        "start": 0,
+        "end": 59.02,
+        "resumeAt": 59.02
+      }
+    ]
+  },
+  "T2_17_03_질문&모범답안": {
+    "file": "task2/topic/society/T2_17_03_질문&모범답안.mp3",
+    "duration": 61.27,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.27,
+        "resumeAt": 61.27
+      }
+    ]
+  },
+  "T2_17_04_질문&모범답안": {
+    "file": "task2/topic/society/T2_17_04_질문&모범답안.mp3",
+    "duration": 64.45,
+    "segments": [
+      {
+        "start": 0,
+        "end": 64.45,
+        "resumeAt": 64.45
+      }
+    ]
+  },
+  "T2_18": {
+    "file": "task2/topic/society/T2_18.mp3",
+    "duration": 279.0,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.32,
+        "resumeAt": 15.39
+      },
+      {
+        "start": 15.39,
+        "end": 32.25,
+        "resumeAt": 77.28
+      },
+      {
+        "start": 77.28,
+        "end": 79.21,
+        "resumeAt": 81.31
+      },
+      {
+        "start": 81.31,
+        "end": 95.88,
+        "resumeAt": 140.91
+      },
+      {
+        "start": 140.91,
+        "end": 142.84,
+        "resumeAt": 144.95
+      },
+      {
+        "start": 144.95,
+        "end": 161.18,
+        "resumeAt": 206.21
+      },
+      {
+        "start": 206.21,
+        "end": 208.15,
+        "resumeAt": 210.28
+      },
+      {
+        "start": 210.28,
+        "end": 229.95,
+        "resumeAt": 274.99
+      },
+      {
+        "start": 274.99,
+        "end": 276.92,
+        "resumeAt": 278.99
+      }
+    ]
+  },
+  "T2_18_05_질문&모범답안": {
+    "file": "task2/topic/society/T2_18_05_질문&모범답안.mp3",
+    "duration": 63.07,
+    "segments": [
+      {
+        "start": 0,
+        "end": 57.06,
+        "resumeAt": 63.06
+      }
+    ]
+  },
+  "T2_18_06_질문&모범답안": {
+    "file": "task2/topic/society/T2_18_06_질문&모범답안.mp3",
+    "duration": 60.79,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.76,
+        "resumeAt": 60.79
+      }
+    ]
+  },
+  "T2_18_07_질문&모범답안": {
+    "file": "task2/topic/society/T2_18_07_질문&모범답안.mp3",
+    "duration": 62.88,
+    "segments": [
+      {
+        "start": 0,
+        "end": 62.88,
+        "resumeAt": 62.88
+      }
+    ]
+  },
+  "T2_18_08_질문&모범답안": {
+    "file": "task2/topic/society/T2_18_08_질문&모범답안.mp3",
+    "duration": 65.71,
+    "segments": [
+      {
+        "start": 0,
+        "end": 65.71,
+        "resumeAt": 65.71
+      }
+    ]
+  },
+  "T2_19": {
+    "file": "task2/topic/society/T2_19.mp3",
+    "duration": 279.96,
+    "segments": [
+      {
+        "start": 0,
+        "end": 13.19,
+        "resumeAt": 15.41
+      },
+      {
+        "start": 15.41,
+        "end": 30.72,
+        "resumeAt": 75.76
+      },
+      {
+        "start": 75.76,
+        "end": 77.69,
+        "resumeAt": 79.84
+      },
+      {
+        "start": 79.84,
+        "end": 94.65,
+        "resumeAt": 139.68
+      },
+      {
+        "start": 139.68,
+        "end": 141.61,
+        "resumeAt": 143.82
+      },
+      {
+        "start": 143.82,
+        "end": 160.44,
+        "resumeAt": 205.47
+      },
+      {
+        "start": 205.47,
+        "end": 207.4,
+        "resumeAt": 209.79
+      },
+      {
+        "start": 209.79,
+        "end": 230.91,
+        "resumeAt": 275.94
+      },
+      {
+        "start": 275.94,
+        "end": 277.87,
+        "resumeAt": 279.95
+      }
+    ]
+  },
+  "T2_19_09_질문&모범답안": {
+    "file": "task2/topic/society/T2_19_09_질문&모범답안.mp3",
+    "duration": 61.74,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.74,
+        "resumeAt": 61.74
+      }
+    ]
+  },
+  "T2_19_10_질문&모범답안": {
+    "file": "task2/topic/society/T2_19_10_질문&모범답안.mp3",
+    "duration": 61.53,
+    "segments": [
+      {
+        "start": 0,
+        "end": 61.53,
+        "resumeAt": 61.53
+      }
+    ]
+  },
+  "T2_19_11_질문&모범답안": {
+    "file": "task2/topic/society/T2_19_11_질문&모범답안.mp3",
+    "duration": 63.51,
+    "segments": [
+      {
+        "start": 0,
+        "end": 63.51,
+        "resumeAt": 63.51
+      }
+    ]
+  },
+  "T2_19_12_질문&모범답안": {
+    "file": "task2/topic/society/T2_19_12_질문&모범답안.mp3",
+    "duration": 68.5,
+    "segments": [
+      {
+        "start": 0,
+        "end": 68.5,
+        "resumeAt": 68.5
+      }
+    ]
+  },
+  "T2_20": {
+    "file": "task2/topic/society/T2_20.mp3",
+    "duration": 273.8,
+    "segments": [
+      {
+        "start": 0,
+        "end": 12.55,
+        "resumeAt": 14.72
+      },
+      {
+        "start": 14.72,
+        "end": 27.28,
+        "resumeAt": 72.32
+      },
+      {
+        "start": 72.32,
+        "end": 74.25,
+        "resumeAt": 76.55
+      },
+      {
+        "start": 76.55,
+        "end": 92.89,
+        "resumeAt": 137.92
+      },
+      {
+        "start": 137.92,
+        "end": 139.85,
+        "resumeAt": 142.13
+      },
+      {
+        "start": 142.13,
+        "end": 157.02,
+        "resumeAt": 202.06
+      },
+      {
+        "start": 202.06,
+        "end": 203.99,
+        "resumeAt": 206.13
+      },
+      {
+        "start": 206.13,
+        "end": 224.75,
+        "resumeAt": 269.78
+      },
+      {
+        "start": 269.78,
+        "end": 271.71,
+        "resumeAt": 273.79
+      }
+    ]
+  },
+  "T2_20_13_질문&모범답안": {
+    "file": "task2/topic/society/T2_20_13_질문&모범답안.mp3",
+    "duration": 58.52,
+    "segments": [
+      {
+        "start": 0,
+        "end": 52.61,
+        "resumeAt": 58.51
+      }
+    ]
+  },
+  "T2_20_14_질문&모범답안": {
+    "file": "task2/topic/society/T2_20_14_질문&모범답안.mp3",
+    "duration": 63.02,
+    "segments": [
+      {
+        "start": 0,
+        "end": 58.92,
+        "resumeAt": 63.01
+      }
+    ]
+  },
+  "T2_20_15_질문&모범답안": {
+    "file": "task2/topic/society/T2_20_15_질문&모범답안.mp3",
+    "duration": 61.08,
+    "segments": [
+      {
+        "start": 0,
+        "end": 51.52,
+        "resumeAt": 61.07
+      }
+    ]
+  },
+  "T2_20_16_질문&모범답안": {
+    "file": "task2/topic/society/T2_20_16_질문&모범답안.mp3",
+    "duration": 64.84,
+    "segments": [
+      {
+        "start": 0,
+        "end": 64.84,
+        "resumeAt": 64.84
+      }
+    ]
+  }
+}

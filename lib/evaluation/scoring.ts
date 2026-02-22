@@ -6,6 +6,7 @@ export function evaluateAttempt(
   exerciseTitle: string,
   recordingDuration: number,
   transcript: string,
+  segmentIndex: number = 0,
 ): PracticeAttempt {
   const wordCount = transcript.trim().split(/\s+/).filter(Boolean).length;
   
@@ -49,6 +50,7 @@ export function evaluateAttempt(
     id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
     exerciseId,
     exerciseTitle,
+    segmentIndex,
     timestamp: Date.now(),
     recordingDuration,
     userTranscript: transcript,

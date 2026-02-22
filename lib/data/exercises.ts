@@ -1,7 +1,14 @@
-import { Exercise, BLOB_BASE } from '../types';
+import { Exercise, AudioSegment, BLOB_BASE } from '../types';
+import markersData from './markers.json';
+
+const markers: Record<string, { duration: number; segments: AudioSegment[] }> = markersData as Record<string, { file: string; duration: number; segments: AudioSegment[] }>;
 
 function makeUrl(path: string): string {
   return `${BLOB_BASE}/${path}`;
+}
+
+function getMarker(id: string): { duration: number; segments: AudioSegment[] } {
+  return markers[id] || { duration: 0, segments: [] };
 }
 
 function makeQaClips(basePath: string, prefix: string, nums: number[]): Exercise['qaClips'] {
@@ -18,11 +25,13 @@ const diagnostic: Exercise[] = [
     id: 'DT_1', title: 'Diagnostic Test 1', titleKo: '진단 테스트 1',
     taskType: 'diagnostic', category: 'Diagnostic', categoryKo: '진단 테스트',
     difficulty: 'intermediate', audioUrl: makeUrl('diagnostic/DT_1.mp3'),
+    ...getMarker('DT_1'),
   },
   {
     id: 'DT_2', title: 'Diagnostic Test 2', titleKo: '진단 테스트 2',
     taskType: 'diagnostic', category: 'Diagnostic', categoryKo: '진단 테스트',
     difficulty: 'intermediate', audioUrl: makeUrl('diagnostic/DT_2.mp3'),
+    ...getMarker('DT_2'),
     qaClips: [8, 9, 10, 11].map(n => ({
       id: `DT_2_${String(n).padStart(2, '0')}`,
       label: `Q${n}`,
@@ -33,10 +42,12 @@ const diagnostic: Exercise[] = [
 
 // ============ TASK 1: Listen & Repeat ============
 function makeT1(id: number, category: string, categoryKo: string, path: string, difficulty: Exercise['difficulty']): Exercise {
+  const exId = `T1_${id}`;
   return {
-    id: `T1_${id}`, title: `Task 1 - #${id}`, titleKo: `Task 1 - ${id}번`,
+    id: exId, title: `Task 1 - #${id}`, titleKo: `Task 1 - ${id}번`,
     taskType: 'task1', category, categoryKo, difficulty,
     audioUrl: makeUrl(`${path}/T1_${id}.mp3`),
+    ...getMarker(exId),
   };
 }
 
@@ -64,14 +75,17 @@ const task1PowerTest: Exercise[] = [1, 2].map(n => ({
   id: `T1_PT_${n}`, title: `Power Test ${n}`, titleKo: `파워 테스트 ${n}`,
   taskType: 'task1' as const, category: 'Power Test', categoryKo: '파워 테스트',
   difficulty: 'advanced' as const, audioUrl: makeUrl(`task1/power-test/PT_${n}.mp3`),
+  ...getMarker(`PT_${n}`),
 }));
 
 // ============ TASK 2: Interview ============
 function makeT2(id: number, category: string, categoryKo: string, path: string, difficulty: Exercise['difficulty'], qaNums?: number[]): Exercise {
+  const exId = `T2_${id}`;
   const ex: Exercise = {
-    id: `T2_${id}`, title: `Task 2 - #${id}`, titleKo: `Task 2 - ${id}번`,
+    id: exId, title: `Task 2 - #${id}`, titleKo: `Task 2 - ${id}번`,
     taskType: 'task2', category, categoryKo, difficulty,
     audioUrl: makeUrl(`${path}/T2_${id}.mp3`),
+    ...getMarker(exId),
   };
   if (qaNums) {
     ex.qaClips = qaNums.map(n => ({
@@ -117,6 +131,7 @@ const task2PowerTest: Exercise[] = [1, 2].map(n => ({
   id: `T2_PT_${n}`, title: `Power Test ${n}`, titleKo: `파워 테스트 ${n}`,
   taskType: 'task2' as const, category: 'Power Test', categoryKo: '파워 테스트',
   difficulty: 'advanced' as const, audioUrl: makeUrl(`task2/power-test/PT_${n}.mp3`),
+  ...getMarker(`PT_${n}`),
   qaClips: [1, 2, 3, 4].map(q => ({
     id: `T2_PT_${n}_${String(q).padStart(2, '0')}`,
     label: `Q${q}`,
@@ -130,11 +145,13 @@ const actualTest: Exercise[] = [
     id: 'AT_1', title: 'Actual Test 1-1', titleKo: '실전 모의고사 1-1',
     taskType: 'actual-test', category: 'Actual Test 1', categoryKo: '실전 모의 1',
     difficulty: 'advanced', audioUrl: makeUrl('actual-test/test1/AT_1.mp3'),
+    ...getMarker('AT_1'),
   },
   {
     id: 'AT_2', title: 'Actual Test 1-2', titleKo: '실전 모의고사 1-2',
     taskType: 'actual-test', category: 'Actual Test 1', categoryKo: '실전 모의 1',
     difficulty: 'advanced', audioUrl: makeUrl('actual-test/test1/AT_2.mp3'),
+    ...getMarker('AT_2'),
     qaClips: [8, 9, 10, 11].map(n => ({
       id: `AT_2_${String(n).padStart(2, '0')}`,
       label: `Q${n}`,
@@ -145,11 +162,13 @@ const actualTest: Exercise[] = [
     id: 'AT_3', title: 'Actual Test 2-1', titleKo: '실전 모의고사 2-1',
     taskType: 'actual-test', category: 'Actual Test 2', categoryKo: '실전 모의 2',
     difficulty: 'advanced', audioUrl: makeUrl('actual-test/test2/AT_3.mp3'),
+    ...getMarker('AT_3'),
   },
   {
     id: 'AT_4', title: 'Actual Test 2-2', titleKo: '실전 모의고사 2-2',
     taskType: 'actual-test', category: 'Actual Test 2', categoryKo: '실전 모의 2',
     difficulty: 'advanced', audioUrl: makeUrl('actual-test/test2/AT_4.mp3'),
+    ...getMarker('AT_4'),
     qaClips: [8, 9, 10, 11].map(n => ({
       id: `AT_4_${String(n).padStart(2, '0')}`,
       label: `Q${n}`,

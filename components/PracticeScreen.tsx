@@ -1,237 +1,287 @@
 'use client';
 
 import { useState, useRef, useCallback, useEffect } from 'react';
-import { Exercise, PracticeState } from '@/lib/types';
+import { Exercise, PlayerState, AudioSegment } from '@/lib/types';
 import { playBeep } from '@/lib/audio/beep';
 import { AudioRecorder } from '@/lib/audio/recorder';
 import { evaluateAttempt } from '@/lib/evaluation/scoring';
-import { saveAttempt, getAttemptsForExercise } from '@/lib/storage/localStorage';
+import { saveAttempt } from '@/lib/storage/localStorage';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBack: () => void }) {
-  const [state, setState] = useState<PracticeState>('idle');
-  const [countdown, setCountdown] = useState(3);
+  const [state, setState] = useState<PlayerState>('idle');
+  const [currentTime, setCurrentTime] = useState(0);
+  const [activeSegment, setActiveSegment] = useState(-1);
   const [recordingTime, setRecordingTime] = useState(0);
-  const [result, setResult] = useState<ReturnType<typeof evaluateAttempt> | null>(null);
-  const [audioProgress, setAudioProgress] = useState(0);
-  const [attempts, setAttempts] = useState(() => getAttemptsForExercise(exercise.id));
+  const [lastResult, setLastResult] = useState<ReturnType<typeof evaluateAttempt> | null>(null);
+  const [segmentScores, setSegmentScores] = useState<Record<number, number>>({});
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const recorderRef = useRef<AudioRecorder>(new AudioRecorder());
-  const recordingTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const recorderRef = useRef(new AudioRecorder());
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const startTimeRef = useRef(0);
+  const checkIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  // Clean up on unmount
+  const segments = exercise.segments;
+
+  // Cleanup
   useEffect(() => {
     return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current = null;
-      }
-      if (recordingTimerRef.current) clearInterval(recordingTimerRef.current);
+      audioRef.current?.pause();
+      if (timerRef.current) clearInterval(timerRef.current);
+      if (checkIntervalRef.current) clearInterval(checkIntervalRef.current);
     };
   }, []);
 
-  const startPractice = useCallback(async () => {
+  // Find which segment we're in based on current time
+  const findSegmentIndex = useCallback((time: number): number => {
+    for (let i = 0; i < segments.length; i++) {
+      if (time >= segments[i].start && time < segments[i].end + 0.5) return i;
+    }
+    return -1;
+  }, [segments]);
+
+  // Start or resume playback
+  const play = useCallback((fromTime?: number) => {
+    if (!audioRef.current) {
+      audioRef.current = new Audio(exercise.audioUrl);
+      audioRef.current.preload = 'auto';
+    }
+    const audio = audioRef.current;
+    if (fromTime !== undefined) audio.currentTime = fromTime;
+
     setState('playing');
-    setAudioProgress(0);
 
-    const audio = new Audio(exercise.audioUrl);
-    audioRef.current = audio;
+    // Monitor playback for auto-pause at segment boundaries
+    if (checkIntervalRef.current) clearInterval(checkIntervalRef.current);
+    checkIntervalRef.current = setInterval(() => {
+      const t = audio.currentTime;
+      setCurrentTime(t);
+      const segIdx = findSegmentIndex(t);
+      if (segIdx >= 0) setActiveSegment(segIdx);
 
-    audio.addEventListener('timeupdate', () => {
-      if (audio.duration) {
-        setAudioProgress((audio.currentTime / audio.duration) * 100);
+      // Check if we've hit a segment end point
+      for (let i = 0; i < segments.length; i++) {
+        const seg = segments[i];
+        if (t >= seg.end - 0.05 && t < seg.end + 0.3) {
+          // Check if this segment hasn't been paused at yet
+          if (state === 'playing' || audio.paused === false) {
+            audio.pause();
+            setActiveSegment(i);
+            setState('paused');
+            if (checkIntervalRef.current) clearInterval(checkIntervalRef.current);
+            return;
+          }
+        }
       }
-    });
 
-    audio.addEventListener('ended', async () => {
-      // 3 second countdown
-      setState('waiting');
-      for (let i = 3; i > 0; i--) {
-        setCountdown(i);
-        await new Promise(r => setTimeout(r, 1000));
+      // Check if audio ended
+      if (audio.ended) {
+        setState('finished');
+        if (checkIntervalRef.current) clearInterval(checkIntervalRef.current);
       }
+    }, 50);
 
-      // Beep
-      setState('beep');
-      await playBeep(800, 0.3);
-      await new Promise(r => setTimeout(r, 200));
+    audio.play().catch(() => setState('idle'));
+  }, [exercise, findSegmentIndex, segments, state]);
 
-      // Start recording
-      setState('recording');
-      setRecordingTime(0);
-      startTimeRef.current = Date.now();
-      try {
-        await recorderRef.current.start();
-        recordingTimerRef.current = setInterval(() => {
-          setRecordingTime((Date.now() - startTimeRef.current) / 1000);
-        }, 100);
-      } catch (err) {
-        console.error('Mic error:', err);
-        setState('idle');
-      }
-    });
-
-    audio.play().catch(err => {
-      console.error('Audio play error:', err);
-      setState('idle');
-    });
-  }, [exercise]);
-
-  const stopRecording = useCallback(async () => {
-    if (recordingTimerRef.current) {
-      clearInterval(recordingTimerRef.current);
-      recordingTimerRef.current = null;
-    }
-
-    setState('analyzing');
-    const duration = (Date.now() - startTimeRef.current) / 1000;
-
-    try {
-      await recorderRef.current.stop();
-    } catch {
-      // ignore
-    }
-
-    // Try STT via Web Speech API
-    let transcript = '';
-    try {
-      const SpeechRecognition = (window as unknown as Record<string, unknown>).SpeechRecognition || 
-        (window as unknown as Record<string, unknown>).webkitSpeechRecognition;
-      if (SpeechRecognition) {
-        // STT not available after recording, use simple estimation
-        transcript = '(speech detected)';
-      }
-    } catch {
-      // no STT
-    }
-
-    // Evaluate
-    const attempt = evaluateAttempt(exercise.id, exercise.titleKo, duration, transcript);
-    saveAttempt(attempt);
-    setResult(attempt);
-    setAttempts(getAttemptsForExercise(exercise.id));
-    setState('result');
-  }, [exercise]);
-
-  const reset = useCallback(() => {
-    setState('idle');
-    setResult(null);
-    setAudioProgress(0);
+  // Start recording at current segment
+  const startRecording = useCallback(async () => {
+    setState('recording');
     setRecordingTime(0);
+    startTimeRef.current = Date.now();
+    
+    await playBeep(800, 0.3);
+    
+    try {
+      await recorderRef.current.start();
+      timerRef.current = setInterval(() => {
+        setRecordingTime((Date.now() - startTimeRef.current) / 1000);
+      }, 100);
+    } catch {
+      setState('paused');
+    }
   }, []);
 
-  const bestScore = attempts.length > 0
-    ? Math.max(...attempts.map(a => a.scores.total))
-    : null;
+  // Stop recording and evaluate
+  const stopRecording = useCallback(async () => {
+    if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
+    
+    const duration = (Date.now() - startTimeRef.current) / 1000;
+    
+    try { await recorderRef.current.stop(); } catch { /* ignore */ }
+
+    const result = evaluateAttempt(exercise.id, exercise.titleKo, duration, '(speech)', activeSegment);
+    saveAttempt(result);
+    setLastResult(result);
+    setSegmentScores(prev => ({ ...prev, [activeSegment]: result.scores.total }));
+    setState('reviewing');
+  }, [exercise, activeSegment]);
+
+  // Continue to next segment
+  const continuePlayback = useCallback(() => {
+    setLastResult(null);
+    const seg = segments[activeSegment];
+    if (seg && seg.resumeAt < exercise.duration - 0.5) {
+      play(seg.resumeAt);
+    } else {
+      setState('finished');
+    }
+  }, [activeSegment, segments, exercise, play]);
+
+  // Skip recording, just continue
+  const skipSegment = useCallback(() => {
+    setLastResult(null);
+    const seg = segments[activeSegment];
+    if (seg && seg.resumeAt < exercise.duration - 0.5) {
+      play(seg.resumeAt);
+    } else {
+      setState('finished');
+    }
+  }, [activeSegment, segments, exercise, play]);
+
+  // Jump to a specific segment
+  const jumpToSegment = useCallback((idx: number) => {
+    setLastResult(null);
+    const seg = segments[idx];
+    if (seg) {
+      setActiveSegment(idx);
+      play(seg.start);
+    }
+  }, [segments, play]);
+
+  // Reset
+  const reset = useCallback(() => {
+    audioRef.current?.pause();
+    if (audioRef.current) audioRef.current.currentTime = 0;
+    setState('idle');
+    setCurrentTime(0);
+    setActiveSegment(-1);
+    setLastResult(null);
+  }, []);
+
+  const progress = exercise.duration > 0 ? (currentTime / exercise.duration) * 100 : 0;
 
   return (
     <div className="h-full flex flex-col">
       {/* Header */}
-      <header className="flex items-center gap-3 px-4 py-3 border-b border-border">
+      <header className="flex items-center gap-3 px-4 py-3 border-b border-border shrink-0">
         <button onClick={onBack} className="p-1 -ml-1">
           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        <div className="min-w-0">
+        <div className="min-w-0 flex-1">
           <h2 className="text-sm font-medium truncate">{exercise.titleKo}</h2>
-          <p className="text-xs text-muted-foreground">{exercise.categoryKo}</p>
+          <p className="text-xs text-muted-foreground">{exercise.categoryKo} · {segments.length}개 구간</p>
         </div>
-        {bestScore !== null && (
-          <span className="ml-auto text-xs text-muted-foreground">최고 {bestScore.toFixed(1)}</span>
-        )}
       </header>
 
+      {/* Timeline bar */}
+      <div className="px-4 py-2 border-b border-border shrink-0">
+        <div className="relative h-8 bg-muted rounded-full overflow-hidden">
+          {/* Progress */}
+          <div className="absolute inset-y-0 left-0 bg-primary/20 transition-all" style={{ width: `${progress}%` }} />
+          
+          {/* Segment markers */}
+          {segments.map((seg, i) => {
+            const left = (seg.end / exercise.duration) * 100;
+            const score = segmentScores[i];
+            return (
+              <button
+                key={i}
+                onClick={() => jumpToSegment(i)}
+                className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 z-10"
+                style={{ left: `${left}%` }}
+                title={`구간 ${i + 1}`}
+              >
+                <div className={`w-3 h-3 rounded-full border-2 transition-all ${
+                  i === activeSegment ? 'border-primary bg-primary scale-125' :
+                  score !== undefined ? (score >= 4 ? 'border-emerald-500 bg-emerald-500' : score >= 3 ? 'border-amber-500 bg-amber-500' : 'border-red-400 bg-red-400') :
+                  'border-muted-foreground/30 bg-background'
+                }`} />
+              </button>
+            );
+          })}
+
+          {/* Playhead */}
+          <div className="absolute top-0 bottom-0 w-0.5 bg-primary transition-all" style={{ left: `${progress}%` }} />
+        </div>
+        <div className="flex justify-between text-[10px] text-muted-foreground mt-1">
+          <span>{formatTime(currentTime)}</span>
+          <span>{formatTime(exercise.duration)}</span>
+        </div>
+      </div>
+
       {/* Main content */}
-      <div className="flex-1 flex flex-col items-center justify-center px-6 gap-6">
+      <div className="flex-1 flex flex-col items-center justify-center px-6 overflow-y-auto">
         <AnimatePresence mode="wait">
           {/* IDLE */}
           {state === 'idle' && (
             <motion.div key="idle" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
               className="flex flex-col items-center gap-6 w-full max-w-sm"
             >
-              <div className="w-24 h-24 rounded-full bg-muted flex items-center justify-center">
-                <span className="text-4xl">🎧</span>
+              <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center">
+                <span className="text-3xl">🎧</span>
               </div>
               <div className="text-center">
-                <p className="text-sm text-muted-foreground mb-1">음성을 듣고 따라 말하세요</p>
-                <p className="text-xs text-muted-foreground">MP3 재생 → 3초 대기 → 비프음 → 녹음</p>
+                <p className="text-sm text-muted-foreground">음성 재생 → 구간마다 자동 멈춤 → 녹음</p>
+                <p className="text-xs text-muted-foreground mt-1">타임라인의 마커를 클릭해서 원하는 구간으로 이동</p>
               </div>
-              <Button onClick={startPractice} size="lg" className="w-full max-w-xs">
-                ▶ 시작하기
+              <Button onClick={() => play(0)} size="lg" className="w-full max-w-xs">
+                ▶ 재생 시작
               </Button>
-              {exercise.qaClips && exercise.qaClips.length > 0 && (
-                <div className="w-full">
-                  <p className="text-xs text-muted-foreground mb-2">모범 답안 듣기</p>
-                  <div className="grid grid-cols-4 gap-2">
-                    {exercise.qaClips.map(clip => (
-                      <button
-                        key={clip.id}
-                        onClick={() => new Audio(clip.audioUrl).play()}
-                        className="text-xs px-2 py-1.5 rounded-md border border-border hover:bg-muted transition-colors"
-                      >
-                        {clip.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
             </motion.div>
           )}
 
           {/* PLAYING */}
           {state === 'playing' && (
             <motion.div key="playing" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              className="flex flex-col items-center gap-6 w-full max-w-sm"
+              className="flex flex-col items-center gap-4"
             >
               <motion.div
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ repeat: Infinity, duration: 2 }}
-                className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center"
+                className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center"
               >
-                <span className="text-4xl">🔊</span>
+                <span className="text-3xl">🔊</span>
               </motion.div>
-              <p className="text-sm font-medium">재생 중... 집중해서 들으세요</p>
-              <div className="w-full">
-                <Progress value={audioProgress} className="h-1.5" />
+              <p className="text-sm font-medium">재생 중... 구간 {activeSegment + 1}/{segments.length}</p>
+              <Button variant="outline" size="sm" onClick={() => {
+                audioRef.current?.pause();
+                setState('paused');
+                if (checkIntervalRef.current) clearInterval(checkIntervalRef.current);
+              }}>
+                ⏸ 일시정지
+              </Button>
+            </motion.div>
+          )}
+
+          {/* PAUSED (auto-pause at segment boundary) */}
+          {state === 'paused' && !lastResult && (
+            <motion.div key="paused" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+              className="flex flex-col items-center gap-4 w-full max-w-sm"
+            >
+              <div className="text-center">
+                <p className="text-xs text-muted-foreground mb-1">구간 {activeSegment + 1} / {segments.length}</p>
+                <p className="text-sm font-medium">이 구간에서 녹음할까요?</p>
               </div>
-            </motion.div>
-          )}
-
-          {/* WAITING (countdown) */}
-          {state === 'waiting' && (
-            <motion.div key="waiting" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              className="flex flex-col items-center gap-4"
-            >
-              <p className="text-sm text-muted-foreground">준비하세요!</p>
-              <motion.span
-                key={countdown}
-                initial={{ scale: 0.5, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                className="text-6xl font-bold"
-              >
-                {countdown}
-              </motion.span>
-            </motion.div>
-          )}
-
-          {/* BEEP */}
-          {state === 'beep' && (
-            <motion.div key="beep" initial={{ scale: 0.8 }} animate={{ scale: 1 }}
-              className="flex flex-col items-center gap-4"
-            >
-              <motion.div
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 0.3 }}
-                className="w-20 h-20 rounded-full bg-amber-100 flex items-center justify-center"
-              >
-                <span className="text-3xl">🔔</span>
-              </motion.div>
+              <div className="flex gap-3 w-full">
+                <Button onClick={startRecording} size="lg" className="flex-1">
+                  🎙️ 녹음하기
+                </Button>
+                <Button onClick={skipSegment} variant="outline" size="lg" className="flex-1">
+                  건너뛰기 →
+                </Button>
+              </div>
+              <Button variant="ghost" size="sm" className="text-xs" onClick={() => {
+                const seg = segments[activeSegment];
+                if (seg) play(seg.start);
+              }}>
+                🔄 이 구간 다시 듣기
+              </Button>
             </motion.div>
           )}
 
@@ -243,9 +293,9 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
               <motion.div
                 animate={{ scale: [1, 1.15, 1], boxShadow: ['0 0 0 0 rgba(239,68,68,0)', '0 0 0 20px rgba(239,68,68,0.1)', '0 0 0 0 rgba(239,68,68,0)'] }}
                 transition={{ repeat: Infinity, duration: 1.5 }}
-                className="w-24 h-24 rounded-full bg-red-50 flex items-center justify-center"
+                className="w-20 h-20 rounded-full bg-red-50 flex items-center justify-center"
               >
-                <span className="text-4xl">🎙️</span>
+                <span className="text-3xl">🎙️</span>
               </motion.div>
               <div className="text-center">
                 <p className="text-sm font-medium text-red-600">녹음 중</p>
@@ -257,74 +307,104 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
             </motion.div>
           )}
 
-          {/* ANALYZING */}
-          {state === 'analyzing' && (
-            <motion.div key="analyzing" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              className="flex flex-col items-center gap-4"
-            >
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ repeat: Infinity, duration: 1, ease: 'linear' }}
-                className="w-12 h-12 border-2 border-muted-foreground border-t-transparent rounded-full"
-              />
-              <p className="text-sm text-muted-foreground">분석 중...</p>
-            </motion.div>
-          )}
-
-          {/* RESULT */}
-          {state === 'result' && result && (
-            <motion.div key="result" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+          {/* REVIEWING (showing result for this segment) */}
+          {(state === 'reviewing' || (state === 'paused' && lastResult)) && lastResult && (
+            <motion.div key="review" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
               className="flex flex-col items-center gap-4 w-full max-w-sm"
             >
-              <Card className="w-full p-6">
-                {/* Total score */}
-                <div className="text-center mb-4">
-                  <p className="text-xs text-muted-foreground mb-1">종합 점수</p>
-                  <p className={`text-5xl font-bold ${
-                    result.scores.total >= 4 ? 'text-emerald-600' :
-                    result.scores.total >= 3 ? 'text-amber-600' : 'text-red-600'
-                  }`}>
-                    {result.scores.total.toFixed(1)}
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-1">/ 5.0</p>
+              <Card className="w-full p-5">
+                <div className="text-center mb-3">
+                  <p className="text-xs text-muted-foreground">구간 {activeSegment + 1} 결과</p>
+                  <p className={`text-4xl font-bold ${
+                    lastResult.scores.total >= 4 ? 'text-emerald-600' :
+                    lastResult.scores.total >= 3 ? 'text-amber-600' : 'text-red-600'
+                  }`}>{lastResult.scores.total.toFixed(1)}</p>
                 </div>
-
-                {/* Score breakdown */}
-                <div className="space-y-3">
+                <div className="space-y-2">
                   {[
-                    { label: '유창성', value: result.scores.fluency, color: 'bg-blue-500' },
-                    { label: '명료성', value: result.scores.intelligibility, color: 'bg-emerald-500' },
-                    { label: '정확도', value: result.scores.accuracy, color: 'bg-violet-500' },
+                    { label: '유창성', value: lastResult.scores.fluency, color: 'bg-blue-500' },
+                    { label: '명료성', value: lastResult.scores.intelligibility, color: 'bg-emerald-500' },
+                    { label: '정확도', value: lastResult.scores.accuracy, color: 'bg-violet-500' },
                   ].map(s => (
                     <div key={s.label}>
-                      <div className="flex justify-between text-xs mb-1">
+                      <div className="flex justify-between text-xs mb-0.5">
                         <span className="text-muted-foreground">{s.label}</span>
                         <span className="font-medium">{s.value.toFixed(1)}</span>
                       </div>
-                      <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+                      <div className="h-1 bg-muted rounded-full overflow-hidden">
                         <motion.div
                           initial={{ width: 0 }}
                           animate={{ width: `${(s.value / 5) * 100}%` }}
-                          transition={{ duration: 0.5, delay: 0.2 }}
+                          transition={{ duration: 0.4 }}
                           className={`h-full rounded-full ${s.color}`}
                         />
                       </div>
                     </div>
                   ))}
                 </div>
-
-                {/* Feedback */}
-                <p className="text-sm text-center mt-4 text-muted-foreground">{result.feedback}</p>
+                <p className="text-xs text-center mt-3 text-muted-foreground">{lastResult.feedback}</p>
               </Card>
-
               <div className="flex gap-3 w-full">
-                <Button onClick={reset} variant="outline" className="flex-1">다시 연습</Button>
-                <Button onClick={onBack} variant="secondary" className="flex-1">목록으로</Button>
+                <Button onClick={() => { setLastResult(null); startRecording(); }} variant="outline" className="flex-1 text-sm">
+                  다시 녹음
+                </Button>
+                <Button onClick={continuePlayback} className="flex-1 text-sm">
+                  다음 구간 →
+                </Button>
+              </div>
+            </motion.div>
+          )}
+
+          {/* FINISHED */}
+          {state === 'finished' && (
+            <motion.div key="finished" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              className="flex flex-col items-center gap-4 w-full max-w-sm"
+            >
+              <span className="text-5xl">🎉</span>
+              <p className="text-sm font-medium">연습 완료!</p>
+              {Object.keys(segmentScores).length > 0 && (
+                <p className="text-xs text-muted-foreground">
+                  녹음 {Object.keys(segmentScores).length}개 구간 · 평균 {(Object.values(segmentScores).reduce((a, b) => a + b, 0) / Object.keys(segmentScores).length).toFixed(1)}점
+                </p>
+              )}
+              <div className="flex gap-3 w-full">
+                <Button onClick={reset} variant="outline" className="flex-1">처음부터</Button>
+                <Button onClick={onBack} className="flex-1">목록으로</Button>
               </div>
             </motion.div>
           )}
         </AnimatePresence>
       </div>
+
+      {/* Segment list (bottom) */}
+      {state !== 'idle' && (
+        <div className="border-t border-border px-4 py-2 shrink-0">
+          <div className="flex gap-1.5 overflow-x-auto pb-1">
+            {segments.map((_, i) => {
+              const score = segmentScores[i];
+              return (
+                <button
+                  key={i}
+                  onClick={() => jumpToSegment(i)}
+                  className={`shrink-0 w-8 h-8 rounded-md text-xs font-medium flex items-center justify-center transition-all ${
+                    i === activeSegment ? 'bg-primary text-primary-foreground' :
+                    score !== undefined ? (score >= 4 ? 'bg-emerald-100 text-emerald-700' : score >= 3 ? 'bg-amber-100 text-amber-700' : 'bg-red-100 text-red-700') :
+                    'bg-muted text-muted-foreground'
+                  }`}
+                >
+                  {score !== undefined ? score.toFixed(0) : i + 1}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </div>
   );
+}
+
+function formatTime(seconds: number): string {
+  const m = Math.floor(seconds / 60);
+  const s = Math.floor(seconds % 60);
+  return `${m}:${String(s).padStart(2, '0')}`;
 }
