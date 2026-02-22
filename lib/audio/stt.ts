@@ -2,6 +2,7 @@
 export interface STTResult {
   transcript: string;
   confidence: number;
+  isFinal: boolean;
 }
 
 export function startSpeechRecognition(onResult: (result: STTResult) => void, onError: (error: any) => void): any {
@@ -14,16 +15,35 @@ export function startSpeechRecognition(onResult: (result: STTResult) => void, on
 
   const recognition = new SpeechRecognition();
   recognition.lang = 'en-US';
-  recognition.interimResults = false;
+  recognition.interimResults = true; // 중간 결과도 받기
   recognition.maxAlternatives = 1;
-  recognition.continuous = false;
+  recognition.continuous = true; // 연속 인식
 
   recognition.onresult = (event: any) => {
-    const result = event.results[0][0];
-    onResult({
-      transcript: result.transcript,
-      confidence: result.confidence || 0.9
-    });
+    let finalTranscript = '';
+    let interimTranscript = '';
+    
+    // 모든 결과를 순회하며 final과 interim 구분
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      const transcript = event.results[i][0].transcript;
+      const confidence = event.results[i][0].confidence || 0.9;
+      
+      if (event.results[i].isFinal) {
+        finalTranscript += transcript + ' ';
+        onResult({
+          transcript: finalTranscript.trim(),
+          confidence,
+          isFinal: true
+        });
+      } else {
+        interimTranscript += transcript;
+        onResult({
+          transcript: interimTranscript,
+          confidence,
+          isFinal: false
+        });
+      }
+    }
   };
 
   recognition.onerror = (event: any) => {

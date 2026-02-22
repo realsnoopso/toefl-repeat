@@ -57,6 +57,34 @@ export const sampleSentences: Sentence[] = [
     difficulty: 'hard',
     wordCount: 15,
     contentWords: ['professor', 'discussed', 'fundamental', 'principles', 'quantum', 'mechanics', 'advanced', 'physics', 'seminar']
+  },
+  {
+    id: '9',
+    text: 'Economic globalization has transformed international trade relationships and created new opportunities for developing nations.',
+    difficulty: 'hard',
+    wordCount: 15,
+    contentWords: ['economic', 'globalization', 'transformed', 'international', 'trade', 'relationships', 'created', 'opportunities', 'developing', 'nations']
+  },
+  {
+    id: '10',
+    text: 'The archaeological evidence suggests that ancient civilizations possessed remarkably sophisticated engineering capabilities.',
+    difficulty: 'hard',
+    wordCount: 13,
+    contentWords: ['archaeological', 'evidence', 'suggests', 'ancient', 'civilizations', 'possessed', 'remarkably', 'sophisticated', 'engineering', 'capabilities']
+  },
+  {
+    id: '11',
+    text: 'Effective communication skills are essential for professional success in today\'s competitive business environment.',
+    difficulty: 'medium',
+    wordCount: 13,
+    contentWords: ['effective', 'communication', 'skills', 'essential', 'professional', 'success', 'competitive', 'business', 'environment']
+  },
+  {
+    id: '12',
+    text: 'The development of artificial intelligence has raised important ethical questions about privacy and automation.',
+    difficulty: 'hard',
+    wordCount: 15,
+    contentWords: ['development', 'artificial', 'intelligence', 'raised', 'important', 'ethical', 'questions', 'privacy', 'automation']
   }
 ];
 
