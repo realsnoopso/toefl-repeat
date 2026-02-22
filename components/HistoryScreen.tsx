@@ -77,23 +77,43 @@ export function HistoryScreen() {
       const attemptIds = new Set(attempts.map(a => a.id));
       for (const rec of allRecs) {
         if (attemptIds.has(rec.id)) {
-          // Convert blob to base64
-          const buf = await rec.blob.arrayBuffer();
-          const base64 = btoa(String.fromCharCode(...new Uint8Array(buf)));
-          recordings[rec.id] = `data:${rec.mimeType};base64,${base64}`;
+          try {
+            // Convert blob to base64 using FileReader (handles binary safely)
+            const base64 = await new Promise<string>((resolve, reject) => {
+              const reader = new FileReader();
+              reader.onload = () => resolve(reader.result as string);
+              reader.onerror = () => reject(reader.error);
+              reader.readAsDataURL(rec.blob);
+            });
+            recordings[rec.id] = base64;
+          } catch {
+            // Skip failed conversions
+          }
         }
       }
 
       // Upload to server
+      const payload = JSON.stringify({
+        attempts,
+        recordings,
+        stats: { total: attempts.length, avg: avgScore, best: bestScore },
+      });
+
+      // If payload > 4MB, drop recordings and share without audio
+      const body = payload.length > 4 * 1024 * 1024
+        ? JSON.stringify({
+            attempts,
+            recordings: {},
+            stats: { total: attempts.length, avg: avgScore, best: bestScore },
+          })
+        : payload;
+
       const res = await fetch('/api/share', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          attempts,
-          recordings,
-          stats: { total: attempts.length, avg: avgScore, best: bestScore },
-        }),
+        body,
       });
+      if (!res.ok) throw new Error('API error');
       const { id } = await res.json();
       const shareUrl = `${window.location.origin}/shared/${id}`;
 
