@@ -145,7 +145,11 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
     // Revoke previous URL
     if (recordingUrl) URL.revokeObjectURL(recordingUrl);
     
-    const result = evaluateAttempt(exercise.id, exercise.titleKo, duration, transcript, activeSegment);
+    // Get original text for this segment
+    const origTexts = transcriptsData[exercise.id];
+    const origText = origTexts?.[activeSegment] || '';
+    
+    const result = evaluateAttempt(exercise.id, exercise.titleKo, duration, transcript, activeSegment, origText);
     saveAttempt(result);
 
     if (blob && blob.size > 0) {
@@ -404,9 +408,9 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
                 </div>
                 <div className="space-y-2">
                   {[
-                    { label: '유창성', value: lastResult.scores.fluency, color: 'bg-blue-500' },
-                    { label: '명료성', value: lastResult.scores.intelligibility, color: 'bg-emerald-500' },
                     { label: '정확도', value: lastResult.scores.accuracy, color: 'bg-violet-500' },
+                    { label: '완성도', value: lastResult.scores.intelligibility, color: 'bg-emerald-500' },
+                    { label: '유창성', value: lastResult.scores.fluency, color: 'bg-blue-500' },
                   ].map(s => (
                     <div key={s.label}>
                       <div className="flex justify-between text-xs mb-0.5">
