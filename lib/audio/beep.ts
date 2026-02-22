@@ -1,33 +1,29 @@
-// Web Audio API로 비프음 생성
-export function playBeep(): Promise<void> {
-  return new Promise((resolve) => {
-    try {
-      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
-      const oscillator = audioContext.createOscillator();
-      const gainNode = audioContext.createGain();
+let audioContext: AudioContext | null = null;
 
-      oscillator.connect(gainNode);
-      gainNode.connect(audioContext.destination);
+function getAudioContext(): AudioContext {
+  if (!audioContext) {
+    audioContext = new AudioContext();
+  }
+  return audioContext;
+}
 
-      // 440Hz 비프음
-      oscillator.frequency.value = 440;
-      oscillator.type = 'sine';
+export function playBeep(frequency = 800, duration = 0.3): Promise<void> {
+  return new Promise(resolve => {
+    const ctx = getAudioContext();
+    const oscillator = ctx.createOscillator();
+    const gain = ctx.createGain();
 
-      // 볼륨 설정
-      gainNode.gain.value = 0.3;
+    oscillator.type = 'sine';
+    oscillator.frequency.setValueAtTime(frequency, ctx.currentTime);
+    gain.gain.setValueAtTime(0.5, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
 
-      // 0.3초 재생
-      const duration = 0.3;
-      oscillator.start(audioContext.currentTime);
-      oscillator.stop(audioContext.currentTime + duration);
+    oscillator.connect(gain);
+    gain.connect(ctx.destination);
 
-      oscillator.onended = () => {
-        audioContext.close();
-        resolve();
-      };
-    } catch (error) {
-      console.error('Beep sound error:', error);
-      resolve();
-    }
+    oscillator.start(ctx.currentTime);
+    oscillator.stop(ctx.currentTime + duration);
+
+    setTimeout(resolve, duration * 1000);
   });
 }

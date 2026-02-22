@@ -1,71 +1,50 @@
-// 문장 데이터 타입
-export interface Sentence {
+// Audio file base URL
+export const BLOB_BASE = 'https://exnsm3lxtncyyrjr.public.blob.vercel-storage.com/audio';
+
+// Exercise category
+export type TaskType = 'diagnostic' | 'task1' | 'task2' | 'actual-test';
+export type Difficulty = 'beginner' | 'intermediate' | 'advanced';
+
+// Exercise (one MP3 file = one exercise set)
+export interface Exercise {
   id: string;
-  text: string;
-  difficulty: 'easy' | 'medium' | 'hard';
-  wordCount: number;
-  contentWords: string[];
+  title: string;
+  titleKo: string;
+  taskType: TaskType;
+  category: string;
+  categoryKo: string;
+  difficulty: Difficulty;
+  audioUrl: string;
+  // For task2, qa-model clips
+  qaClips?: { id: string; label: string; audioUrl: string }[];
 }
 
-// 연습 시도 타입
+// Practice attempt
 export interface PracticeAttempt {
   id: string;
-  sentenceId: string;
-  sentenceText: string;
-  timestamp: Date;
-  
-  // 녹음 데이터
+  exerciseId: string;
+  exerciseTitle: string;
+  timestamp: number;
   recordingDuration: number;
-  
-  // 전사 결과
   userTranscript: string;
-  
-  // 타이밍 메트릭
-  responseLatency: number;
-  
-  // 평가 결과
   scores: {
-    fluency: number;
-    intelligibility: number;
-    accuracy: number;
-    total: number;
+    fluency: number;       // 0-5
+    intelligibility: number; // 0-5
+    accuracy: number;      // 0-5
+    total: number;         // average
   };
-  
-  // 상세 메트릭
-  metrics: {
-    pauseCount: number;
-    contentWordMatches: number;
-    contentWordTotal: number;
-    wordOrderAccuracy: number;
-  };
-  
-  // 피드백
-  feedback: {
-    overall: string;
-    actionItems: string[];
-  };
+  feedback: string;
 }
 
-// 사용자 통계
-export interface UserStatistics {
-  totalAttempts: number;
-  totalPracticeTime: number;
-  averageScore: number;
-  averageFluency: number;
-  averageIntelligibility: number;
-  averageAccuracy: number;
-  bestScore: number;
-  bestAttemptId: string;
-  firstAttemptDate: Date;
-  lastAttemptDate: Date;
-}
-
-// 연습 상태
-export type PracticeState = 
-  | 'idle' 
-  | 'playing' 
-  | 'waiting' 
-  | 'beep' 
-  | 'recording' 
-  | 'analyzing' 
+// Practice state machine
+export type PracticeState =
+  | 'idle'
+  | 'playing'
+  | 'waiting'
+  | 'beep'
+  | 'recording'
+  | 'analyzing'
   | 'result';
+
+// Navigation
+export type TabId = 'practice' | 'history';

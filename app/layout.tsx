@@ -1,31 +1,28 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata, Viewport } from 'next';
+import { Geist, Geist_Mono } from 'next/font/google';
+import './globals.css';
+
+const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
+const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "TOEFL Listen & Repeat Practice",
-  description: "Practice TOEFL Speaking Listen & Repeat with instant feedback",
+  title: 'TOEFL Speaking - Listen & Repeat',
+  description: '2026 TOEFL Speaking Listen & Repeat 연습',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#ffffff',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
-        />
-      </head>
-      <body className="antialiased min-h-screen bg-background">
-        <header className="border-b">
-          <div className="container max-w-[600px] mx-auto px-4 py-4">
-            <h1 className="text-xl font-bold">TOEFL Repeat Practice</h1>
-          </div>
-        </header>
-        <main>{children}</main>
+    <html lang="ko">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {children}
       </body>
     </html>
   );
