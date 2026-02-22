@@ -66,28 +66,37 @@ export function HistoryScreen() {
     downloadRecording(rec.blob, filename);
   }, []);
 
-  const handleShare = useCallback(async () => {
-    const lines: string[] = ['🎙️ TOEFL Listen & Repeat 연습 기록\n'];
-    for (const [key, items] of grouped) {
-      const dayAvg = items.reduce((s, a) => s + a.scores.total, 0) / items.length;
-      lines.push(`📅 ${dateLabel(key)} — ${items.length}회 연습, 평균 ${dayAvg.toFixed(1)}점`);
-      for (const a of items) {
-        const time = new Date(a.timestamp).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' });
-        lines.push(`  ${time} ${a.exerciseTitle} 구간${a.segmentIndex + 1} → ${a.scores.total.toFixed(1)}점`);
-      }
-      lines.push('');
-    }
-    lines.push(`📊 전체: ${attempts.length}회, 평균 ${avgScore.toFixed(1)}점, 최고 ${bestScore.toFixed(1)}점`);
-    lines.push(`\n👉 https://toefl-repeat.vercel.app`);
-    const text = lines.join('\n');
+  const [sharing, setSharing] = useState(false);
 
-    if (navigator.share) {
-      try { await navigator.share({ title: 'TOEFL 연습 기록', text }); } catch { /* cancelled */ }
-    } else {
-      await navigator.clipboard.writeText(text);
-      alert('기록이 복사되었습니다!');
+  const handleShare = useCallback(async () => {
+    setSharing(true);
+    try {
+      // Upload to server
+      const res = await fetch('/api/share', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          attempts,
+          stats: { total: attempts.length, avg: avgScore, best: bestScore },
+        }),
+      });
+      const { id } = await res.json();
+      const shareUrl = `${window.location.origin}/shared/${id}`;
+
+      const text = `🎙️ TOEFL 연습 기록\n📊 ${attempts.length}회 연습, 평균 ${avgScore.toFixed(1)}점, 최고 ${bestScore.toFixed(1)}점\n\n👉 ${shareUrl}`;
+
+      if (navigator.share) {
+        try { await navigator.share({ title: 'TOEFL 연습 기록', text, url: shareUrl }); } catch { /* cancelled */ }
+      } else {
+        await navigator.clipboard.writeText(text);
+        alert('공유 링크가 복사되었습니다!');
+      }
+    } catch {
+      alert('공유 링크 생성에 실패했습니다.');
+    } finally {
+      setSharing(false);
     }
-  }, [grouped, attempts, avgScore, bestScore]);
+  }, [attempts, avgScore, bestScore]);
 
   return (
     <div className="h-full flex flex-col">
@@ -99,12 +108,17 @@ export function HistoryScreen() {
         {attempts.length > 0 && (
           <button
             onClick={handleShare}
-            className="p-2 rounded-md hover:bg-muted transition-colors"
+            disabled={sharing}
+            className="p-2 rounded-md hover:bg-muted transition-colors disabled:opacity-50"
             title="기록 공유"
           >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-            </svg>
+            {sharing ? (
+              <span className="text-xs animate-spin">⏳</span>
+            ) : (
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+              </svg>
+            )}
           </button>
         )}
       </header>
