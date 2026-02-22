@@ -231,6 +231,29 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
           <h2 className="text-sm font-medium truncate">{exercise.titleKo}</h2>
           <p className="text-xs text-muted-foreground">{exercise.categoryKo} · {segments.length}개 구간</p>
         </div>
+        <button
+          onClick={async () => {
+            const url = `${window.location.origin}?ex=${exercise.id}`;
+            if (navigator.share) {
+              try {
+                await navigator.share({
+                  title: `TOEFL 연습 - ${exercise.titleKo}`,
+                  text: `${exercise.categoryKo} ${exercise.titleKo}`,
+                  url,
+                });
+              } catch { /* user cancelled */ }
+            } else {
+              await navigator.clipboard.writeText(url);
+              alert('링크가 복사되었습니다!');
+            }
+          }}
+          className="p-1.5 rounded-md hover:bg-muted transition-colors"
+          title="공유"
+        >
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+          </svg>
+        </button>
       </header>
 
       {/* Timeline bar */}
@@ -466,6 +489,25 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
                   녹음 {Object.keys(segmentScores).length}개 구간 · 평균 {(Object.values(segmentScores).reduce((a, b) => a + b, 0) / Object.keys(segmentScores).length).toFixed(1)}점
                 </p>
               )}
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-xs"
+                onClick={async () => {
+                  const url = `${window.location.origin}?ex=${exercise.id}`;
+                  const scored = Object.keys(segmentScores).length;
+                  const avg = scored > 0 ? (Object.values(segmentScores).reduce((a, b) => a + b, 0) / scored).toFixed(1) : '0';
+                  const text = `🎙️ TOEFL 연습 완료!\n${exercise.titleKo} (${exercise.categoryKo})\n📊 ${scored}개 구간 · 평균 ${avg}점\n\n나도 연습하기 👉 ${url}`;
+                  if (navigator.share) {
+                    try { await navigator.share({ title: 'TOEFL 연습 결과', text }); } catch {}
+                  } else {
+                    await navigator.clipboard.writeText(text);
+                    alert('결과가 복사되었습니다!');
+                  }
+                }}
+              >
+                📤 결과 공유하기
+              </Button>
               <div className="flex gap-3 w-full">
                 <Button onClick={reset} variant="outline" className="flex-1">처음부터</Button>
                 <Button onClick={onBack} className="flex-1">목록으로</Button>

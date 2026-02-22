@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { TabId, Exercise } from '@/lib/types';
+import { allExercises } from '@/lib/data/exercises';
 import { ExerciseBrowser } from '@/components/ExerciseBrowser';
 import { PracticeScreen } from '@/components/PracticeScreen';
 import { HistoryScreen } from '@/components/HistoryScreen';
@@ -11,6 +12,33 @@ import { AnimatePresence, motion } from 'framer-motion';
 export default function Home() {
   const [tab, setTab] = useState<TabId>('practice');
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
+  const [initialized, setInitialized] = useState(false);
+
+  // On mount, check URL for shared exercise
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const exId = params.get('ex');
+    if (exId) {
+      const exercise = allExercises.find(e => e.id === exId);
+      if (exercise) {
+        setSelectedExercise(exercise);
+        setTab('practice');
+      }
+    }
+    setInitialized(true);
+  }, []);
+
+  // Update URL when exercise changes
+  const selectExercise = useCallback((exercise: Exercise | null) => {
+    setSelectedExercise(exercise);
+    if (exercise) {
+      window.history.replaceState(null, '', `?ex=${exercise.id}`);
+    } else {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+  }, []);
+
+  if (!initialized) return null;
 
   return (
     <div className="flex flex-col h-dvh bg-background">
@@ -24,7 +52,7 @@ export default function Home() {
               exit={{ opacity: 0, y: -10 }}
               className="h-full"
             >
-              <ExerciseBrowser onSelect={setSelectedExercise} />
+              <ExerciseBrowser onSelect={selectExercise} />
             </motion.div>
           )}
           {tab === 'practice' && selectedExercise && (
@@ -37,7 +65,7 @@ export default function Home() {
             >
               <PracticeScreen
                 exercise={selectedExercise}
-                onBack={() => setSelectedExercise(null)}
+                onBack={() => selectExercise(null)}
               />
             </motion.div>
           )}
@@ -58,7 +86,7 @@ export default function Home() {
         active={tab}
         onChange={(t) => {
           setTab(t);
-          if (t !== 'practice') setSelectedExercise(null);
+          if (t !== 'practice') selectExercise(null);
         }}
       />
     </div>
