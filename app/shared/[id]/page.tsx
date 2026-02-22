@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, use, useCallback } from 'react';
+import { useEffect, useState, use, useCallback, useRef } from 'react';
 import { PracticeAttempt } from '@/lib/types';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -33,6 +33,7 @@ export default function SharedPage({ params }: { params: Promise<{ id: string }>
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [playingId, setPlayingId] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     fetch(`/api/share/${id}`)
@@ -46,12 +47,23 @@ export default function SharedPage({ params }: { params: Promise<{ id: string }>
   }, [id]);
 
   const handlePlay = useCallback((attemptId: string, url: string) => {
+    // Stop any currently playing audio first
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current = null;
+    }
+    // If clicking the same item, just stop
+    if (playingId === attemptId) {
+      setPlayingId(null);
+      return;
+    }
     const audio = new Audio(url);
+    audioRef.current = audio;
     setPlayingId(attemptId);
-    audio.onended = () => setPlayingId(null);
-    audio.onerror = () => setPlayingId(null);
-    audio.play().catch(() => setPlayingId(null));
-  }, []);
+    audio.onended = () => { setPlayingId(null); audioRef.current = null; };
+    audio.onerror = () => { setPlayingId(null); audioRef.current = null; };
+    audio.play().catch(() => { setPlayingId(null); audioRef.current = null; });
+  }, [playingId]);
 
   if (loading) {
     return (
