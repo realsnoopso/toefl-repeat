@@ -7,6 +7,7 @@ import { AudioRecorder } from '@/lib/audio/recorder';
 import { startSpeechRecognition } from '@/lib/audio/stt';
 import { evaluateAttempt } from '@/lib/evaluation/scoring';
 import { saveAttempt } from '@/lib/storage/localStorage';
+import { saveRecording } from '@/lib/storage/recordingDB';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { DiffDisplay } from '@/components/DiffDisplay';
@@ -144,9 +145,21 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
     // Revoke previous URL
     if (recordingUrl) URL.revokeObjectURL(recordingUrl);
     
+    const result = evaluateAttempt(exercise.id, exercise.titleKo, duration, transcript, activeSegment);
+    saveAttempt(result);
+
     if (blob && blob.size > 0) {
       const url = URL.createObjectURL(blob);
       setRecordingUrl(url);
+      // Save to IndexedDB for history download
+      saveRecording({
+        id: result.id,
+        blob,
+        mimeType: blob.type || 'audio/webm',
+        timestamp: Date.now(),
+        exerciseId: exercise.id,
+        segmentIndex: activeSegment,
+      }).catch(() => { /* ignore save errors */ });
       // Auto-play recording
       const playback = new Audio(url);
       setIsPlayingBack(true);
@@ -156,9 +169,6 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
     } else {
       setRecordingUrl(null);
     }
-
-    const result = evaluateAttempt(exercise.id, exercise.titleKo, duration, transcript, activeSegment);
-    saveAttempt(result);
     setLastResult(result);
     setSegmentScores(prev => ({ ...prev, [activeSegment]: result.scores.total }));
     setState('reviewing');
