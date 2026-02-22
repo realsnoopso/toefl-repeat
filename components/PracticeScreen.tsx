@@ -28,6 +28,8 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
   const [segmentScores, setSegmentScores] = useState<Record<number, number>>({});
   const [userTranscript, setUserTranscript] = useState('');
   const [liveTranscript, setLiveTranscript] = useState('');
+  const [recordingUrl, setRecordingUrl] = useState<string | null>(null);
+  const [isPlayingBack, setIsPlayingBack] = useState(false);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const recorderRef = useRef(new AudioRecorder());
@@ -135,7 +137,25 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
     const transcript = liveTranscript;
     setUserTranscript(transcript);
     
-    try { await recorderRef.current.stop(); } catch { /* ignore */ }
+    // Get recorded audio blob and create playback URL
+    let blob: Blob | null = null;
+    try { blob = await recorderRef.current.stop(); } catch { /* ignore */ }
+    
+    // Revoke previous URL
+    if (recordingUrl) URL.revokeObjectURL(recordingUrl);
+    
+    if (blob && blob.size > 0) {
+      const url = URL.createObjectURL(blob);
+      setRecordingUrl(url);
+      // Auto-play recording
+      const playback = new Audio(url);
+      setIsPlayingBack(true);
+      playback.onended = () => setIsPlayingBack(false);
+      playback.onerror = () => setIsPlayingBack(false);
+      playback.play().catch(() => setIsPlayingBack(false));
+    } else {
+      setRecordingUrl(null);
+    }
 
     const result = evaluateAttempt(exercise.id, exercise.titleKo, duration, transcript, activeSegment);
     saveAttempt(result);
@@ -395,8 +415,26 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
                 }
                 return null;
               })()}
+              {/* Replay recording button */}
+              {recordingUrl && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-xs w-full"
+                  disabled={isPlayingBack}
+                  onClick={() => {
+                    const audio = new Audio(recordingUrl);
+                    setIsPlayingBack(true);
+                    audio.onended = () => setIsPlayingBack(false);
+                    audio.onerror = () => setIsPlayingBack(false);
+                    audio.play().catch(() => setIsPlayingBack(false));
+                  }}
+                >
+                  {isPlayingBack ? '🔊 재생 중...' : '🔁 내 녹음 다시 듣기'}
+                </Button>
+              )}
               <div className="flex gap-3 w-full">
-                <Button onClick={() => { setLastResult(null); startRecording(); }} variant="outline" className="flex-1 text-sm">
+                <Button onClick={() => { setLastResult(null); setRecordingUrl(null); startRecording(); }} variant="outline" className="flex-1 text-sm">
                   다시 녹음
                 </Button>
                 <Button onClick={continuePlayback} className="flex-1 text-sm">
