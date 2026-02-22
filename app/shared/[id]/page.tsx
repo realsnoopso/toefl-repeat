@@ -9,7 +9,7 @@ interface SharedData {
   id: string;
   createdAt: string;
   stats: { total: number; avg: number; best: number };
-  attempts: PracticeAttempt[];
+  attempts: (PracticeAttempt & { recordingUrl?: string })[];
   audioUrls?: Record<string, string>;
 }
 
@@ -141,14 +141,15 @@ export default function SharedPage({ params }: { params: Promise<{ id: string }>
                 </div>
                 <div className="space-y-2">
                   {items.map(a => {
-                    const hasAudio = !!audioUrls[a.id];
+                    const audioUrl = audioUrls[a.id] || a.recordingUrl;
+                    const hasAudio = !!audioUrl;
                     const isPlaying = playingId === a.id;
                     return (
                       <Card
                         key={a.id}
                         className={`p-3 transition-colors ${hasAudio ? 'cursor-pointer hover:bg-muted/50 active:bg-muted' : ''}`}
                         onClick={() => {
-                          if (hasAudio) handlePlay(a.id, audioUrls[a.id]);
+                          if (hasAudio) handlePlay(a.id, audioUrl!);
                         }}
                       >
                         <div className="flex items-center justify-between">

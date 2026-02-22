@@ -45,11 +45,13 @@ export function diffSentences(original: string, spoken: string): DiffToken[] {
     if (i > 0 && j > 0 && origWords[i - 1].toLowerCase() === spokenWords[j - 1].toLowerCase()) {
       stack.push({ type: 'correct', original: origWords[i - 1], spoken: spokenWords[j - 1] });
       i--; j--;
-    } else if (j > 0 && (i === 0 || dp[i][j - 1] >= dp[i - 1][j])) {
+    } else if (i > 0 && (j === 0 || dp[i - 1][j] > dp[i][j - 1])) {
+      stack.push({ type: 'missing', original: origWords[i - 1] });
+      i--;
+    } else if (j > 0) {
       stack.push({ type: 'extra', spoken: spokenWords[j - 1] });
       j--;
     } else {
-      stack.push({ type: 'missing', original: origWords[i - 1] });
       i--;
     }
   }

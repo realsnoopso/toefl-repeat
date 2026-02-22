@@ -43,6 +43,7 @@ export interface PracticeAttempt {
     total: number;
   };
   feedback: string;
+  recordingUrl?: string; // Vercel Blob URL of the recording
 }
 
 // Player state

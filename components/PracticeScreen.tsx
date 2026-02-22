@@ -20,6 +20,16 @@ try {
   transcriptsData = require('@/lib/data/transcripts.json');
 } catch { /* will be empty until transcripts are generated */ }
 
+/** Extract first sentence from whisper transcript (whisper often duplicates the repeated sentence) */
+function extractFirstSentence(text: string): string {
+  if (!text) return '';
+  // Remove leading number+period patterns like "1." "3." "9."
+  const cleaned = text.replace(/^\d+\.\s*/, '').trim();
+  // Split on period followed by space+uppercase (sentence boundary)
+  const match = cleaned.match(/^(.+?\.)\s+[A-Z]/);
+  return match ? match[1].trim() : cleaned;
+}
+
 export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBack: () => void }) {
   const [state, setState] = useState<PlayerState>('idle');
   const [currentTime, setCurrentTime] = useState(0);
@@ -145,9 +155,10 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
     // Revoke previous URL
     if (recordingUrl) URL.revokeObjectURL(recordingUrl);
     
-    // Get original text for this segment
+    // Get original text for this segment (first sentence only — whisper often duplicates)
     const origTexts = transcriptsData[exercise.id];
-    const origText = origTexts?.[activeSegment] || '';
+    const rawOrigText = origTexts?.[activeSegment] || '';
+    const origText = extractFirstSentence(rawOrigText);
     
     const result = evaluateAttempt(exercise.id, exercise.titleKo, duration, transcript, activeSegment, origText);
     saveAttempt(result);
@@ -155,7 +166,7 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
     if (blob && blob.size > 0) {
       const url = URL.createObjectURL(blob);
       setRecordingUrl(url);
-      // Save to IndexedDB for history download
+      // Save to IndexedDB (backup)
       saveRecording({
         id: result.id,
         blob,
@@ -163,7 +174,27 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
         timestamp: Date.now(),
         exerciseId: exercise.id,
         segmentIndex: activeSegment,
-      }).catch(() => { /* ignore save errors */ });
+      }).catch(() => {});
+      // Upload to server in background — save URL in attempt for sharing
+      (async () => {
+        try {
+          const fd = new FormData();
+          fd.append('attemptId', result.id);
+          fd.append('file', blob, `${result.id}.webm`);
+          const uploadRes = await fetch('/api/recording', { method: 'POST', body: fd });
+          if (uploadRes.ok) {
+            const { url: blobUrl } = await uploadRes.json();
+            // Update the attempt in localStorage with the recording URL
+            const key = 'toefl-repeat-attempts';
+            const stored = JSON.parse(localStorage.getItem(key) || '[]');
+            const idx = stored.findIndex((a: { id: string }) => a.id === result.id);
+            if (idx >= 0) {
+              stored[idx].recordingUrl = blobUrl;
+              localStorage.setItem(key, JSON.stringify(stored));
+            }
+          }
+        } catch { /* non-critical */ }
+      })();
       // Auto-play recording
       const playback = new Audio(url);
       setIsPlayingBack(true);
@@ -433,7 +464,7 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
               {/* Diff display */}
               {(() => {
                 const origTexts = transcriptsData[exercise.id];
-                const origText = origTexts?.[activeSegment];
+                const origText = origTexts?.[activeSegment] ? extractFirstSentence(origTexts[activeSegment]) : undefined;
                 if (origText && userTranscript) {
                   return (
                     <Card className="w-full p-4">

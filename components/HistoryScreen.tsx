@@ -45,77 +45,121 @@ export function HistoryScreen() {
     return Array.from(map.entries()).sort((a, b) => b[0].localeCompare(a[0]));
   }, [attempts]);
 
-  const handlePlay = useCallback(async (id: string) => {
-    const rec = await getRecording(id);
-    if (!rec) return;
-    const url = URL.createObjectURL(rec.blob);
-    const audio = new Audio(url);
-    setPlayingId(id);
-    audio.onended = () => { setPlayingId(null); URL.revokeObjectURL(url); };
-    audio.onerror = () => { setPlayingId(null); URL.revokeObjectURL(url); };
-    audio.play().catch(() => setPlayingId(null));
+  const handlePlay = useCallback(async (id: string, recordingUrl?: string) => {
+    // Prefer server URL (always works), fall back to IndexedDB
+    if (recordingUrl) {
+      const audio = new Audio(recordingUrl);
+      setPlayingId(id);
+      audio.onended = () => setPlayingId(null);
+      audio.onerror = () => setPlayingId(null);
+      audio.play().catch(() => setPlayingId(null));
+      return;
+    }
+    const rec = await getRecording(id).catch(() => null);
+    if (rec && rec.blob && rec.blob.size > 0) {
+      const url = URL.createObjectURL(rec.blob);
+      const audio = new Audio(url);
+      setPlayingId(id);
+      audio.onended = () => { setPlayingId(null); URL.revokeObjectURL(url); };
+      audio.onerror = () => { setPlayingId(null); URL.revokeObjectURL(url); };
+      audio.play().catch(() => setPlayingId(null));
+    }
   }, []);
 
   const handleDownload = useCallback(async (attempt: PracticeAttempt) => {
-    const rec = await getRecording(attempt.id);
-    if (!rec) return;
-    const ext = rec.mimeType.includes('webm') ? 'webm' : rec.mimeType.includes('mp4') ? 'mp4' : 'wav';
-    const date = new Date(attempt.timestamp);
-    const ds = `${date.getFullYear()}${String(date.getMonth()+1).padStart(2,'0')}${String(date.getDate()).padStart(2,'0')}`;
-    const filename = `${attempt.exerciseId}_seg${attempt.segmentIndex + 1}_${ds}.${ext}`;
-    downloadRecording(rec.blob, filename);
+    // Try IndexedDB first, fall back to server URL
+    const rec = await getRecording(attempt.id).catch(() => null);
+    if (rec && rec.blob && rec.blob.size > 0) {
+      const ext = rec.mimeType.includes('webm') ? 'webm' : rec.mimeType.includes('mp4') ? 'mp4' : 'wav';
+      const date = new Date(attempt.timestamp);
+      const ds = `${date.getFullYear()}${String(date.getMonth()+1).padStart(2,'0')}${String(date.getDate()).padStart(2,'0')}`;
+      const filename = `${attempt.exerciseId}_seg${attempt.segmentIndex + 1}_${ds}.${ext}`;
+      downloadRecording(rec.blob, filename);
+    } else if (attempt.recordingUrl) {
+      // Download from server URL
+      const a = document.createElement('a');
+      a.href = attempt.recordingUrl;
+      a.download = `${attempt.exerciseId}_seg${attempt.segmentIndex + 1}.webm`;
+      a.click();
+    }
   }, []);
 
   const [sharing, setSharing] = useState(false);
+  const [shareProgress, setShareProgress] = useState('');
 
   const handleShare = useCallback(async () => {
     setSharing(true);
+    setShareProgress('준비 중...');
     try {
-      // Collect recordings as base64
-      const recordings: Record<string, string> = {};
-      const allRecs = await getAllRecordings().catch(() => []);
-      const attemptIds = new Set(attempts.map(a => a.id));
-      for (const rec of allRecs) {
-        if (attemptIds.has(rec.id)) {
-          try {
-            // Convert blob to base64 using FileReader (handles binary safely)
-            const base64 = await new Promise<string>((resolve, reject) => {
-              const reader = new FileReader();
-              reader.onload = () => resolve(reader.result as string);
-              reader.onerror = () => reject(reader.error);
-              reader.readAsDataURL(rec.blob);
-            });
-            recordings[rec.id] = base64;
-          } catch {
-            // Skip failed conversions
-          }
+      // Load cached upload state from localStorage
+      const CACHE_KEY = 'share-cache';
+      const cache = JSON.parse(localStorage.getItem(CACHE_KEY) || '{}') as {
+        shareId?: string;
+        uploadedUrls?: Record<string, string>; // attemptId → blob URL
+        attemptCount?: number;
+      };
+
+      // Reuse existing shareId or create new one
+      let shareId = cache.shareId;
+      if (!shareId) {
+        const res = await fetch('/api/share', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            attempts,
+            stats: { total: attempts.length, avg: avgScore, best: bestScore },
+          }),
+        });
+        if (!res.ok) throw new Error('API error');
+        ({ id: shareId } = await res.json());
+        cache.shareId = shareId;
+        cache.uploadedUrls = {};
+        cache.attemptCount = attempts.length;
+        localStorage.setItem(CACHE_KEY, JSON.stringify(cache));
+      }
+
+      // If attempt count changed, update metadata
+      if (cache.attemptCount !== attempts.length) {
+        // Create new share with updated data, keep old audio URLs
+        const res = await fetch('/api/share', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            attempts,
+            stats: { total: attempts.length, avg: avgScore, best: bestScore },
+          }),
+        });
+        if (!res.ok) throw new Error('API error');
+        ({ id: shareId } = await res.json());
+        cache.shareId = shareId;
+        cache.attemptCount = attempts.length;
+        // Keep uploadedUrls — will re-link below
+        localStorage.setItem(CACHE_KEY, JSON.stringify(cache));
+      }
+
+      // Build audioUrls from attempts that already have recordingUrl (uploaded during practice)
+      const audioUrls: Record<string, string> = {};
+      for (const a of attempts) {
+        if (a.recordingUrl) {
+          audioUrls[a.id] = a.recordingUrl;
         }
       }
 
-      // Upload to server
-      const payload = JSON.stringify({
-        attempts,
-        recordings,
-        stats: { total: attempts.length, avg: avgScore, best: bestScore },
-      });
+      setShareProgress(`녹음 ${Object.keys(audioUrls).length}/${attempts.length}개 포함`);
 
-      // If payload > 4MB, drop recordings and share without audio
-      const body = payload.length > 4 * 1024 * 1024
-        ? JSON.stringify({
-            attempts,
-            recordings: {},
-            stats: { total: attempts.length, avg: avgScore, best: bestScore },
-          })
-        : payload;
-
-      const res = await fetch('/api/share', {
+      // Update share with attempts + audio URLs
+      await fetch('/api/share/update', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body,
+        body: JSON.stringify({
+          shareId,
+          attempts,
+          audioUrls,
+          stats: { total: attempts.length, avg: avgScore, best: bestScore },
+        }),
       });
-      if (!res.ok) throw new Error('API error');
-      const { id } = await res.json();
-      const shareUrl = `${window.location.origin}/shared/${id}`;
+
+      const shareUrl = `${window.location.origin}/shared/${shareId}`;
 
       const text = `🎙️ TOEFL 연습 기록\n📊 ${attempts.length}회 연습, 평균 ${avgScore.toFixed(1)}점, 최고 ${bestScore.toFixed(1)}점\n\n👉 ${shareUrl}`;
 
@@ -129,6 +173,7 @@ export function HistoryScreen() {
       alert('공유 링크 생성에 실패했습니다.');
     } finally {
       setSharing(false);
+      setShareProgress('');
     }
   }, [attempts, avgScore, bestScore]);
 
@@ -147,7 +192,7 @@ export function HistoryScreen() {
             title="기록 공유"
           >
             {sharing ? (
-              <span className="text-xs animate-spin">⏳</span>
+              <span className="text-xs">{shareProgress || '⏳'}</span>
             ) : (
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -191,7 +236,7 @@ export function HistoryScreen() {
                   {/* Items */}
                   <div className="space-y-2">
                     {items.map(a => {
-                      const hasRecording = recordingIds.has(a.id);
+                      const hasRecording = recordingIds.has(a.id) || !!a.recordingUrl;
                       const isPlaying = playingId === a.id;
                       return (
                         <Card key={a.id} className="p-3">
@@ -212,7 +257,7 @@ export function HistoryScreen() {
                               {hasRecording && (
                                 <>
                                   <button
-                                    onClick={() => handlePlay(a.id)}
+                                    onClick={() => handlePlay(a.id, a.recordingUrl)}
                                     disabled={isPlaying}
                                     className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-xs hover:bg-muted/80 transition-colors disabled:opacity-50"
                                     title="재생"

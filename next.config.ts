@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  headers: async () => [
+    {
+      source: '/:path((?!api|_next/static|_next/image|favicon).*)',
+      headers: [
+        { key: 'Cache-Control', value: 'no-cache, must-revalidate' },
+      ],
+    },
+  ],
 };
 
 export default nextConfig;
