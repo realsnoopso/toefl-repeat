@@ -79,6 +79,9 @@ export function HistoryScreen({ sharedAttempts, isShared }: HistoryScreenProps =
       audio.onended = () => { setPlayingId(null); URL.revokeObjectURL(url); };
       audio.onerror = () => { setPlayingId(null); URL.revokeObjectURL(url); };
       audio.play().catch(() => setPlayingId(null));
+    } else {
+      // No recording available
+      alert('녹음 파일을 찾을 수 없습니다');
     }
   }, []);
 
@@ -220,7 +223,7 @@ export function HistoryScreen({ sharedAttempts, isShared }: HistoryScreenProps =
                   {/* Items */}
                   <div className="space-y-2">
                     {items.map(a => {
-                      const hasRecording = recordingIds.has(a.id) || !!a.recordingUrl;
+                      const hasRecording = true; // Always show play button — graceful fallback on click
                       const isPlaying = playingId === a.id;
                       return (
                         <Card key={a.id} className="p-3">
@@ -238,25 +241,14 @@ export function HistoryScreen({ sharedAttempts, isShared }: HistoryScreenProps =
                               )}
                             </div>
                             <div className="flex items-center gap-1.5 shrink-0 ml-2">
-                              {hasRecording && (
-                                <>
-                                  <button
-                                    onClick={() => handlePlay(a.id, a.recordingUrl)}
-                                    disabled={isPlaying}
-                                    className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-xs hover:bg-muted/80 transition-colors disabled:opacity-50"
-                                    title="재생"
-                                  >
-                                    {isPlaying ? '🔊' : '▶️'}
-                                  </button>
-                                  <button
-                                    onClick={() => handleDownload(a)}
-                                    className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-xs hover:bg-muted/80 transition-colors"
-                                    title="다운로드"
-                                  >
-                                    ⬇️
-                                  </button>
-                                </>
-                              )}
+                              <button
+                                onClick={() => handlePlay(a.id, a.recordingUrl)}
+                                disabled={isPlaying}
+                                className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-xs hover:bg-muted/80 transition-colors disabled:opacity-50"
+                                title="재생"
+                              >
+                                {isPlaying ? '🔊' : '▶️'}
+                              </button>
                               <p className={`text-lg font-bold w-10 text-right ${a.scores.total >= 4 ? 'text-emerald-600' : a.scores.total >= 3 ? 'text-amber-600' : 'text-red-600'}`}>
                                 {a.scores.total.toFixed(1)}
                               </p>
