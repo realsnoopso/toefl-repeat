@@ -7,6 +7,7 @@ import { AudioRecorder } from '@/lib/audio/recorder';
 import { startSpeechRecognition } from '@/lib/audio/stt';
 import { evaluateAttempt } from '@/lib/evaluation/scoring';
 import { saveAttempt } from '@/lib/storage/localStorage';
+import { saveAttemptToSupabase } from '@/lib/storage/supabase';
 import { saveRecording } from '@/lib/storage/recordingDB';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -162,6 +163,7 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
     
     const result = evaluateAttempt(exercise.id, exercise.titleKo, duration, transcript, activeSegment, origText);
     saveAttempt(result);
+    saveAttemptToSupabase(result);
 
     if (blob && blob.size > 0) {
       const url = URL.createObjectURL(blob);
@@ -192,8 +194,13 @@ export function PracticeScreen({ exercise, onBack }: { exercise: Exercise; onBac
               stored[idx].recordingUrl = blobUrl;
               localStorage.setItem(key, JSON.stringify(stored));
             }
+            // Update Supabase too
+            saveAttemptToSupabase({ ...result, recordingUrl: blobUrl });
+          } else {
+            const errBody = await uploadRes.text();
+            console.error('[Recording upload failed]', uploadRes.status, errBody);
           }
-        } catch { /* non-critical */ }
+        } catch (uploadErr) { console.error('[Recording upload error]', uploadErr); }
       })();
       // Auto-play recording
       const playback = new Audio(url);
